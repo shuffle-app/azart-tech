@@ -1,0 +1,97 @@
+.section_block {
+    margin-top: 100px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.header button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #7140FD;
+    border-radius: 7px;
+    padding: 9px 22px;
+}
+
+
+.card_list {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    width: 236px;
+    height: 238px;
+    padding: 15px;
+    background: #282835;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.card_border {
+    margin-top: 15px;
+    border: 1px solid #808080;
+    border-radius: 11px;
+    padding: 10px;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card_border_blurred {
+    border: 1px solid #CBFA11;
+    cursor: pointer;
+}
+
+.card_product div {
+    width: 16px;
+    height: 16px;
+    background: #CBFA11;
+    border-radius: 50%;
+}
+
+.card_product_blurred {
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+    filter: blur(28.3333px);
+}
+
+.card_product_text {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    max-width: 176px;
+}
+
+.card:hover .card_product_text {
+    display: block;
+}
+
+.card_product img {
+    transform: translateY(-40px);
+}

@@ -1,0 +1,82 @@
+.first_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.text span {
+    background: #7140FD;
+    border-radius: 8px;
+    padding: 0 5px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.btn {
+    background: #CBFA11;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #21212B;
+    width: 253px;
+    height: 60px;
+    margin-top: 75px;
+}
+
+.experts h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.directions {
+    padding: 22px 30px;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 1px solid #808080;
+    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(28.3333px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.directions p {
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+}
+
+.directions p:first-child {
+    width: 25px;
+    height: 0px; 
+    border: 0.5px solid #808080;
+    transform: rotate(90deg);
+}
+
+.directions p:last-child {
+    width: 25px;
+    height: 0px; 
+    border: 0.5px solid #808080;
+    transform: rotate(90deg);
+}

@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+.menu_button {
+    background: none;
+}
+
+.menu_button div:first-child {
+    width: 30px;
+    height: 0px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.menu_button div:last-child {
+    width: 15px;
+    height: 0px;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    margin-top: 10px;
+}
