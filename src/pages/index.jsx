@@ -5,6 +5,12 @@ import Header from '@/components/shared/Header'
 import Section1 from '@/components/home/Section1'
 import Section2 from '@/components/home/Section2'
 import Websites from '@/components/home/Websites'
+import Advantages from '@/components/home/Advantages'
+import Product from '@/components/home/Product'
+import Footer from '@/components/shared/Footer'
+import Messenger from '@/components/home/Messenger'
+import Stacks from '@/components/home/Stacks'
+import Projects from '@/components/home/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +30,14 @@ export default function Home() {
         </div>
         <Section2/>
         <Websites/>
+        <Advantages/>
+        <Product/>
+        <Stacks/>
+        <Messenger/>
+        <Projects/>
+
+
+        <Footer/>
       </main>
     </>
   )

@@ -1,0 +1,27 @@
+.footer {
+    background: #21212B;
+    margin-top: 100px;
+}
+
+.footer_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email {
+    font-size: 16px;
+    line-height: 21px;
+    color: #CBFA11;
+}
+
+.social div {
+    margin-bottom: 30px;
+}
+
+.social a{
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}

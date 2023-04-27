@@ -1,0 +1,179 @@
+.stacks_block {
+    margin-top: 100px;
+}
+
+.stacks_block h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.accordion {
+    margin-top: 18px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.title .number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 0.8px solid #808080;
+    box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(22.6666px);
+    border-radius: 8px;
+    padding: 20px 28px;
+}
+
+.title h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.not_active_accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 15px;
+}
+
+
+/* Стили для активного аккордиона */
+
+.accordion_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.active_accordion {
+    margin-top: 15px;
+    padding: 15px;
+    background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, #CBFA11 294.07%);
+    border: 1px solid #A8A8A8;
+    border-radius: 5px;
+}
+
+.active_accordion_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title .active_number {
+    background: #CBFA11;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+    border: 0.8px solid #808080;
+    border-radius: 8px;
+    padding: 20px 28px;
+}
+
+.accordion_content {
+    margin-top: 15px;
+}
+
+.accordion_content p {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    max-width: 464px;
+    margin-top: 15px;
+}
+
+.active_tab {
+    background: #CBFA11;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #21212B;
+}
+
+.not_active_tab {
+    border: 1px solid #808080;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 1px solid #808080;
+    box-shadow: inset 38.664px -38.664px 38.664px rgba(186, 186, 186, 0.1), inset -38.664px 38.664px 38.664px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(38.664px);
+    border-radius: 10px;
+}
+
+.tab_content {
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 1px solid #CBFA11;
+    box-shadow: inset 28.3px -28.3px 28.3px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(28.3px);
+    border-radius: 10px;
+    max-width: 464px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.tabs_logo  {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.active_logo {
+    width: 64px;
+    height: 64px;
+    left: 1103px;
+    top: 3650px;
+    padding: 16px 18px;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 0.799999px solid #CBFA11;
+    box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(22.6666px);
+    border-radius: 7.99999px;
+}
+
+.not_active_logo {
+    width: 64px;
+    height: 64px;
+    left: 1103px;
+    top: 3650px;
+    padding: 16px 18px;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 0.8px solid #808080;
+    box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(22.6666px);
+    border-radius: 8px;
+}
+
+.line {
+    border: 1px solid #808080;
+    width: 100%;
+    margin-top: 30px;
+}
