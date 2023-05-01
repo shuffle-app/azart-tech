@@ -56,12 +56,12 @@ const Section2 = () => {
     };
 
     return (
-        <section className={`container ${s.section_block}`}>
-            <div className={s.header}>
+        <section className={`${s.section_block}`}>
+            <div className={`${s.header} container`}>
                 <h1>We can do everything</h1>
                 <button>but we are experts in</button>
             </div>
-            <div className={s.card_list}>
+            <div className={`${s.card_list} ${s.container}`}>
                 {cards.map((card, index) => (
                     <Card key={index} card={card} />
                 ))}

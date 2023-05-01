@@ -18,12 +18,12 @@ const Websites = () => {
                                     <h3>Marketplaces</h3>
                                     <p>user-friendly interface that will lead to the purchase</p>
                                 </div>
-                                <img src="./assets/images/services-img1.png" alt="" />
+                                <img className={s.img} src="./assets/images/services-img1.png" alt="" />
                                 <div>
                                     <h3>Delivery</h3>
                                     <p>for fast deliveries, fast and simple functionality for their customers</p>
                                 </div>
-                                <img src="./assets/images/services-img2.png" alt="" />
+                                <img className={s.img} src="./assets/images/services-img2.png" alt="" />
                             </div>
                         </div>
                         <div className={s.btn}>
@@ -39,12 +39,12 @@ const Websites = () => {
                                     <h3>Landing page</h3>
                                     <p>a one-page solution that can be your business card or selling tool</p>
                                 </div>
-                                <img src="./assets/images/sites-img1.png" alt="" />
+                                <img className={s.img} src="./assets/images/sites-img1.png" alt="" />
                                 <div>
                                     <h3>Websites</h3>
                                     <p>a multi-page and modern website of any complexity for your tasks</p>
                                 </div>
-                                <img src="./assets/images/sites-img2.png" alt="" />
+                                <img className={s.img} src="./assets/images/sites-img2.png" alt="" />
                             </div>
                         </div>
                         <div className={s.btn}>

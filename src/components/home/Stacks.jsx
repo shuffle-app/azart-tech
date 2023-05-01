@@ -1,22 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import s from '@/styles/main/Stacks.module.css';
 
-const Accordion = ({ isActive, title, children, onToggle }) => {
-    const arrowIcon = isActive ? "./assets/icons/arrow-up.svg" : "./assets/icons/arrow-down.svg";
-  
-    return (
-      <div className={isActive ? s.active_accordion : s.not_active_accordion}>
-        <div className={s.active_accordion_header}>
-          <div className={s.title}>
-            <p className={isActive ? s.active_number : s.number}>1</p>
-            <h4>{title}</h4>
-          </div>
-          <button onClick={onToggle}><img src={arrowIcon} alt="" /></button>
+const Accordion = ({ isActive, title, children, onToggle, number }) => {
+  const arrowIcon = isActive ? "./assets/icons/arrow-up.svg" : "./assets/icons/arrow-down.svg";
+
+  return (
+    <div className={isActive ? s.active_accordion : s.not_active_accordion}>
+      <div className={s.active_accordion_header}>
+        <div className={s.title}>
+          <p className={isActive ? s.active_number : s.number}>{number}</p>
+          <h4>{title}</h4>
         </div>
-        {isActive && children}
+        <button onClick={onToggle}><img src={arrowIcon} alt="" /></button>
       </div>
-    );
-  };
+      {isActive && children}
+    </div>
+  );
+};
 
 const Tab = ({ isActive, label, onClick }) => (
   <button
@@ -46,112 +46,34 @@ const Stacks = () => {
     const handleTabClick = (tabIndex) => {
       setActiveTab(tabIndex);
     };
+
+  const [uniqueTabs, setUniqueTabs] = useState([]);
+  const [accordions, setAccordions] = useState([]);
+
+  useEffect(() => {
+    fetch('/accordionData.json')
+      .then((response) => response.json())
+      .then((data) => {
+        setUniqueTabs(data.uniqueTabs);
+        setAccordions(
+          data.accordions.map((accordion) => ({
+            ...accordion,
+            tabs: accordion.tabs.map((tabIndex) => data.uniqueTabs[tabIndex]),
+          }))
+        );
+      });
+  }, []);
   
 
-    const accordions = [
-        {
-            title: 'Backend',
-            text: 'business analysis that will help your ideas shine',
-            tabs: [
-                {
-                label: 'node.js',
-                tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-            ],
-        },
-        {
-            title: 'Backend',
-            text: 'business analysis that will help your ideas shine',
-            tabs: [
-                {
-                label: 'node.js',
-                tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-                {
-                    label: 'node.js',
-                    tabText: 'Node.js is a software platform based on the V8 engine , which turns JavaScript from a highly specialized language into a general—purpose language.',
-                    image: './assets/icons/nodejs.svg',
-                },
-            ],
-        },
-    ];
-
-
   return (
-    <section className={`container ${s.stacks_block}`}>
+    <section className={`${s.stacks_block}`}>
       <h1>Stacks</h1>
       <div className={s.accordion}>
         {
             accordions.map((content, index) => (
                 <Accordion
                     key={index}
+                    number={index + 1}
                     isActive={activeAccordion === index}
                     title={content.title}
                     onToggle={() => toggleAccordion(index)}
@@ -163,10 +85,10 @@ const Stacks = () => {
                     <div className={s.tabs}>
                     {content.tabs.map((tab, tabIndex) => (
                         <Tab
-                        key={tabIndex}
-                        isActive={activeTab === tabIndex + 1}
-                        label={tab.label}
-                        onClick={() => handleTabClick(tabIndex + 1)}
+                          key={tabIndex}
+                          isActive={activeTab === tabIndex + 1}
+                          label={tab.label}
+                          onClick={() => handleTabClick(tabIndex + 1)}
                         />
                     ))}
                     </div>

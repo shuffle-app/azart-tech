@@ -2,7 +2,7 @@ import s from '@/styles/main/Advantages.module.css'
 
 const Advantages = () => {
     return (
-        <section className={`container ${s.advantages}`} >
+        <section className={`${s.advantages}`} >
             <h1>Advantages</h1>
             <div className={s.blocks}>
                 <div className={s.block}>

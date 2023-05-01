@@ -1,0 +1,124 @@
+.video_audit {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.section_header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.section_header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.section_header button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 8px 23px;
+    background: #7140FD;
+    border-radius: 7px;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.video_audit p {
+    padding: 15px 27px;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 1px solid #808080;
+    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(28.3333px);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    max-width: 600px;
+    margin-top: 15px;
+}
+
+.video_play {
+    width: 600px;
+    height: 300px;
+    background: #A8A8A8;
+    border-radius: 10px;
+}
+
+.video_audit button {
+    padding: 20px 34px;
+    background: #CBFA11;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #21212B;
+}
+
+.img1 {
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+}
+
+.img2 {
+    position: absolute;
+    right: -100px;
+    top: -20px;
+    z-index: -1;
+}
+
+.glow {
+    width: 102px;
+    height: 37px;
+    background: #CBFA11;
+    filter: blur(100px);
+    z-index: -1;
+    transform: translateY(-50px);
+}
+
+.glow2 {
+    width: 100px;
+    height: 100px;
+    left: -200px;
+    bottom: 0;
+    background: #7140FD;
+    filter: blur(100px);
+    position: absolute;
+}
+
+
+@media (max-width: 1024px) {
+    .section_header h1 {
+        font-size: 34px;
+        line-height: 37px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video_play {
+        width: 358px;
+        height: 150px;
+    }
+}

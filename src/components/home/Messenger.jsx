@@ -2,7 +2,7 @@ import s from '@/styles/main/Messenger.module.css'
 
 const Messenger = () => {
     return (
-        <section className={`container ${s.messenger_block}`}>
+        <section className={`${s.messenger_block}`}>
             <div className={s.question_blocks}>
                 <img src="./assets/images/lupa.png" alt="" />
                 <div className={s.question}>
@@ -18,7 +18,7 @@ const Messenger = () => {
             <div className={s.content}>
                 <h1>Find out how to turn these incidents into dust by going to our messenger!</h1>
                 <div className={s.contact}>
-                    <img src="./assets/images/emoji.svg" alt="emoji" />
+                    <img className={s.emoji_img} src="./assets/images/emoji.svg" alt="emoji" />
                     <button>
                         go over
                         <img src="./assets/icons/telega-dark.svg" alt="telegram" />

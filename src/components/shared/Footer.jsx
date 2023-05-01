@@ -8,8 +8,7 @@ const Footer = () => {
                 <img src="./assets/icons/footer-logo.svg" alt="logo" />
                 <div className={s.social}>
                     <div><a href="#">Pinterest</a></div>
-                    <div><a href="#">You Tube</a></div>
-                    
+                    <div><a href="#">You Tube</a></div> 
                 </div>
             </div>
         </footer>

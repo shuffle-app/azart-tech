@@ -1,6 +1,6 @@
 .footer {
     background: #21212B;
-    margin-top: 100px;
+
 }
 
 .footer_block {
@@ -24,4 +24,22 @@
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .footer_block {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer_block img {
+        order: -1;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
 }

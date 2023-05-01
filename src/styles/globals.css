@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/* Стили для контента, когда экран меньше 1440px */
 .container {
-	margin: 0 100px;
-  }
-  
-  /* Стили для контента, когда экран больше 1440px */
-  @media screen and (min-width: 1240px) {
+	max-width: 1240px; /* Максимальная ширина контейнера */
+	margin: 0 auto; /* Выравнивание контейнера по центру */
+	width: 100%; /* Ширина контейнера по умолчанию */
+	position: relative;
+}
+
+@media (max-width: 1440px) {
 	.container {
-	  margin: 0 auto;
-	  max-width: 1240px;
+	  padding: 0 100px; /* Отступы для контейнера на экранах меньше 1440px */
+	  max-width: 1440px;
 	}
-  }
+}
+
+@media (max-width: 1024px) {
+	.container {
+		padding: 0 40px; /* Отступы для контейнера на экранах меньше 1440px */
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 15px;
+	}
+}
   
 
 .lines {
@@ -22,7 +36,10 @@
 
 .slick-slider {
 	display: flex;
-	gap: 30px;
+	width: 100%;
+	margin-bottom: 0;
+	justify-content: space-between;
+	vertical-align: top;
 }
 
 /* Обнуление CSS */
@@ -59,3 +76,39 @@ html,body{
 button {
 	background: none;
 }
+
+
+
+
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s;
+	margin: 0 5px;
+  }
+  
+  .inactive {
+	width: 50px;
+	height: 50px;
+	background-color: lightgray;
+  }
+  
+  .active {
+	width: 80px;
+	height: 80px;
+	background-color: blue;
+  }
+  
+  .active-center {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+  }
+  

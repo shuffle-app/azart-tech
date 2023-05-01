@@ -1,0 +1,139 @@
+.card {
+    padding: 15px;
+    min-width: 348px;
+    background: #282835;
+    border: 1px solid #808080;
+    border-radius: 10px;
+}
+
+.card_header {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #808080;
+}
+
+.photo {
+    min-width: 130px;
+    height: 130px;
+    background: #000;
+    border: 1px solid #808080;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.about h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.about h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #CBFA11;
+}
+
+.about p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 77.45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #CBFA11;
+    transform: translateY(-25px);
+}
+
+.awards_block {
+    padding: 15px 0;
+    border-bottom: 1px solid #808080;
+}
+
+.awards_block h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #7140FD;
+    margin-bottom: 15px;
+}
+
+.awards {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.award {
+    width: 52px;
+    height: 52px;
+    background: #282835;
+    border: 0.584269px solid #CBFA11;
+    border-radius: 12.0421px;
+    padding: 12px;
+}
+
+.award h6{
+    font-weight: 500;
+    font-size: 8.75789px;
+    text-align: center;
+    color: #CBFA11;
+}
+
+.award p {
+    font-weight: 500;
+    font-size: 8.7px;
+    color: #FFFFFF;
+}
+
+.tags {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tags p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;  
+    color: #CBFA11;
+}
+
+.tags div div {
+    padding: 7px 10px;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 1px solid #808080;
+    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(28.3333px);
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.tags_flex {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        min-width: 320px;
+    }
+}

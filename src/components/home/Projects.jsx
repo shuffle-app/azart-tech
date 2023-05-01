@@ -37,33 +37,46 @@ const Projects = () => {
         slidesToScroll: 1,
         autoplay: false,
         cssEase: "linear",
+
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1.7
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1.1
+              }
+            }
+          ]
+      
     };
 
     return (
-        <section className={` ${s.projects_section}`}>
-            <h1>Projects</h1>
+        <section className={`${s.projects_section}`}>
+            <h1 className='container'>Resent projects</h1>
             {/* Карточки проектов */}
-            <div >
-                <Slider {...settings} >
+            <div className={`${s.slide} ${s.container}`}>
                     <ProjectCard />
                     <ProjectCard />
                     <ProjectCard />
                     <ProjectCard />
-                </Slider>
+
             </div>
 
             {/* Скролл бар слайдера, длинной линией */}
-            <div className={s.slider_block}>
+            <div className={`container ${s.slider_block}`}>
                 <a href="">all project</a>
                 <div className={s.slider_scroll}></div>
-            </div>
-
-            <div className={s.zoom}>
-                <div>
-                    <img src="./assets/icons/people.png" alt="people" />
-                    <p>Have a zoom meeting with an expert!</p>
-                </div>
-                <button>go zoom</button>
             </div>
         </section>
     );

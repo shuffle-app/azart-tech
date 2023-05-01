@@ -11,6 +11,12 @@ import Footer from '@/components/shared/Footer'
 import Messenger from '@/components/home/Messenger'
 import Stacks from '@/components/home/Stacks'
 import Projects from '@/components/home/Projects'
+import VideoAudit from '@/components/home/VideoAudit'
+import Form from '@/components/home/Form'
+import Question from '@/components/home/Question'
+import StagesWork from '@/components/home/StagesWork'
+import TeamSlider from '@/components/home/TeamSlider'
+import Zoom from '@/components/shared/Zoom'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,15 +34,28 @@ export default function Home() {
           <Header/>
           <Section1/>
         </div>
-        <Section2/>
+          <Section2/>
+
+
         <Websites/>
-        <Advantages/>
-        <Product/>
-        <Stacks/>
-        <Messenger/>
-        <Projects/>
 
-
+        <div className='container'>
+          <Advantages/>
+          <Product/>
+          <Stacks/>
+          <Messenger/>
+        </div>
+          <Projects/>
+        <div className='container'>
+          <Zoom/>
+          <VideoAudit/>
+        </div>
+          <StagesWork/>
+          <TeamSlider/>
+        <div className='container'>
+          <Question/>
+          <Form/>
+        </div>
         <Footer/>
       </main>
     </>

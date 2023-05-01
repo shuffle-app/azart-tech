@@ -1,14 +1,34 @@
-.projects_section{
-    margin: 100px 0 0 100px;
+ .projects_section{
+    margin-top: 100px;
 }
   
-  /* Стили для контента, когда экран больше 1440px */
-  @media screen and (min-width: 1240px) {
-	.projects_section{
-        margin: 100px auto;
-	  max-width: 1240px;
+.container {
+	max-width: 1240px; /* Максимальная ширина контейнера */
+	margin: 0 auto; /* Выравнивание контейнера по центру */
+	width: 100%; /* Ширина контейнера по умолчанию */
+	position: relative;
+}
+
+@media (max-width: 1440px) {
+	.container {
+	  padding: 0 100px; /* Отступы для контейнера на экранах меньше 1440px */
+	  max-width: 1440px;
 	}
-  }
+}
+
+@media (max-width: 1024px) {
+	.container {
+		padding: 0 40px; /* Отступы для контейнера на экранах меньше 1440px */
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 0 0 15px;
+        margin: 0;
+	}
+}
 
 .projects_section h1 {
     font-weight: 700;
@@ -23,10 +43,12 @@
     background: #282835;
     border: 1px solid #808080;
     border-radius: 10px;
-    width: 450px;
-    height: 433px;
+    min-width: 450px;
+    min-height: 433px;
     position: relative;
 }
+
+
 
 .card_header {
     display: flex;
@@ -136,6 +158,7 @@
     box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(28.3333px);
     border-radius: 10px;
+    max-height: 101px;
 }
 
 .zoom div {
@@ -160,4 +183,80 @@
     background: linear-gradient(105.09deg, #55A1FF -2.98%, #4087FD 92.91%);
     border-radius: 10px;
     padding: 20px 30px;
+}
+
+.slide {
+    overflow-x: scroll;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        min-width: 327px;
+        min-height: 325px;
+    }
+
+    .card_text h4 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .card_text p {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .preview img {
+        width: 187px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects_section h1 {
+        font-size: 34px;
+        line-height: 37px;
+    }
+
+    .zoom {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .zoom div{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        transform: translateY(-50px);
+    }
+
+    .zoom button {
+        transform: translateY(-50px);
+    }
+
+    .zoom p {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .card {
+        width: 327px;
+        height: 325px;
+    }
+
+    .card_text p {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .card_text h4 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .preview img {
+        width: 187px;
+    }
 }
