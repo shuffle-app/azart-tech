@@ -6,7 +6,7 @@ const Accordion = ({ isActive, title, children, onToggle, number }) => {
 
   return (
     <div className={isActive ? s.active_accordion : s.not_active_accordion}>
-      <div className={s.active_accordion_header}>
+      <div onClick={onToggle} className={s.active_accordion_header}>
         <div className={s.title}>
           <p className={isActive ? s.active_number : s.number}>{number}</p>
           <h4>{title}</h4>
@@ -36,7 +36,7 @@ const TabContent = ({ isVisible, children }) => (
 );
 
 const Stacks = () => {
-    const [activeAccordion, setActiveAccordion] = useState(null);
+    const [activeAccordion, setActiveAccordion] = useState(0);
     const [activeTab, setActiveTab] = useState(1);
   
     const toggleAccordion = (accordionIndex) => {
@@ -77,39 +77,43 @@ const Stacks = () => {
                     isActive={activeAccordion === index}
                     title={content.title}
                     onToggle={() => toggleAccordion(index)}
-  
                 >
-                <div className={s.accordion_content}>
-                    <div className={s.tabs_block}>
-                        <p>{content.text}</p>
-                    <div className={s.tabs}>
-                    {content.tabs.map((tab, tabIndex) => (
-                        <Tab
-                          key={tabIndex}
-                          isActive={activeTab === tabIndex + 1}
-                          label={tab.label}
-                          onClick={() => handleTabClick(tabIndex + 1)}
-                        />
-                    ))}
-                    </div>
-                        {content.tabs.map((tab, tabIndex) => (
-                            <TabContent key={tabIndex} isVisible={activeTab === tabIndex + 1}>
-                                <p>{tab.tabText}</p>
-                            </TabContent>
-                        ))}
-                    </div>
+                  <div className={s.accordion_content}>
+                      <div className={s.tabs_block}>
+                          <p>{content.text}</p>
+                      <div className={s.tabs}>
+                      {content.tabs.map((tab, tabIndex) => (
+                          <Tab
+                            key={tabIndex}
+                            isActive={activeTab === tabIndex + 1}
+                            label={tab.label}
+                            onClick={() => handleTabClick(tabIndex + 1)}
+                          />
+                      ))}
+                      </div>
+                          {content.tabs.map((tab, tabIndex) => (
+                              <TabContent key={tabIndex} isVisible={activeTab === tabIndex + 1}>
+                                  <p>{tab.tabText}</p>
+                              </TabContent>
+                          ))}
+                      </div>
 
-                    <div className={s.tabs_logo}>
-                        {content.tabs.map((tab, tabIndex) => (
-                            <div
-                                key={tabIndex}
-                                className={activeTab === tabIndex + 1 ? s.active_logo : s.not_active_logo}
-                                >
-                                <img src={tab.image} alt="" />
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                      <div className={s.tabs_logo}>
+  {content.tabs.map((tab, tabIndex) => {
+    if (tab.image) {
+      return (
+        <div
+          key={tabIndex}
+          className={activeTab === tabIndex + 1 ? s.active_logo : s.not_active_logo}
+        >
+          <img src={tab.image} alt="" />
+        </div>
+      );
+    }
+    return null;
+  })}
+</div>
+                  </div>
                 </Accordion>
             ))
         }

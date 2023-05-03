@@ -43,6 +43,7 @@
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .product_header p {
@@ -54,7 +55,7 @@
 
 .glow {
     position: absolute;
-    width: 214px;
+    width: 114px;
     height: 40px;
     background: #7140FD;
     filter: blur(30px);
@@ -95,8 +96,8 @@
 
 .card_p {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 13px;
+    font-size: 10px;
+    line-height: 110%;
     color: #FFFFFF;
     opacity: 0.8;
 }
@@ -112,6 +113,17 @@
     border: 1px solid #BEBEBE;
     backdrop-filter: blur(5px);
     border-radius: 300px;
+}
+
+.glow5 {
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    background: #CBFA11;
+    filter: blur(100px);
+    z-index: -1;
+    top: 35%;
+    left: 40px;
 }
 
 .azart p {
@@ -139,6 +151,7 @@
     display: none;
 }
 
+
 @media (max-width: 1024px) {
     .azart {
         display: none;
@@ -146,10 +159,16 @@
 
     .products_block {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .product {
         max-width: 100%;
+    }
+
+    .card_p {
+        font-size: 14px;
+        line-height: 120%;
     }
 }
 
@@ -158,6 +177,10 @@
         flex-direction: column;
         align-items: start;
         gap: 10px;
+    }
+
+    .glow {
+        width: 70px;
     }
 
     .product_header {

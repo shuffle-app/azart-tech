@@ -1,5 +1,5 @@
 import s from '@/styles/main/Question.module.css'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const data = [
     {
@@ -50,26 +50,16 @@ const Question = () => {
                     <div className={s.accordion} key={item.id}>
                         <div className={s.accordion_header}>
                             <h4>{item.title}</h4>
-                            {
-                                activeIndex === index ? (
-                                    <button onClick={() => onClickAccordion(index)}>
-                                        <img src="./assets/icons/arr-minus.svg" alt="" />
-                                    </button>
-                                ) : (
-                                    <button onClick={() => onClickAccordion(index)}>
-                                        <img src="./assets/icons/arr-plus.svg" alt="" />
-                                    </button>
-                                )
-                            }
+                            <button onClick={() => onClickAccordion(index)}>
+                                <img src={`./assets/icons/arr-${activeIndex === index ? 'minus' : 'plus'}.svg`} alt="" />
+                            </button>
                         </div>
-                        {
-                            activeIndex === index ? (
-                                <div className={s.text}>
-                                    <div className={s.line}/>
-                                    <p>{item.text}</p>
-                                </div>
-                            ) : ''
-                        }
+                        <ContentTransition index={index} activeIndex={activeIndex}>
+                            <div className={s.text}>
+                                <div className={s.line}/>
+                                <p>{item.text}</p>
+                            </div>
+                        </ContentTransition>
                     </div>
                 ))
             }
@@ -77,4 +67,20 @@ const Question = () => {
     )
 }
 
+const ContentTransition = ({ index, activeIndex, children }) => {
+    const [height, setHeight] = useState(0)
+    const contentRef = useRef(null)
+
+    useEffect(() => {
+        setHeight(activeIndex === index ? contentRef.current.scrollHeight : 0)
+    }, [activeIndex, index])
+
+    return (
+        <div ref={contentRef} style={{ height, overflow: 'hidden', transition: 'height 200ms ease' }}>
+            {children}
+        </div>
+    )
+}
+
 export default Question
+

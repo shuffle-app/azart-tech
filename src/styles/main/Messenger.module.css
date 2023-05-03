@@ -64,6 +64,13 @@
     gap: 15px;
 }
 
+.glow {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    background: #7140FD;
+    filter: blur(100px);
+}
 
 @media (max-width: 1024px) {
     .emoji_img {
@@ -99,6 +106,8 @@
     }
 
     .question_blocks img {
-        display: none;
+        transform: translateY(340px) translateX(-150px) rotate(-5.94deg);
+        width: 110.7px;
+        height: 112.39px;
     }
 }

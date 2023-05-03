@@ -9,7 +9,6 @@
     display: flex;
     gap: 41px;
     align-items: center;
-    cursor: pointer;
 }
 
 .nav {
@@ -53,81 +52,64 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    cursor: pointer;
 }
 
 .menu_button div:first-child {
     width: 30px;
     height: 0px;
     background: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     transition: 0.3s;
-}
-
-.menu_button div:first-child:hover {
-    transform: translateX(-10px);
 }
 
 .menu_button div:last-child {
     width: 15px;
     height: 0px;
     background: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     margin-top: 10px;
     transition: 0.3s;
 }
 
 
-.mob_header {
-    display: none;
+
+.active_nav {
+    display: flex;
+    gap: 41px;
+    align-items: center;
 }
 
-.burger_button {
-    display: inline-block;
-    cursor: pointer;
-    width: 30px;
-    height: 20px;
-  }
-  
-  .line {
-    display: block;
-    background-color: #ffffff;
-    margin-bottom: 6px;
-    transition: all 0.3s;
-  }
-  
-  .line1 {
-    transform-origin: right;
-    width: 30px;
-    height: 2px;
-  }
-  
-  .line2 {
-    transform-origin: left;
-    width: 15px;
-    height: 2px;
-    margin-top: 10px;
-    margin-left: 15px;
-  }
-  
-  .burger_button:hover .line1 {
-    transform: translateX(-30%);
-  }
-  
-  .burger_button:hover .line2 {
-    transform: translateX(30%);
-  }
-  
+.active_header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(76.36deg, rgba(3, 3, 3, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    box-shadow: inset 21.6837px -21.6837px 21.6837px rgba(186, 186, 186, 0.1), inset -21.6837px 21.6837px 21.6837px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(21.6837px);
+    position: fixed;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    top: 0;
+}
 
 @media (max-width: 1024px) {
-
-
-    .mob_header {
-        display: initial;
+    .nav ul {
+        flex-direction: column;
     }
 
-    .header {
-        display: none;
+    .active_btns {
+        margin-top: 40px;
+        display: flex;
+        gap: 41px;
+        align-items: center;
     }
 
+    .nav {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

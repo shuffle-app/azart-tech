@@ -115,7 +115,7 @@
     left: 15px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 15px;
+    line-height: 120%;
     color: #FFFFFF;
     max-width: 176px;
 }
@@ -125,9 +125,12 @@
 }
 
 .card_product img {
-    transform: translateY(-40px);
+    transform: translateY(-40px) translateX(-10px);
 }
 
+.exit {
+    display: none;
+}
 
 
 @media (max-width: 748px) {
@@ -136,9 +139,18 @@
         line-height: 37px;
     }
 
+    .section_block {
+        margin-top: 50px;
+    }
+
     .header button {
         font-size: 14px;
         line-height: 17px;
         padding: 9px 18px;
+    }
+
+    .exit {
+        display: flex;
+        justify-content: end;
     }
 }

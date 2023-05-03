@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    z-index: 5;
 }
 
 .text h1 {
@@ -41,7 +42,7 @@
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .directions {
@@ -54,9 +55,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow-x: scroll;
+}
 
-    
+.block {
+    overflow-x: scroll;
 }
 
 .directions p {
@@ -84,6 +86,9 @@
     transform: rotate(90deg);
 }
 
+.br {
+    display: none;
+}
 
 
 
@@ -92,11 +97,13 @@
     .first_block {
         flex-direction: column;
         margin-bottom: 100px;
+        align-items: start;
     }
 
     .first_block img {
         order: -1;
         z-index: 1;
+       
     }
 
     .text {
@@ -107,12 +114,12 @@
         transform: translateY(-100px);
     }
 
-    .directions {
-        overflow: scroll;
-    }
-
     .directions p:first-child {
         display: none;
+    }
+    
+    .directions {
+        width: 753px;
     }
 
     .directions p:last-child {
@@ -132,7 +139,8 @@
 
 @media (max-width: 464px) {
     .first_block img {
-        width: 150%;
+        width: 130%;
+        transform: translateX(-50px);
     }
 
     .text h1 {
@@ -140,8 +148,43 @@
         line-height: 37px;
     }
 
+    .br {
+        display: initial;
+    }
+
     .text span {
         font-size: 34px;
         line-height: 37px;
     }
+}
+
+.container {
+	max-width: 1240px; /* Максимальная ширина контейнера */
+	margin: 0 auto; /* Выравнивание контейнера по центру */
+	width: 100%; /* Ширина контейнера по умолчанию */
+	position: relative;
+}
+
+@media (max-width: 1440px) {
+	.container {
+	  padding: 0 100px; /* Отступы для контейнера на экранах меньше 1440px */
+	  max-width: 1440px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		padding: 0 40px; /* Отступы для контейнера на экранах меньше 1440px */
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 0 0 15px;
+        margin: 0;
+	}
+}
+
+.block {
+    overflow-x: scroll;
 }

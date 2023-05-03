@@ -1,6 +1,6 @@
 .footer {
     background: #21212B;
-
+    padding-bottom: 66px;
 }
 
 .footer_block {
@@ -15,6 +15,10 @@
     color: #CBFA11;
 }
 
+.social {
+    margin-top: 50px;
+}
+
 .social div {
     margin-bottom: 30px;
 }
@@ -26,6 +30,10 @@
     text-decoration: none;
 }
 
+.footer_block img {
+    transform: translateX(-40px);
+}
+
 @media (max-width: 500px) {
     .footer_block {
         flex-direction: column;
@@ -35,6 +43,7 @@
 
     .footer_block img {
         order: -1;
+        transform: translateX(-10px);
     }
 
     .social {

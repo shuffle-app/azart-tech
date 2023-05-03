@@ -1,5 +1,6 @@
  .projects_section{
     margin-top: 100px;
+    position: relative;
 }
   
 .container {
@@ -47,7 +48,6 @@
     min-height: 433px;
     position: relative;
 }
-
 
 
 .card_header {
@@ -111,7 +111,12 @@
     left: 0;
     display: flex;
     align-items: end;
-    gap: 30px;
+    gap: 20px;
+}
+
+.preview img {
+    height: 210px;
+    margin-left: 5px;
 }
 
 .detailis a {
@@ -190,6 +195,39 @@
     display: flex;
     gap: 30px;
     width: 100%;
+}
+
+.glow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #7140FD;
+    filter: blur(100px);
+    top: 70px;
+    left: 25%;
+    z-index: -1;
+}
+
+.glow2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #7140FD;
+    filter: blur(100px);
+    top: 70px;
+    right: 0;
+    z-index: -1;
+}
+
+.glow3 {
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    background: #CBFA11;
+    filter: blur(100px);
+    bottom: -100px;
+    right: 0;
+    z-index: -1;
 }
 
 @media (max-width: 1024px) {

@@ -24,7 +24,7 @@ const Section2 = () => {
             text: 'the most tricky niche, but it has a lot of nuances and if you don`t take them into account, everything will fail at the start'
         },
         {
-            title: 'HoReCa',
+            title: 'Entertainment',
             image: './assets/images/enter.png',
             text: 'here are the most capricious consumers, it took us many years to put together the perfect user experience'
         },
@@ -47,6 +47,9 @@ const Section2 = () => {
                     </div>
                     {isHovered && (
                         <div className={s.card_product_text}>
+                            <div className={s.exit}>
+                                <button><img src="./assets/icons/arr-minus.svg" alt="" /></button>
+                            </div>
                             <p>{card.text}</p>
                         </div>
                     )}

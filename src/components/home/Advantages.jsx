@@ -54,6 +54,8 @@ const Advantages = () => {
                     </div>
                 </div>
             </div>
+
+            <div className={s.glow}/>
             
         </section>
     )

@@ -115,6 +115,7 @@ const StagesWork = () => {
 
         <div className={s.glow}/>
         <div className={s.glow2}/>
+        <div className={s.glow3}/>
     </section>
   );
 };

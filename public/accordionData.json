@@ -3,31 +3,26 @@
       {
         "label": "TDD",
         "tabText": "a software development methodology where tests are written before writing code. It allows faster and more reliable development of high-quality software.",
-        "image": "./assets/stacks/tdd.svg",
         "id": 0
       },
       {
         "label": "ML",
         "tabText": "a subfield of artificial intelligence that allows computers to learn and make predictions based on data without explicit programming. It is used in many areas, such as speech and image recognition, medical diagnosis, financial analysis, and more. Python and R are often used for ML implementation, as well as libraries and frameworks such as TensorFlow and PyTorch. ",
-        "image": "./assets/stacks/ml.svg",
         "id": 1
       },
       {
         "label": "UI-kit",
         "tabText": "UI-kit (User Interface Kit) - a set of tools for creating a user interface. It includes standard design elements such as buttons, input fields, menus, etc. that can be easily reused when creating various web or mobile applications. Currently, there are many UI kits available for different platforms, such as Android, iOS, React Native, etc.",
-        "image": "./assets/stacks/ui-kit.svg",
         "id": 2
       },
       {
         "label": "Atomic Design",
         "tabText": "Atomic Design is a design methodology that breaks interfaces down into small, reusable components, helping to create consistent and efficient user interfaces, speed up development, and simplify project maintenance.",
-        "image": "./assets/stacks/ui-kit.svg",
         "id": 3
       },
       {
         "label": "Backend Driven UI",
         "tabText": "Backend Driven UI is an approach to UI development where business logic and data drive the structure and behavior of the user interface. Developers create APIs and backend services for data retrieval and processing, then use that data to dynamically generate the UI on the client-side.",
-        "image": "./assets/stacks/ui-kit.svg",
         "id": 4
       },
       {
@@ -99,13 +94,11 @@
       {
         "label": "Responsible design",
         "tabText": "Responsible design (or sustainable design) is an approach to design that considers the impact of design on the environment and society, and seeks to reduce the negative effects associated with the production, use, and disposal of a product. It includes many aspects, such as sustainability, accessibility, safety, ethics, and social responsibility.",
-        "image": "./assets/stacks/ui-kit.svg",
         "id": 16
       },
       {
         "label": "Version control",
         "tabText": "Version control is the process of tracking changes to code or other documents and keeping each version under version control. This allows for managing changes, rolling back to previous versions, and collaborating on a project as a team, avoiding conflicts of changes.",
-        "image": "./assets/stacks/ui-kit.svg",
         "id": 17
       },
       {
@@ -224,32 +217,32 @@
     "accordions": [
       {
         "title": "Development",
-        "text": "business analysis that will help your ideas shine",
+        "text": "Creating tailored solutions for your business",
         "tabs": [0, 1, 2, 26, 3, 4]
       },
       {
         "title": "Backend",
-        "text": "business analysis that will help your ideas shine",
+        "text": "Providing business analysis to help your ideas shine",
         "tabs": [25, 5, 6, 36, 7, 8, 9, 10]
       },
       {
         "title": "Big Data",
-        "text": "design and development of user interfaces",
+        "text": "Analyzing big data to make informed decisions",
         "tabs": [11, 12]
       },
       {
         "title": "UX/UI",
-        "text": "design and development of user interfaces",
-        "tabs": [13, 14, 15, 16, 17, 4]
+        "text": "Crafting user-friendly interfaces for seamless experiences",
+        "tabs": [13, 4, 15, 16, 17, 14]
       },
       {
         "title": "Web Code",
-        "text": "design and development of user interfaces",
+        "text": "Programming web applications of any complexity",
         "tabs": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ]
       },
       {
         "title": "Web NoCode",
-        "text": "design and development of user interfaces",
+        "text": "Rapidly building websites without writing code",
         "tabs": [13, 32, 31, 33, 34, 35 ]
       }
     ]

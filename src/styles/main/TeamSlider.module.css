@@ -44,16 +44,16 @@
 .img1 {
     position: absolute;
     z-index: -1;
-    left: 250px;
+    left: 20%;
     top: 0;
 }
 
 .img2 {
     position: absolute;
     z-index: -1;
-    right: 220px;
+    right: 18%;
     top: 30px;
-    transform: rotate(-39.82deg);
+    transform: rotate(-50.82deg);
 }
 
 .header h1 {
@@ -71,7 +71,6 @@
     line-height: 21px;
     text-align: center;
     color: #FFFFFF;
-    opacity: 0.8;
     max-width: 703px;
     background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
     border: 1px solid #808080;
@@ -196,6 +195,15 @@
 @media (max-width: 764px) {
     .from_input input {
         width: 100%;
+    }
+
+    .img1 {
+        left: -10px;
+    }
+    
+    .img2 {
+        right: 0;
+        top: -5px;
     }
     
 }

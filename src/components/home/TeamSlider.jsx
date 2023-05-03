@@ -1,7 +1,7 @@
 import s from '@/styles/main/TeamSlider.module.css'
 import TeamCard from "../cards/TeamCard"
 
-const TeamSlider = () => {
+const TeamSlider = ({teamMembers}) => {
     return (
         <section className={`${s.team_section}`}>
             <div className='container'>
@@ -15,12 +15,7 @@ const TeamSlider = () => {
                 </div>
             </div>
             <div className={`${s.team_slider} ${s.container}`}>
-                <TeamCard/>
-                <TeamCard/>
-                <TeamCard/>
-                <TeamCard/>
-                <TeamCard/>
-                <TeamCard/>
+                <TeamCard teamMembers={teamMembers}/>
             </div>
 
             <div className='container'>

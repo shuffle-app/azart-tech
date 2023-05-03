@@ -3,6 +3,7 @@ import s from '@/styles/main/Websites.module.css'
 const Websites = () => {
     return (
         <section className={s.white_bg}>
+            <img className={s.bg} src="./assets/images/websites-line.png" alt="" />
             <div className={`container ${s.sections_block}`}>
                 <div className={s.header}>
                     <h1>Websites as part of IT</h1>

@@ -95,6 +95,16 @@
     left: 50%;
 }
 
+.glow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #CBFA11;
+    filter: blur(100px);
+    right: 0;
+    top: -150px;
+}
+
 @media (max-width: 1024px) {
     .blocks {
         grid-template-columns: 1fr 1fr;
@@ -104,6 +114,7 @@
 @media (max-width: 764px) {
     .blocks {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
 

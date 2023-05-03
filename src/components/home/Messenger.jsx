@@ -6,7 +6,7 @@ const Messenger = () => {
             <div className={s.question_blocks}>
                 <img src="./assets/images/lupa.png" alt="" />
                 <div className={s.question}>
-                    <p>Do bugs pop up after launch?</p>
+                    <p>Do bugs pop up after <br /> launch?</p>
                 </div>
                 <div className={s.question}>
                     <p>Does the product not retain user traffic?</p>
@@ -29,6 +29,8 @@ const Messenger = () => {
                     </button>
                 </div>
             </div>
+
+            <div className={s.glow}/>
         </section>
     )
 }
