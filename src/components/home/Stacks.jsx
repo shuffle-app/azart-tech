@@ -80,39 +80,39 @@ const Stacks = () => {
                 >
                   <div className={s.accordion_content}>
                       <div className={s.tabs_block}>
-                          <p>{content.text}</p>
-                      <div className={s.tabs}>
-                      {content.tabs.map((tab, tabIndex) => (
-                          <Tab
-                            key={tabIndex}
-                            isActive={activeTab === tabIndex + 1}
-                            label={tab.label}
-                            onClick={() => handleTabClick(tabIndex + 1)}
-                          />
-                      ))}
-                      </div>
+                        <p>{content.text}</p>
+                        <div className={s.tabs}>
                           {content.tabs.map((tab, tabIndex) => (
-                              <TabContent key={tabIndex} isVisible={activeTab === tabIndex + 1}>
-                                  <p>{tab.tabText}</p>
-                              </TabContent>
+                              <Tab
+                                key={tabIndex}
+                                isActive={activeTab === tabIndex + 1}
+                                label={tab.label}
+                                onClick={() => handleTabClick(tabIndex + 1)}
+                              />
                           ))}
+                        </div>
+                        {content.tabs.map((tab, tabIndex) => (
+                            <TabContent key={tabIndex} isVisible={activeTab === tabIndex + 1}>
+                                <p>{tab.tabText}</p>
+                            </TabContent>
+                        ))}
                       </div>
 
                       <div className={s.tabs_logo}>
-  {content.tabs.map((tab, tabIndex) => {
-    if (tab.image) {
-      return (
-        <div
-          key={tabIndex}
-          className={activeTab === tabIndex + 1 ? s.active_logo : s.not_active_logo}
-        >
-          <img src={tab.image} alt="" />
-        </div>
-      );
-    }
-    return null;
-  })}
-</div>
+                        {content.tabs.map((tab, tabIndex) => {
+                          if (tab.image) {
+                            return (
+                              <div
+                                key={tabIndex}
+                                className={activeTab === tabIndex + 1 ? s.active_logo : s.not_active_logo}
+                              >
+                                <img src={tab.image} alt="" />
+                              </div>
+                            );
+                          }
+                          return null;
+                        })}
+                      </div>
                   </div>
                 </Accordion>
             ))

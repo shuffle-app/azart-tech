@@ -35,11 +35,12 @@ const TeamCard = ({teamMembers}) => {
                     </div>
                 </div>
                 <div className={s.tags}>
-                    {teamMember.tags && teamMember.tags.tagss.map((tag, index) => (
-                        <div key={index}>
-                            <p>{tag}</p>
-                        </div>
-                    ))}
+                    {teamMember.tags &&
+                        teamMember.tags.tagss.map((tag, index) => (
+                        <button className={s.tag} key={index}>
+                            {tag}
+                        </button>
+                        ))}
                 </div>
             </div>
           ))}

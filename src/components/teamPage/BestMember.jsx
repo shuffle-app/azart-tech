@@ -2,7 +2,7 @@ import s from '@/styles/main/BestMember.module.css'
 
 const BestMember = () => {
     return (
-        <section className={s.bm_section}>
+        <section className={`container ${s.bm_section}`}>
             <div className={s.text_content}>
                 <h1>
                     Let`s meet <br /> with <span>our team</span>

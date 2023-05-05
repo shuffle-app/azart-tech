@@ -1,5 +1,8 @@
 .white_bg {
     background: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
 }
 
 .bg {
@@ -9,7 +12,6 @@
 }
 
 .sections_block {
-    margin-top: 100px;
     z-index: 5;
 }
 

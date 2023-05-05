@@ -1,6 +1,6 @@
 .card {
     padding: 15px;
-    width: 348px;
+    min-width: 348px;
     background: #282835;
     border: 1px solid #808080;
     border-radius: 10px;
@@ -9,6 +9,8 @@
 .card_header {
     display: flex;
     gap: 15px;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 .photo {
@@ -28,8 +30,8 @@
 
 .about h4 {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 13px;
     color: #FFFFFF;
 }
 
@@ -44,7 +46,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 77.45%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100.45%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -57,7 +59,8 @@
     line-height: 19px;
     text-decoration-line: underline;
     color: #CBFA11;
-    transform: translateY(-25px);
+    position: absolute;
+    bottom: 10px;
 }
 
 .awards_block {
@@ -102,36 +105,33 @@
     color: #FFFFFF;
 }
 
+
 .tags {
     margin-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    max-width: 150px;
+    display: inline-block;
 }
 
-.tags p {
+.tags  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    flex: 0 0 auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;  
     color: #CBFA11;
-    display: inline-block;
-}
-
-.tags div div {
-    padding: 7px 10px;
     background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
     border: 1px solid #808080;
     box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(28.3333px);
     border-radius: 7px;
-    display: inline-block;
+    padding: 7px 10px;
 }
 
-.tags_flex {
-    display: flex;
-    gap: 10px;
-}
+
 
 @media (max-width: 1024px) {
     .card {

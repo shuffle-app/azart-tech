@@ -1,6 +1,7 @@
 import s from '@/styles/main/TeamSlider.module.css'
 import TeamCard from "../cards/TeamCard"
 
+
 const TeamSlider = ({teamMembers}) => {
     return (
         <section className={`${s.team_section}`}>

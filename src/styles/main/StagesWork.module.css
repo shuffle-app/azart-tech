@@ -3,6 +3,7 @@
 	margin: 0 auto; /* Выравнивание контейнера по центру */
 	width: 100%; /* Ширина контейнера по умолчанию */
 	position: relative;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 1440px) {
@@ -65,6 +66,7 @@
   width: 40%;
 }
 
+
 .active-center {
   width: 405px;
   height: 219px;
@@ -119,20 +121,31 @@
   border-radius: 12px;
 }
   
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
 
 .item-text-side {
-    display: flex;
-    margin-top: 0;
-    font-size: 13px;
-    color: #FFFFFF;
-    flex-direction: row; /* Change this from column to row */
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px; /* Add some margin for spacing */
-    position: absolute;
-    bottom: -35px;
-    left: 20px;
-    opacity: 0.8;
+  display: flex;
+  margin-top: 0;
+  font-size: 13px;
+  color: #FFFFFF;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  position: absolute;
+  bottom: -35px;
+  left: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.2s; /* Adjust this value to control the delay */
 }
   
 .item-text-center {
@@ -147,6 +160,7 @@
   position: absolute; /* Add this line */
   bottom: -35px; /* Add this line */
   left: 0;
+  transition: 0.6s;
 }
 
 .item-number-special {

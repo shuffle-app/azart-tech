@@ -101,7 +101,7 @@
     height: 100px;
     background: #CBFA11;
     filter: blur(100px);
-    right: 0;
+    right: -100px;
     top: -150px;
 }
 

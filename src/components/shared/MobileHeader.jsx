@@ -1,4 +1,5 @@
 import s from '@/styles/MobileHeader.module.css'
+import Link from 'next/link'
 import { useState } from 'react'
 
 const MobileHeader = () => {
@@ -8,9 +9,11 @@ const MobileHeader = () => {
     }
     return (
         <header className={`container ${menu ? s.active_header : s.header}`}>
-            <div>
-                <img src="./assets/icons/logo.svg" alt="Azart-tech logo" />
-            </div>
+            <Link href="/">
+                <div>
+                    <img src="./assets/icons/logo.svg" alt="Azart-tech logo" />
+                </div>
+            </Link>
             <nav className={s.nav}>
                 {
                     menu ? (
@@ -28,7 +31,7 @@ const MobileHeader = () => {
                                 <a href="#">Cases</a>
                             </li>
                             <li>
-                                <a href="#">Team</a>
+                                <Link href="/team">Team</Link>
                             </li>
                             <li>
                                 <a href="#">Scheme of work</a>

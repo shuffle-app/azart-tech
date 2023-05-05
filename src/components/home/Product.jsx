@@ -14,7 +14,7 @@ const Product = () => {
 
     const productsData = [
         {
-          title: "analitics",
+          title: "analytics",
           desc: "Powerful analytical systems",
           cards: [
             {
