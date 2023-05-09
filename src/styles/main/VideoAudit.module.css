@@ -66,9 +66,19 @@
     border-radius: 10px;
 }
 
-.video_audit button {
+.order_btn {
     padding: 20px 34px;
     background: #CBFA11;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #21212B;
+}
+
+.free {
+    padding: 20px 34px;
+    background: #7140FD;
     border-radius: 10px;
     font-weight: 700;
     font-size: 16px;
@@ -122,8 +132,15 @@
         height: 150px;
     }
 
+
     .img1 {
         width: 130px;
         left: -70px;
+    }
+
+    .img2 {
+        right: -30px;
+        top: -50px;
+        width: 91.85px;
     }
 }

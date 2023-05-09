@@ -141,12 +141,13 @@
 }
 
 .btn {
-    padding: 20px;
+    padding: 23px;
     background: #CBFA11;
     border-radius: 10px;
     width: 261px;
     display: flex;
     justify-content: center;
+    height: 60px;
 }
 
 .btn button {

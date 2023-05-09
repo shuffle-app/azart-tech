@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    transition: 0.9s;
 }
 
 .nav ul li {
@@ -97,26 +98,46 @@
   }
   
   .line1 {
-    transform-origin: right;
     width: 30px;
     height: 2px;
   }
-  
+
   .line2 {
-    transform-origin: left;
     width: 15px;
     height: 2px;
+  }
+  
+  .burger_button .line1 {
+    transform-origin: right;
+  }
+  
+  .burger_button .line2 {
+    transform-origin: left;
     margin-top: 10px;
     margin-left: 15px;
   }
   
-  .burger_button:hover .line1 {
-    transform: translateX(-30%);
+  .burger_button:hover .line2 {
+    width: 30px;
   }
   
-  .burger_button:hover .line2 {
-    transform: translateX(30%);
+  .burger_button.active .line1 {
+    transform: rotate(43deg);
+    margin-bottom: 0;
   }
+  
+  .burger_button.active .line2 {
+    transform: rotate(-43deg);
+    margin-top: -2px;
+    margin-left: 6px;
+    width: 30px;
+  }
+
+  .burger_button.active {
+    transform: translateY(20px);
+  }
+
+  
   
 
 @media (max-width: 1024px) {

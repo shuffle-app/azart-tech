@@ -4,6 +4,7 @@ import Header from "@/components/shared/Header"
 import BestMember from "@/components/teamPage/BestMember"
 import s from '@/styles/main/TeamSlider.module.css'
 import c from '@/styles/main/TeamCard.module.css'
+import Link from "next/link"
 
 export async function getStaticProps() {
   
@@ -15,12 +16,13 @@ export async function getStaticProps() {
         slug
         tags
         category
-        content {
-          html
-        }
         coverImage {
           url
         }
+        awards {
+          html
+        }
+        rewards
       }
     }`;
   
@@ -46,6 +48,12 @@ export async function getStaticProps() {
     };
   }
   
+  const truncateText = (text, maxLength = 7) => {
+    const words = text.split(' ');
+    return words.length > maxLength
+      ? words.slice(0, maxLength).join(' ') + '...'
+      : text;
+  };
 
 const TeamPage = ({ teamMembers }) => {
     return (
@@ -69,24 +77,24 @@ const TeamPage = ({ teamMembers }) => {
                         <div className={c.about}>
                           <h4>{teamMember.name}</h4>
                           <h5>{teamMember.profession}</h5>
-                          <p>{teamMember.excerpt}</p>
-                          <a href="#">more detailis</a>
+                          <p>{truncateText(teamMember.excerpt)}</p>
+                          <Link href={`/cv/${teamMember.slug}`}>more details</Link>
                         </div>
                       </div>
                       <div className={c.awards_block}>
                         <h3>Awards</h3>
-                        <div className={c.awards}>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
-                          </div>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
-                          </div>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
+                        <div className={c.rewards_block}>
+                          <div className={c.rew}>
+                              {teamMember.rewards && teamMember.rewards.reward && teamMember.rewards.reward.length > 0 ? (teamMember.rewards.reward.map((reward, index) => (
+                                  <div key={index} className={c.rewards}>
+                                      <span>{reward.number}</span>
+                                      <p>{reward.text}</p>
+                                  </div>
+                                  
+                              ))
+                              ) : (
+                              <p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>
+                              )}
                           </div>
                         </div>
                       </div>
@@ -118,26 +126,26 @@ const TeamPage = ({ teamMembers }) => {
                         <div className={c.about}>
                           <h4>{teamMember.name}</h4>
                           <h5>{teamMember.profession}</h5>
-                          <p>{teamMember.excerpt}</p>
-                          <a href="#">more detailis</a>
+                          <p>{truncateText(teamMember.excerpt)}</p>
+                          <Link href={`/cv/${teamMember.slug}`}>more details</Link>
                         </div>
                       </div>
                       <div className={c.awards_block}>
                         <h3>Awards</h3>
-                        <div className={c.awards}>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
-                          </div>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
-                          </div>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
-                          </div>
+                        <div className={c.rewards_block}>
+                        <div className={c.rew}>
+                            {teamMember.rewards && teamMember.rewards.reward && teamMember.rewards.reward.length > 0 ? (teamMember.rewards.reward.map((reward, index) => (
+                                <div key={index} className={c.rewards}>
+                                    <span>{reward.number}</span>
+                                    <p>{reward.text}</p>
+                                </div>
+                                
+                            ))
+                            ) : (
+                            <p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>
+                            )}
                         </div>
+                    </div>
                       </div>
                       <div className={c.tags}>
                         {teamMember.tags &&
@@ -167,26 +175,26 @@ const TeamPage = ({ teamMembers }) => {
                         <div className={c.about}>
                           <h4>{teamMember.name}</h4>
                           <h5>{teamMember.profession}</h5>
-                          <p>{teamMember.excerpt}</p>
-                          <a href="#">more detailis</a>
+                          <p>{truncateText(teamMember.excerpt)}</p>
+                          <Link href={`/cv/${teamMember.slug}`}>more details</Link>
                         </div>
                       </div>
                       <div className={c.awards_block}>
                         <h3>Awards</h3>
-                        <div className={c.awards}>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
-                          </div>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
-                          </div>
-                          <div className={c.award}>
-                            <h6>20+</h6>
-                            <p>Lorem, ipsum.</p>
-                          </div>
+                        <div className={c.rewards_block}>
+                        <div className={c.rew}>
+                            {teamMember.rewards && teamMember.rewards.reward && teamMember.rewards.reward.length > 0 ? (teamMember.rewards.reward.map((reward, index) => (
+                                <div key={index} className={c.rewards}>
+                                    <span>{reward.number}</span>
+                                    <p>{reward.text}</p>
+                                </div>
+                                
+                            ))
+                            ) : (
+                            <p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>
+                            )}
                         </div>
+                    </div>
                       </div>
                       <div className={c.tags}>
                         {teamMember.tags &&

@@ -25,7 +25,7 @@ const Advantages = () => {
                     <div className={s.bg3}/>
                     <p className={s.number}>03</p>
                     <div>
-                        <p className={s.title}>Great digital- marketing</p>
+                        <p className={s.title}>Great digital - marketing</p>
                         <p className={s.text}>due to our expertise in business and business analysis</p>
                     </div>
                 </div>
@@ -37,20 +37,24 @@ const Advantages = () => {
                         <p className={s.text}>onboarding process</p>
                     </div>
                 </div>
-                <div className={s.block}>
-                    <div className={s.bg3}/>
-                    <p className={s.number}>05</p>
-                    <div>
-                        <p className={s.title}>more coming soon</p>
-                        <p className={s.text}>more coming soon</p>
+                <div className={s.block_none}>
+                    <div className={s.block}>
+                        <div className={s.bg3}/>
+                        <p className={s.number}>05</p>
+                        <div>
+                            <p className={s.title}>more coming soon</p>
+                            <p className={s.text}>more coming soon</p>
+                        </div>
                     </div>
                 </div>
-                <div className={s.block}>
-                    <div className={s.bg1}/>
-                    <p className={s.number}>06</p>
-                    <div>
-                        <p className={s.title}>more coming soon</p>
-                        <p className={s.text}>more coming soon</p>
+                <div className={s.block_none}>
+                    <div className={s.block}>
+                        <div className={s.bg1}/>
+                        <p className={s.number}>06</p>
+                        <div>
+                            <p className={s.title}>more coming soon</p>
+                            <p className={s.text}>more coming soon</p>
+                        </div>
                     </div>
                 </div>
             </div>

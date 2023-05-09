@@ -5,7 +5,7 @@ const Zoom = () => {
         <div>
             <div className={s.zoom}>
                 <div>
-                    <img src="./assets/icons/people.png" alt="people" />
+                    <img src="./assets/icons/zm.svg" alt="people" />
                     <p>Have a zoom meeting with an expert!</p>
                 </div>
                 <button>go zoom</button>

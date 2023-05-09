@@ -17,6 +17,7 @@ import Question from '@/components/home/Question'
 import StagesWork from '@/components/home/StagesWork'
 import TeamSlider from '@/components/home/TeamSlider'
 import Zoom from '@/components/shared/Zoom'
+import Thanks from '@/components/shared/Thanks'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,12 +43,10 @@ export async function getStaticProps() {
       profession
       slug
       tags
-      content {
-        html
-      }
       coverImage {
         url
       }
+      rewards
     }
   }`;
 
@@ -106,7 +105,8 @@ export default function Home({projects, teamMembers}) {
           <Header/>
           <Section1/>
         </div>
-          <Section2/>
+
+        <Section2/>
 
 
         <Websites/>

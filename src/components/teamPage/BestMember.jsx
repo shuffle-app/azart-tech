@@ -1,4 +1,5 @@
 import s from '@/styles/main/BestMember.module.css'
+import Link from 'next/link'
 
 const BestMember = () => {
     return (
@@ -31,7 +32,7 @@ const BestMember = () => {
                         <div className={s.about_person}>
                             <h2>Achievement</h2>
                             <p>Active participation in the development of the interface for a new project, a manifestation of proactivity and professionalism</p>
-                            <a href="#">more details</a>
+                            <Link href="/cv/Alexandra-Kotkina">more details</Link>
                         </div>
                     </div>
                     <div className={s.marks}>

@@ -1,4 +1,5 @@
 import s from '@/styles/main/Projects.module.css';
+import Link from 'next/link';
 
 const ProjectCard = ({ project }) => {
   return (
@@ -17,7 +18,7 @@ const ProjectCard = ({ project }) => {
       <div className={s.preview}>
         <img src={project.coverImage.url} alt="Project preview" />
         <div className={s.detailis}>
-          <a href="#">more detailis</a>
+          <Link href="/cases/shuffle-app">more detailis</Link>
           <p>{new Date(project.createdAt).toLocaleDateString()}</p>
         </div>
       </div>

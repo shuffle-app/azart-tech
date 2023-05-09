@@ -49,14 +49,20 @@ const Header = () => {
                     <img src="./assets/icons/telegram.svg" alt="telegram" />
                     {
                         menu 
-                        ? (<img onClick={activeMenu} src="./assets/icons/menu-btn.svg" alt="telegram" />)
+                        ? (
+                            <div onClick={activeMenu} className={`${s.burger_button} ${s.active}`}>
+                                <span className={`${s.line} ${s.line1}`}></span>
+                                <span className={`${s.line} ${s.line2}`}></span>
+                            </div>
+                            )
                         : (
                             <div onClick={activeMenu} className={s.burger_button}>
                                 <span className={`${s.line} ${s.line1}`}></span>
                                 <span className={`${s.line} ${s.line2}`}></span>
                             </div>
-                        )
+                            )
                     }
+
                 </div>
             </header>
             <div className={s.mob_header}>

@@ -28,6 +28,11 @@
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #CBFA11;
 }
 
 .footer_block img {

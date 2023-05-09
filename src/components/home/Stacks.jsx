@@ -67,7 +67,10 @@ const Stacks = () => {
 
   return (
     <section className={`${s.stacks_block}`}>
-      <h1>Stacks</h1>
+      <div className={s.mob}>
+        <h1>Stacks</h1>
+        <img src="./assets/images/5302.svg" alt="" />
+      </div>
       <div className={s.accordion}>
         {
             accordions.map((content, index) => (

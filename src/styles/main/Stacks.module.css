@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    cursor: pointer;
 }
 
 .title .number {
@@ -30,6 +31,11 @@
     backdrop-filter: blur(22.6666px);
     border-radius: 8px;
     padding: 20px 28px;
+    transition: 0.2s;
+}
+
+.title .number:hover {
+    border: 0.5px solid #CBFA11;
 }
 
 .title h4 {
@@ -158,6 +164,7 @@
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(4,1fr);
+    margin-top: 30px;
 }
 
 .tabs_logo img {
@@ -199,12 +206,26 @@
     margin-top: 30px;
 }
 
+.mob img {
+    display: none;
+}
+
 
 
 
 @media  (max-width: 880px) {
     .tabs_logo {
         display: none;
+    }
+
+    .mob {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mob img {
+        display: initial;
     }
 }
 

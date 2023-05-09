@@ -16,7 +16,7 @@ const stagesData = [
     image: "./assets/images/03.png"
   },
   {
-    text: "brending",
+    text: "branding",
     image: "./assets/images/04.png"
   },
   {
@@ -97,6 +97,7 @@ const StagesWork = () => {
 
   return (
     <section className={`${s.stages_work} ${s.container}`}>
+        <h1 className={s.h1}>Stages of works</h1>
         <div className={s.slider}>
             {Array.from({ length: 8 }, (_, index) => renderItem(index, stagesData[index]))}
         </div>
@@ -107,7 +108,7 @@ const StagesWork = () => {
 
           <div className={s.zoom}>
                 <div>
-                    <img src="./assets/icons/people.png" alt="people" />
+                    <img src="./assets/icons/zm.svg" alt="people" />
                     <p>Have a zoom meeting with an expert!</p>
                 </div>
                 <button>go zoom</button>

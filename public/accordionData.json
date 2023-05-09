@@ -212,13 +212,24 @@
         "tabText": "RabbitMQ is a message broker used to organize message queues and exchange messages between application",
         "image": "./assets/stacks/rabbitmq.svg",
         "id": 36
+      },
+      {
+        "label": "Flutter",
+        "tabText": "Flutter is a framework for creating fast and beautiful mobile applications for Android and iOS using a single codebase in Dart language. Built-in widgets and effects help create user interfaces of any complexity and innovative applications.",
+        "image": "./assets/stacks/flutter.svg",
+        "id": 37
+      },
+      {
+        "label": "Dart",
+        "tabText": "Dart is a statically typed programming language with a fast JIT compiler and AOT compiler. It is used for creating web applications, mobile applications, server applications and other types of software, and is also the foundation of the Flutter framework for creating mobile applications.",
+        "id": 38
       }
     ],
     "accordions": [
       {
         "title": "Development",
         "text": "Creating tailored solutions for your business",
-        "tabs": [0, 1, 2, 26, 3, 4]
+        "tabs": [37, 38, 0, 1, 2, 26, 3, 4]
       },
       {
         "title": "Backend",
@@ -248,3 +259,6 @@
     ]
   }
   
+
+
+

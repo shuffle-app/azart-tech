@@ -29,7 +29,7 @@ const Websites = () => {
                         </div>
                         <div className={s.btn}>
                             <p>form <span>3000 $</span></p>
-                            <button>more detailis</button>
+                            <button>more details</button>
                         </div>
                     </div>
                     <div className={s.sites}>
@@ -50,7 +50,7 @@ const Websites = () => {
                         </div>
                         <div className={s.btn}>
                             <p>form <span>2000 $</span></p>
-                            <button>more detailis</button>
+                            <button>more details</button>
                         </div>
                     </div>
                     <div className={s.form_block}>
@@ -68,10 +68,10 @@ const Websites = () => {
                             </div>
                             <div className={s.submits}>
                                 <input type="checkbox" />
-                                <text>
+                                <div>
                                     I agree to the
                                     <span> terms of personal data processing</span>
-                                </text>
+                                </div>
                                 <button>
                                     <img src="./assets/icons/arrow.svg" alt="arrow" />
                                 </button>
