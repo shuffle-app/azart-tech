@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Header from '@/components/shared/Header'
 import Section1 from '@/components/home/Section1'
@@ -17,7 +16,6 @@ import Question from '@/components/home/Question'
 import StagesWork from '@/components/home/StagesWork'
 import TeamSlider from '@/components/home/TeamSlider'
 import Zoom from '@/components/shared/Zoom'
-import Thanks from '@/components/shared/Thanks'
 
 const inter = Inter({ subsets: ['latin'] })
 

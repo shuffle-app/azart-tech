@@ -2,7 +2,7 @@ import s from '@/styles/cases/Development.module.css'
 import { useState } from 'react'
 
 const Development = () => {
-    const [accordion, setAccordion] = useState([false, false, false, false]);
+    const [accordion, setAccordion] = useState([false, false, false, false, false, false, false, false]);
     const clickAccordion = (index) => {
         const newAccordionState = accordion.map((state, i) => (i === index ? !state : state));
         setAccordion(newAccordionState);
@@ -15,19 +15,13 @@ const Development = () => {
                     <p>03</p>
                     <h3>Development</h3>
                 </div>
-                <div className={s.dev_header}>
-                    <div>
-                        <p>For development, the team decided to use BEM technology, which allows structuring and building a universal code system that can be used to create any web applications and online stores.</p>
-                        <h6>4 key pillars of the process:</h6>
-                    </div>
-                    <img src="./assets/images/6061.svg" alt="" />
-                </div>
 
-                <div className={s.accordions}>
-                    {accordion.map((state, index) => (
+                <div className={s.accordion_block}>
+                    <div className={s.accordions}>
+                        {accordion.map((state, index) => (
                             <div key={index} className={state ? s.active_accordion : null}>
                                 <div className={s.accordion}>
-                                    <h4>{index + 1}</h4>
+                                    <h4 className={`${s.number} ${state ? s.setNumber : ''}`}>{index + 1}</h4>
                                     <div>
                                         <h5>First</h5>
                                         {state ? <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iusto officia dicta eveniet, sed illo.</p> : ''}
@@ -37,7 +31,14 @@ const Development = () => {
                                     </button>
                                 </div>
                             </div>
-                    ))}
+                        ))}
+                    </div>
+                    <div className={s.methodology}>
+                        <h3>Title</h3>
+                        <p>methodology</p>
+                        <img className={s.met_img} src="./assets/img/methodology-arr.svg" alt="" />
+                        <img className={s.m_line} src="./assets/img/linee.svg" alt="l" />
+                    </div>
                 </div>
 
                 <div className={s.tech}>
@@ -70,7 +71,7 @@ const Development = () => {
                     </div>
                 </div>
             </section>
-            <img className='lines2' src="./assets/images/lines2.svg" alt="324" />
+            <img className={`lines2 ${s.lines_img}`} src="./assets/images/lines2.svg" alt="324" />
         </section>
     )
 }

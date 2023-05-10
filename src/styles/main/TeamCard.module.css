@@ -15,16 +15,16 @@
 }
 
 .photo {
-    min-width: 130px;
-    height: 130px;
+    min-width: 155px;
+    min-height: 155px;
     background: #000;
     border: 1px solid #808080;
     border-radius: 10px;
 }
 
 .photo img {
-    width: 130px;
-    height: 130px;
+    min-width: 155px;
+    min-height: 155px;
 }
 
 .about {
@@ -37,7 +37,7 @@
 .about h4 {
     font-weight: 700;
     font-size: 16px;
-line-height: 21px;
+    line-height: 21px;
     color: #FFFFFF;
 }
 

@@ -36,7 +36,7 @@ const TabContent = ({ isVisible, children }) => (
 );
 
 const Stacks = () => {
-    const [activeAccordion, setActiveAccordion] = useState(0);
+    const [activeAccordion, setActiveAccordion] = useState(1);
     const [activeTab, setActiveTab] = useState(1);
   
     const toggleAccordion = (accordionIndex) => {

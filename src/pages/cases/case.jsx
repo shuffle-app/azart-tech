@@ -4,6 +4,7 @@ import Development from "@/components/cases/Development"
 import Digital from "@/components/cases/Digital"
 import Members from "@/components/cases/Members"
 import Preview from "@/components/cases/Preview"
+import Prodaction from "@/components/cases/Prodaction"
 import Stack from "@/components/cases/Stack"
 import Form from "@/components/home/Form"
 import Footer from "@/components/shared/Footer"
@@ -20,7 +21,9 @@ const Case = () => {
             <Design/>
             <Development/>
             <Digital/>
+            <Prodaction/>
             <Members/>
+            
 
 
             <Form/>

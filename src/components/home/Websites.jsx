@@ -28,7 +28,7 @@ const Websites = () => {
                             </div>
                         </div>
                         <div className={s.btn}>
-                            <p>form <span>3000 $</span></p>
+                            <p>from <span>3000 $</span></p>
                             <button>more details</button>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ const Websites = () => {
                             </div>
                         </div>
                         <div className={s.btn}>
-                            <p>form <span>2000 $</span></p>
+                            <p>from <span>2000 $</span></p>
                             <button>more details</button>
                         </div>
                     </div>

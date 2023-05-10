@@ -94,14 +94,14 @@
     .members {
         grid-template-columns:  1fr 1fr;
     }
+
+    .img {
+        display: none;
+    }
 }
 
 @media (max-width: 430px) {
     .members {
         grid-template-columns:  1fr;
-    }
-
-    .img {
-        display: none;
     }
 }

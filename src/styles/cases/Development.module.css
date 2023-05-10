@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-bottom: 50px;
 }
 
 .block_03 p {
@@ -61,12 +62,12 @@
     display: flex;
     align-items: start;
     gap: 30px;
-    padding: 15px;
     max-width: 445px;
     position: relative;
+    cursor: pointer;
 }
 
-.accordion h4 {
+.number {
     background: linear-gradient(76.36deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
     border: 0.799999px solid #808080;
     box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
@@ -76,6 +77,21 @@
     font-weight: 700;
     font-size: 24px;
     color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.number:hover {
+    border: 0.5px solid #CBFA11;
+}
+
+.setNumber {
+    background: #CBFA11;
+    border: 0.799999px solid #808080;
+    border-radius: 7.99999px;
+    padding: 20px 26px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
 }
 
 .accordions {
@@ -83,6 +99,12 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     row-gap: 15px;
+    width: 100%;
+}
+
+.accordion_block {
+    display: flex;
+    justify-content: space-between;
 }
 
 .accordion h5 {
@@ -95,8 +117,8 @@
 
 .accordion button {
     position: absolute;
-    right: 15px;
-    top: 40px;
+    right: 10px;
+    top: 10px;
 }
 
 .accordion p {
@@ -105,10 +127,28 @@
     color: #FFFFFF;
 }
 
+.methodology h3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.methodology p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
 .active_accordion {
     background: linear-gradient(360deg, rgba(204, 255, 0, 0) 8.1%, #CBFA11 238.73%);
     border-radius: 5px;
     max-width: 445px;
+    padding: 15px;
 }
 
 .stacks {
@@ -160,6 +200,11 @@
     margin-bottom: 80px;
 }
 
+.m_line {
+    display: none;
+}
+
+
 @media (max-width: 768px) {
     .accordions {
         grid-template-columns: 1fr;
@@ -178,6 +223,15 @@
         line-height: 19px;
     }
 
+    .accordion {
+        min-width: 100%;
+    }
+
+    .active_accordion {
+        min-width: 100%;
+        padding: 15px;
+    }
+
     .accordion h4 {
         font-size: 16px;
         line-height: 19px;
@@ -186,6 +240,37 @@
     .platforms {
         margin-bottom: 30px;
     }
+
+    .accordion_block {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .methodology .met_img {
+        display: none;
+    }
+
+    .methodology h3 {
+        text-align: center;
+        font-size: 34px;
+        line-height: 37px;
+    }
+
+    .methodology p {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .lines_img {
+        display: none;
+    }
+
+    .m_line {
+        display: initial;
+        width: 100%;
+    }
+
 }
 
 .dev_section {
