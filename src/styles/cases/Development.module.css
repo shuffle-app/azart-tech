@@ -72,12 +72,15 @@
     border: 0.799999px solid #808080;
     box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(22.6666px);
-    border-radius: 7.99999px;
+    border-radius: 8px;
     padding: 20px 26px;
     font-weight: 700;
     font-size: 24px;
     color: #FFFFFF;
     transition: 0.3s;
+    width: 64px;
+    height: 64px;
+    text-align: center;
 }
 
 .number:hover {
@@ -87,11 +90,12 @@
 .setNumber {
     background: #CBFA11;
     border: 0.799999px solid #808080;
-    border-radius: 7.99999px;
+    border-radius: 8px;
     padding: 20px 26px;
     font-weight: 700;
     font-size: 24px;
     color: #000;
+    text-align: center;
 }
 
 .accordions {
@@ -118,7 +122,7 @@
 .accordion button {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 20px;
 }
 
 .accordion p {
@@ -216,6 +220,12 @@
 
     .tech {
         flex-direction: column;
+    }
+
+    .number {
+        width: 55px;
+        height: 55px;
+        padding: 19px 0;
     }
 
     .accordion h5 {

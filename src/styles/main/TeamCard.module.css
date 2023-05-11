@@ -15,10 +15,6 @@
 }
 
 .photo {
-    min-width: 155px;
-    min-height: 155px;
-    background: #000;
-    border: 1px solid #808080;
     border-radius: 10px;
 }
 

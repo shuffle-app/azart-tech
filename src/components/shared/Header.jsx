@@ -30,7 +30,7 @@ const Header = () => {
                                     <a href="#">Stack</a>
                                 </li>
                                 <li>
-                                    <a href="#">Cases</a>
+                                    <Link href="/case">Cases</Link>
                                 </li>
                                 <li>
                                     <Link href='/team'>Team</Link>

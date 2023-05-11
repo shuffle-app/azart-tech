@@ -13,10 +13,14 @@ const Analytics = () => {
             </div>
             <p className={s.dashed_p}>It was not difficult to guess that the main mistakes were in the convenience of moving through the pages, intuitively his chain of actions was difficult to logically perform targeted actions that lead to a sale</p>
             <div className={s.rect}>
-                <img src="./assets/img/rect2.svg" alt="" />
+                <div className={s.blur}>
+                    <img src="./assets/img/rect2.svg" alt="" />
+                    <div></div>
+                </div>
                 <div className={s.rect_text}>
-                    <p>Building an application architecture using the flowchart method based on user experience analysis</p>
+                    <p>Building an application architecture using the flowchart method based on user experience analysis</p> 
                     <img src="./assets/images/6041.svg" alt="" />
+                    <div className={s.glow1}/>
                 </div>
             </div>
             <div className={s.also}>

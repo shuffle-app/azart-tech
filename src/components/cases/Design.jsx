@@ -14,7 +14,6 @@ const Design = () => {
                 </div>
                 <div>
                     <p className={s.text_2}>The combination of blue and orange color symbolizes the reliability and high quality of the product, which is very important for future customers and the subject of the product as a whole.</p>
-                    <p className={s.dashed_text}>The combination of blue and orange color symbolizes the reliability and high quality of the product, which is very important for future customers and the subject of the product as a whole.</p>
                 </div>
             </div>
             <div className={s.text2}>
@@ -28,6 +27,8 @@ const Design = () => {
                     </div>
                 </div>
             </div>
+            <p className={s.dashed_text}>The combination of blue and orange color symbolizes the reliability and high quality of the product, which is very important for future customers and the subject of the product as a whole.</p>
+
         </section>
     )
 }

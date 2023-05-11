@@ -62,18 +62,44 @@
     gap: 30px;
 }
 
-
-
-.table:hover {
-    backdrop-filter: blur(0);
-    
+.blur {
+    position: relative;
 }
 
-.rect img {
-    position: relative;
+.blur div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(76.36deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    border: 1px solid #808080;
+    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    min-width: 100%;
+    max-width: 780px;
+    height: 100%;
+}
+
+.blur img {
     padding: 15px;
     width: 100%;
 }
+
+.rect_text {
+    max-width: 360px;
+    position: relative;
+}
+
+.glow1 {
+    position: absolute;
+    width: 208px;
+    height: 68px;
+    background: #7140FD;
+    filter: blur(50px);
+    bottom: 50px;
+    left: 100px;
+    z-index: -1;
+ }
 
 .rect_text p {
     font-weight: 700;
@@ -111,6 +137,10 @@
     .text_01 p {
         font-size: 14px;
         line-height: 17px;
+    }
+
+    .glow1 {
+        display: none;
     }
 
     .dashed_p {
