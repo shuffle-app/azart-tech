@@ -6,11 +6,12 @@ const BestMember = () => {
         <section className={`container ${s.bm_section}`}>
             <div className={s.text_content}>
                 <h1>
-                    Let`s meet <br /> with <span>our team</span>
+                    Let`s meet <br className={s.br}/> with <span>our team</span>
                 </h1>
-                <p>We are a professional team that includes various specialists in broad and narrow areas</p>
-                <div>
+                <p className={s.tp}>We are a professional team that includes various specialists in broad and narrow areas</p>
+                <div className={s.scroll_down}>
                     <h3>Our destinations</h3>
+                    <img src="./assets/icons/dw-btn.svg" alt="" />
                 </div>
                 <div className={s.tags}>
                     <p>Development</p>

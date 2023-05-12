@@ -42,7 +42,6 @@
     font-size: 24px;
     line-height: 29px;
     color: #CBFA11;
-    margin-top: 30px;
 }
 
 .tags {
@@ -161,6 +160,13 @@
     z-index: 1;
 }
 
+.scroll_down {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
 @media (max-width: 1024px) {
     .bm_section {
         flex-direction: column;
@@ -178,6 +184,10 @@
         width: 58.29px;
         height: 85px;
     }
+
+    .tp {
+        min-width: 100%;
+    }
 }
 
 @media (max-width: 530px) {
@@ -194,5 +204,29 @@
 
     .name p {
         margin-top: 0;
+    }
+
+    .text_content h1 span {
+        min-width: 100%;
+        padding-right: 400px;
+        white-space: nowrap;
+    }
+
+    .text_content h1 {
+        font-size: 34px;
+        line-height: 37px;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .about_person h2 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .about_person p {
+        min-width: 100%;
     }
 }

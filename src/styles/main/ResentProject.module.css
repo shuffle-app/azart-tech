@@ -6,6 +6,24 @@
     position: relative;
 }
 
+.category {
+    margin-top: 100px;
+}
+
+.category h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.case_cards {
+    display: flex;
+    gap: 30px;
+}
+
 .text_content h1 {
     font-weight: 700;
     font-size: 48px;
@@ -94,7 +112,6 @@
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
-    opacity: 0.8;
 }
 
 .card_tags {
@@ -113,7 +130,6 @@
     font-size: 16px;
     line-height: 21px;
     color: #fff;
-    opacity: 0.8;
     background: #7140FD;
     border-radius: 7px;
     padding: 10px;
@@ -174,6 +190,10 @@
     z-index: 1;
 }
 
+.mobile_card {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .bm_section {
         flex-direction: column;
@@ -181,9 +201,46 @@
     }
 }
 
-@media (max-width: 764px) {
+@media (max-width: 768px) {
+    .case_cards {
+        flex-direction: column;
+        gap: 15px;
+    }
 
+    .card {
+        display: none;
+    }
+
+    .mobile_card {
+        display: initial;
+    }
+
+    .category h1 {
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 15px;
+    }
+
+    .text_content h1 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    .p {
+        min-width: 100%;
+        font-size: 14px;
+    }
+
+    .text_content h1 span {
+        padding-right: 600px;
+        white-space: nowrap;
+    }
+
+    .category {
+        margin-top: 50px;
+    }
 }
+
 
 @media (max-width: 530px) {
 

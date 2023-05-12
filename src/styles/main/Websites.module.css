@@ -250,7 +250,7 @@
     margin-bottom: 15px;
 }
 
-.mob_btn {
+.mob_submit {
     display: none;
 }
 
@@ -299,4 +299,46 @@
         background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(232,232,232,1) 50%);
     }
 
+    .submits {
+        display: none;
+    }
+
+    .desc {
+        min-height: 95px;
+    }
+
+    .mob_submit {
+        display: initial;
+    }
+
+    .mob_submit button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 104%;
+        text-align: center;
+        color: #FFFFFF;
+        width: 253px;
+        height: 57px;
+        background: #7140FD;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .checkbox p {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 115%;
+        color: #A8A8A8;
+    }
+
+    .checkbox span {
+        color: #7140FD;
+    }
 }

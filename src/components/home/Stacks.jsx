@@ -37,7 +37,7 @@ const TabContent = ({ isVisible, children }) => (
 
 const Stacks = () => {
     const [activeAccordion, setActiveAccordion] = useState(1);
-    const [activeTab, setActiveTab] = useState(1);
+    const [activeTab, setActiveTab] = useState(2);
   
     const toggleAccordion = (accordionIndex) => {
       setActiveAccordion(activeAccordion === accordionIndex ? null : accordionIndex);
@@ -108,6 +108,7 @@ const Stacks = () => {
                               <div
                                 key={tabIndex}
                                 className={activeTab === tabIndex + 1 ? s.active_logo : s.not_active_logo}
+                                onClick={() => handleTabClick(tabIndex + 1)}
                               >
                                 <img src={tab.image} alt="" />
                               </div>

@@ -142,7 +142,7 @@
     }
 
     .btn {
-        margin: 0 25%;
+        margin: 0 13%;
     }
 }
 
@@ -164,6 +164,8 @@
     .text span {
         font-size: 34px;
         line-height: 37px;
+        padding-right: 300px;
+
     }
 }
 

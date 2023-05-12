@@ -45,8 +45,10 @@
     border: 1px solid #808080;
     border-radius: 10px;
     min-width: 450px;
+    max-width: 450.1px;
     min-height: 433px;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -68,6 +70,10 @@
     line-height: 120%;  
     color: #FFFFFF;
     margin-bottom: 10px;
+}
+
+.card_text h4 span {
+    color: #CBFA11;
 }
 
 .card_text p {
@@ -106,16 +112,14 @@
 }
 
 .preview {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     display: flex;
     align-items: end;
     gap: 20px;
 }
 
 .preview img {
-    margin-left: 5px;
+    position: absolute;
+    bottom: -50%;
 }
 
 .detailis a {
@@ -124,6 +128,13 @@
     line-height: 19px;
     text-decoration-line: underline;
     color: #CBFA11;
+    text-align: end;
+}
+
+.detailis {
+    bottom: 15px;
+    right: 15px;
+    position: absolute;
 }
 
 .detailis p {
@@ -231,7 +242,7 @@
 
 @media (max-width: 1024px) {
     .card {
-        min-width: 327px;
+        min-width: 100%;
         min-height: 325px;
     }
 
@@ -262,9 +273,6 @@
         gap: 15px;
     }
 
-    .preview img {
-        height: 210px;
-    }
 
     .zoom div{
         flex-direction: column;
@@ -297,7 +305,4 @@
         line-height: 19px;
     }
 
-    .preview img {
-        width: 187px;
-    }
 }

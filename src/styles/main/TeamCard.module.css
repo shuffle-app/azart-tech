@@ -19,8 +19,10 @@
 }
 
 .photo img {
-    min-width: 155px;
-    min-height: 155px;
+    min-width: 130px;
+    min-height: 130px;
+    border: 1px solid #808080;
+    border-radius: 11px;
 }
 
 .about {
@@ -48,7 +50,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100.45%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 140.45%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -191,5 +193,27 @@
 @media (max-width: 1024px) {
     .card {
         min-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo img {
+        width: 116px;
+        height: 116px;
+    }
+
+    .about p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .about h5 {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .about h4 {
+        font-size: 16px;
+        line-height: 21px;
     }
 }

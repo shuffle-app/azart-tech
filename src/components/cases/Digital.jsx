@@ -9,19 +9,27 @@ const Digital = () => {
             </div>
             <div className={s.digital_block}>
                 <div className={s.digital_content}>
-                    <img src="./assets/icons/1206.svg" alt="" />
+                    <div>
+                        <img src="./assets/icons/1206.svg" alt="" />
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet, sapiente a exercitationem consequatur minima, voluptas laudantium doloremque temporibus earum quas deleniti tenetur voluptatem. Delectus rerum minima, veniam nam ullam corporis aliquid accusamus deleniti dolore!</p>
                 </div>
                 <div className={s.digital_content}>
-                    <img src="./assets/icons/1206.svg" alt="" />
+                    <div>
+                        <img src="./assets/icons/1206.svg" alt="" />
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet, sapiente a exercitationem consequatur minima, voluptas laudantium doloremque temporibus earum quas deleniti tenetur voluptatem. Delectus rerum minima, veniam nam ullam corporis aliquid accusamus deleniti dolore!</p>
                 </div>
                 <div className={s.digital_content}>
-                    <img src="./assets/icons/1206.svg" alt="" />
+                    <div>
+                        <img src="./assets/icons/1206.svg" alt="" />
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet, sapiente a exercitationem consequatur minima, voluptas laudantium doloremque temporibus earum quas deleniti tenetur voluptatem. Delectus rerum minima, veniam nam ullam corporis aliquid accusamus deleniti dolore!</p>
                 </div>
                 <div className={s.digital_content}>
-                    <img src="./assets/icons/1206.svg" alt="" />
+                    <div>
+                        <img src="./assets/icons/1206.svg" alt="" />
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet, sapiente a exercitationem consequatur minima, voluptas laudantium doloremque temporibus earum quas deleniti tenetur voluptatem. Delectus rerum minima, veniam nam ullam corporis aliquid accusamus deleniti dolore!</p>
                 </div>
             </div>

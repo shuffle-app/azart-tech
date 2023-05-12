@@ -25,8 +25,7 @@
 
 .digital_block {
     display: grid;
-    column-gap: 15px;
-    row-gap: 30px;
+    gap: 15px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -36,7 +35,7 @@
     box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(28.3333px);
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -50,9 +49,9 @@
     padding: 15px;
 }
 
-.digital_content img {
+.digital_content div {
     padding: 10px;
-    background: hsla(72, 96%, 52%, 0.1);
+    background: rgb(84, 93, 52);
     border: 1px solid #808080;
     box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(28.3333px);

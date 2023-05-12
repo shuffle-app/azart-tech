@@ -59,11 +59,25 @@
 }
 
 .accordion {
+    padding: 15px;
+    min-width: 445px;
+    cursor: pointer;
+}
+
+.accordion_header div {
     display: flex;
-    align-items: start;
-    gap: 30px;
-    max-width: 445px;
-    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.accordion_header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion_header button {
     cursor: pointer;
 }
 
@@ -98,37 +112,25 @@
     text-align: center;
 }
 
-.accordions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
-    row-gap: 15px;
-    width: 100%;
-}
 
 .accordion_block {
     display: flex;
     justify-content: space-between;
 }
 
-.accordion h5 {
+.accordion_header h5 {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
-    margin-top: 15px;
 }
 
-.accordion button {
-    position: absolute;
-    right: 10px;
-    top: 20px;
-}
 
-.accordion p {
+.active_accordion p {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    margin-top: 15px;
 }
 
 .methodology h3{
@@ -153,6 +155,11 @@
     border-radius: 5px;
     max-width: 445px;
     padding: 15px;
+}
+
+.accordions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .stacks {
@@ -214,6 +221,7 @@
         grid-template-columns: 1fr;
         margin-top: 30px;
     }
+
     .dev_header img {
         display: none;
     }
@@ -228,13 +236,10 @@
         padding: 19px 0;
     }
 
-    .accordion h5 {
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    .accordion {
-        min-width: 100%;
+    .setNumber {
+        width: 55px;
+        height: 55px;
+        padding: 19px 0;
     }
 
     .active_accordion {
@@ -242,9 +247,23 @@
         padding: 15px;
     }
 
-    .accordion h4 {
+    .accordion {
+        min-width: 358px;
+    }
+
+    .accordion h5 {
         font-size: 16px;
         line-height: 19px;
+    }
+
+    .active_accordion h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .active_accordion p {
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .platforms {

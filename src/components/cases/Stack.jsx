@@ -1,8 +1,12 @@
 import s from '@/styles/cases/Stack.module.css'
-import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable';
+import ImageSlider from './ImageSlider'
+import Slider3D from './ImageSlider'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import AdaptiveSlider from '../home/AdaptiveSlider';
+
 
 const Stack = () => {
+
   return (
     <section className={`container main_container`}>
       <div className={s.stack_header}>
@@ -42,13 +46,9 @@ const Stack = () => {
             <p>UX/UI</p>
         </div>
 
-
-      <div className={s.sliders}>
-          <img className={s.not_active} src="./assets/images/Welcome.png" alt="" />
-          <img className={s.active_center} src="./assets/images/Welcome.png" alt="" />
-          <img className={s.not_active} src="./assets/images/Welcome.png" alt="" />
+        <div>
+          <ImageSlider/>
         </div>
-
 
       </div>
     </section>

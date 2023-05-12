@@ -1,5 +1,6 @@
 import s from '@/styles/main/TeamCard.module.css'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 
 const truncateText = (text, maxLength = 4) => {
@@ -10,11 +11,13 @@ const truncateText = (text, maxLength = 4) => {
   };
 
 const TeamCard = ({teamMembers}) => {
+    const router = useRouter();
+
     return (
         <>
         {teamMembers && teamMembers.map((teamMember, index) => (
             <div key={index} className={s.card}>
-                <div className={s.card_header}>
+                <div onClick={(e) => router.push(`/cv/${teamMember.slug}`)} className={s.card_header}>
                     <div className={s.photo}>
                         <img src={teamMember.coverImage?.url} alt="" />
                     </div>
@@ -29,16 +32,10 @@ const TeamCard = ({teamMembers}) => {
                     <h3>Awards</h3>
                     <div className={s.rewards_block}>
                         <div className={s.rew}>
-                            {teamMember.rewards && teamMember.rewards.reward && teamMember.rewards.reward.length > 0 ? (teamMember.rewards.reward.map((reward, index) => (
-                                <div key={index} className={s.rewards}>
-                                    <span>{reward.number}</span>
-                                    <p>{reward.text}</p>
-                                </div>
-                                
-                            ))
-                            ) : (
-                            <p className={s.comming}>They are not there yet, but they will definitely be soon! 💪</p>
-                            )}
+                            {
+                                teamMember.awardsImg === null ? (<p className={s.comming}>They are not there yet, but they will definitely be soon! 💪</p>)
+                                : (<img src={teamMember.awardsImg.url}/>)
+                            }
                         </div>
                     </div>
                 </div>

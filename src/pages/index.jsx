@@ -25,6 +25,7 @@ export async function getStaticProps() {
     posts {
       title
       excerpt
+      niche
       tags
       createdAt
       slug
@@ -44,7 +45,9 @@ export async function getStaticProps() {
       coverImage {
         url
       }
-      rewards
+      awardsImg {
+        url
+      }
     }
   }`;
 

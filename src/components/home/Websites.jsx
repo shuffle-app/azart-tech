@@ -63,7 +63,7 @@ const Websites = () => {
                                     <input type="number" placeholder='phone'/>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder='description'/>
+                                    <input className={s.desc} type="text" placeholder='description'/>
                                 </div>
                             </div>
                             <div className={s.submits}>
@@ -76,6 +76,14 @@ const Websites = () => {
                                     <img src="./assets/icons/arrow.svg" alt="arrow" />
                                 </button>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className={s.mob_submit}>
+                        <button>Send</button>
+                        <div className={s.checkbox}>
+                            <input type="checkbox" name="" id="" />
+                            <p>I agree to the <span>terms of personal data processing</span> </p>
                         </div>
                     </div>
                 </div>

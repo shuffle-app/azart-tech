@@ -2,11 +2,17 @@ import s from '@/styles/cases/Development.module.css'
 import { useState } from 'react'
 
 const Development = () => {
-    const [accordion, setAccordion] = useState([false, false, false, false, false, false, false, false]);
-    const clickAccordion = (index) => {
-        const newAccordionState = accordion.map((state, i) => (i === index ? !state : state));
-        setAccordion(newAccordionState);
-    };
+    const data = [
+        { title: "Accordion title 1", content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nostrum quam blanditiis voluptates corrupti molestiae quod beatae voluptatibus ducimus ratione!"},
+        { title: "Accordion title 2", content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nostrum quam blanditiis voluptates corrupti molestiae quod beatae voluptatibus ducimus ratione!"},
+        { title: "Accordion title 3", content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nostrum quam blanditiis voluptates corrupti molestiae quod beatae voluptatibus ducimus ratione!"},
+        { title: "Accordion title 4", content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nostrum quam blanditiis voluptates corrupti molestiae quod beatae voluptatibus ducimus ratione!"},
+        { title: "Accordion title 5", content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nostrum quam blanditiis voluptates corrupti molestiae quod beatae voluptatibus ducimus ratione!"},
+        { title: "Accordion title 6", content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nostrum quam blanditiis voluptates corrupti molestiae quod beatae voluptatibus ducimus ratione!"},
+    ]
+
+
+    const [activeIndex, setActiveIndex] = useState(null);
 
     return (
         <section className={s.dev_section}>
@@ -16,22 +22,31 @@ const Development = () => {
                     <h3>Development</h3>
                 </div>
 
+                
+
                 <div className={s.accordion_block}>
                     <div className={s.accordions}>
-                        {accordion.map((state, index) => (
-                            <div key={index} className={state ? s.active_accordion : null}>
-                                <div className={s.accordion}>
-                                    <h4 className={`${s.number} ${state ? s.setNumber : ''}`}>{index + 1}</h4>
-                                    <div>
-                                        <h5>First</h5>
-                                        {state ? <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iusto officia dicta eveniet, sed illo.</p> : ''}
+                        {
+                            data.map((item, index) => {
+                                const isActive = index === activeIndex;
+                                const arrowIcon = isActive ? './assets/icons/arrow-up.svg' : './assets/icons/arrow-down.svg';
+
+                                return (
+                                    <div className={isActive ? s.active_accordion : s.accordion} key={index}>
+                                        <div className={s.accordion_header}>
+                                            <div>
+                                                <h4 className={isActive ? s.setNumber : s.number}>{index + 1}</h4>
+                                                <h5>{item.title}</h5>
+                                            </div>
+                                            <button onClick={() => setActiveIndex(isActive ? null : index)}>
+                                                <img src={arrowIcon} alt="" />
+                                            </button>
+                                        </div>
+                                        {isActive && <p>{item.content}</p>}
                                     </div>
-                                    <button onClick={() => clickAccordion(index)}>
-                                        <img src='./assets/icons/arrow-down.svg' alt='' />
-                                    </button>
-                                </div>
-                            </div>
-                        ))}
+                                )
+                            })
+                        }
                     </div>
                     <div className={s.methodology}>
                         <h3>Title</h3>

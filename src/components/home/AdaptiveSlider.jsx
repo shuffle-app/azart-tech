@@ -28,35 +28,35 @@ const AdaptiveSlider = () => {
     const slidesData = [
         {
           text: "brief",
-          image: "./assets/images/01.png"
+          image: "./assets/images/01.svg"
         },
         {
           text: "business-analysis & creating a CJM",
-          image: "./assets/images/02.png"
+          image: "./assets/images/02.svg"
         },
         {
           text: "prototype and its testing (CustDevs)",
-          image: "./assets/images/03.png"
+          image: "./assets/images/03.svg"
         },
         {
           text: "brending",
-          image: "./assets/images/04.png"
+          image: "./assets/images/04.svg"
         },
         {
           text: "visual concept (ux-ui MVP/MLP)",
-          image: "./assets/images/05.png"
+          image: "./assets/images/05.svg"
         },
         {
           text: "development through testing",
-          image: "./assets/images/06.png"
+          image: "./assets/images/06.svg"
         },
         {
           text: "correcting MLP & Final launch",
-          image: "./assets/images/07.png"
+          image: "./assets/images/07.svg"
         },
         {
           text: "digital-marketing",
-          image: "./assets/images/08.png"
+          image: "./assets/images/08.svg"
         },
       ];
       

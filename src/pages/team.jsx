@@ -5,6 +5,7 @@ import BestMember from "@/components/teamPage/BestMember"
 import s from '@/styles/main/TeamSlider.module.css'
 import c from '@/styles/main/TeamCard.module.css'
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export async function getStaticProps() {
   
@@ -22,7 +23,9 @@ export async function getStaticProps() {
         awards {
           html
         }
-        rewards
+        awardsImg {
+          url
+        }
       }
     }`;
   
@@ -48,7 +51,7 @@ export async function getStaticProps() {
     };
   }
   
-  const truncateText = (text, maxLength = 7) => {
+  const truncateText = (text, maxLength = 4) => {
     const words = text.split(' ');
     return words.length > maxLength
       ? words.slice(0, maxLength).join(' ') + '...'
@@ -56,10 +59,11 @@ export async function getStaticProps() {
   };
 
 const TeamPage = ({ teamMembers }) => {
+  const router = useRouter();
     return (
       <main>
+        <div className="main_container">
         <Header />
-        <div>
           <BestMember />
   
           <section className={`${s.team_section}`}>
@@ -70,33 +74,27 @@ const TeamPage = ({ teamMembers }) => {
                   .filter((teamMember) => teamMember.category.includes("development"))
                   .map((teamMember, index) => (
                     <div key={index} className={c.card}>
-                      <div className={c.card_header}>
-                        <div className={s.photo}>
-                          <img src={teamMember.coverImage?.url} alt="" />
-                        </div>
-                        <div className={c.about}>
-                          <h4>{teamMember.name}</h4>
-                          <h5>{teamMember.profession}</h5>
-                          <p>{truncateText(teamMember.excerpt)}</p>
-                          <Link href={`/cv/${teamMember.slug}`}>more details</Link>
-                        </div>
-                      </div>
-                      <div className={c.awards_block}>
-                        <h3>Awards</h3>
-                        <div className={c.rewards_block}>
-                          <div className={c.rew}>
-                              {teamMember.rewards && teamMember.rewards.reward && teamMember.rewards.reward.length > 0 ? (teamMember.rewards.reward.map((reward, index) => (
-                                  <div key={index} className={c.rewards}>
-                                      <span>{reward.number}</span>
-                                      <p>{reward.text}</p>
-                                  </div>
-                                  
-                              ))
-                              ) : (
-                              <p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>
-                              )}
+                        <div onClick={(e) => router.push(`/cv/${teamMember.slug}`)} className={c.card_header}>
+                          <div className={s.photo}>
+                            <img src={teamMember.coverImage?.url} alt="" />
+                          </div>
+                          <div className={c.about}>
+                            <h4>{teamMember.name}</h4>
+                            <h5>{teamMember.profession}</h5>
+                            <p>{truncateText(teamMember.excerpt)}</p>
+                            <Link href={`/cv/${teamMember.slug}`}>more details</Link>
                           </div>
                         </div>
+                        <div className={c.awards_block}>
+                          <h3>Awards</h3>
+                          <div className={s.rewards_block}>
+                              <div className={s.rew}>
+                                  {
+                                      teamMember.awardsImg === null ? (<p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>)
+                                      : (<img src={teamMember.awardsImg.url}/>)
+                                  }
+                              </div>
+                          </div>
                       </div>
                       <div className={c.tags}>
                         {teamMember.tags &&
@@ -111,103 +109,7 @@ const TeamPage = ({ teamMembers }) => {
             </div>
           </section>
 
-          <section className={`${s.team_section}`}>
-            <h1 className={`container ${s.h1}`}>UX/UI</h1>
-            <div className={`${s.team_slider} ${s.container}`}>
-              {teamMembers &&
-                teamMembers
-                  .filter((teamMember) => teamMember.category.includes("design"))
-                  .map((teamMember, index) => (
-                    <div key={index} className={c.card}>
-                      <div className={c.card_header}>
-                        <div className={s.photo}>
-                          <img src={teamMember.coverImage?.url} alt="" />
-                        </div>
-                        <div className={c.about}>
-                          <h4>{teamMember.name}</h4>
-                          <h5>{teamMember.profession}</h5>
-                          <p>{truncateText(teamMember.excerpt)}</p>
-                          <Link href={`/cv/${teamMember.slug}`}>more details</Link>
-                        </div>
-                      </div>
-                      <div className={c.awards_block}>
-                        <h3>Awards</h3>
-                        <div className={c.rewards_block}>
-                        <div className={c.rew}>
-                            {teamMember.rewards && teamMember.rewards.reward && teamMember.rewards.reward.length > 0 ? (teamMember.rewards.reward.map((reward, index) => (
-                                <div key={index} className={c.rewards}>
-                                    <span>{reward.number}</span>
-                                    <p>{reward.text}</p>
-                                </div>
-                                
-                            ))
-                            ) : (
-                            <p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>
-                            )}
-                        </div>
-                    </div>
-                      </div>
-                      <div className={c.tags}>
-                        {teamMember.tags &&
-                          teamMember.tags.tagss.map((tag, index) => (
-                            <button className={c.tag} key={index}>
-                              {tag}
-                            </button>
-                          ))}
-                      </div>
-                    </div>
-                  ))}
-            </div>
-          </section>
-
-          <section className={`${s.team_section}`}>
-            <h1 className={`container ${s.h1}`}>Marketing</h1>
-            <div className={`${s.team_slider} ${s.container}`}>
-              {teamMembers &&
-                teamMembers
-                  .filter((teamMember) => teamMember.category.includes("marketing"))
-                  .map((teamMember, index) => (
-                    <div key={index} className={c.card}>
-                      <div className={c.card_header}>
-                        <div className={s.photo}>
-                          <img src={teamMember.coverImage?.url} alt="" />
-                        </div>
-                        <div className={c.about}>
-                          <h4>{teamMember.name}</h4>
-                          <h5>{teamMember.profession}</h5>
-                          <p>{truncateText(teamMember.excerpt)}</p>
-                          <Link href={`/cv/${teamMember.slug}`}>more details</Link>
-                        </div>
-                      </div>
-                      <div className={c.awards_block}>
-                        <h3>Awards</h3>
-                        <div className={c.rewards_block}>
-                        <div className={c.rew}>
-                            {teamMember.rewards && teamMember.rewards.reward && teamMember.rewards.reward.length > 0 ? (teamMember.rewards.reward.map((reward, index) => (
-                                <div key={index} className={c.rewards}>
-                                    <span>{reward.number}</span>
-                                    <p>{reward.text}</p>
-                                </div>
-                                
-                            ))
-                            ) : (
-                            <p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>
-                            )}
-                        </div>
-                    </div>
-                      </div>
-                      <div className={c.tags}>
-                        {teamMember.tags &&
-                          teamMember.tags.tagss.map((tag, index) => (
-                            <button className={c.tag} key={index}>
-                              {tag}
-                            </button>
-                          ))}
-                      </div>
-                    </div>
-                  ))}
-            </div>
-          </section>
+          
   
           <Form />
         </div>

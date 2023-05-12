@@ -32,6 +32,13 @@
     margin-top: 150px;
 }
 
+.photo img {
+    min-width: 130px;
+    min-height: 130px;
+    border: 1px solid #808080;
+    border-radius: 11px;
+}
+
 .h1 {
     font-style: normal;
     font-weight: 700;
@@ -216,6 +223,15 @@
         right: 0;
         top: -5px;
     }
+
+    .team_section {
+        margin-top: 77px;
+    }
+
+    .photo img {
+        width: 116px;
+        height: 116px;
+    }
     
 }
 
@@ -240,6 +256,12 @@
     .btn {
        width: 100%;
        margin-top: 15px;
+    }
+
+    .h1 {
+        font-size: 34px;
+        line-height: 37px;
+        margin-bottom: 15px;
     }
 
 }
