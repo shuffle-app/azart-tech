@@ -5,6 +5,17 @@
     z-index: 50;
 }
 
+.logo {
+  width: 98px;
+  height: 98px;
+  background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  padding: 26px 17px 10px 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+
 .btns {
     display: flex;
     gap: 41px;
@@ -145,6 +156,9 @@
 
     .mob_header {
         display: initial;
+        position: absolute;
+        min-width: 100%;
+        top: 0;
     }
 
     .header {

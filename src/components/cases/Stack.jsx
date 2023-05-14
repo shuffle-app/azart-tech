@@ -1,11 +1,11 @@
 import s from '@/styles/cases/Stack.module.css'
 import ImageSlider from './ImageSlider'
-import Slider3D from './ImageSlider'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import AdaptiveSlider from '../home/AdaptiveSlider';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
-const Stack = () => {
+
+const Stack = ({cases}) => {
 
   return (
     <section className={`container main_container`}>
@@ -22,34 +22,16 @@ const Stack = () => {
           </div>
         </div>
       </div>
-      <div className={s.section}>
-        <div className={s.stacks}>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-            <p>UX/UI</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-            <p>UX/UI</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-            <p>UX/UI</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-            <p>UX/UI</p>
+          <div className={s.section}>
+              <div className={s.stacks}>
+                {cases.stacks.stack.map((stack, index) => (
+                  <p key={index}>{stack}</p>
+                ))}
+              </div>
+              
+              <ImageSlider cases={cases}/>
+          <div>
         </div>
-
-        <div>
-          <ImageSlider/>
-        </div>
-
       </div>
     </section>
   )

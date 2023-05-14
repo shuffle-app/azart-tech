@@ -4,6 +4,10 @@
     align-items: center;
     overflow: hidden;
     z-index: 5;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 168px;
+    padding-right: 80px;
 }
 
 .text h1 {
@@ -101,22 +105,23 @@
 @media (max-width: 900px) {
     .first_block {
         flex-direction: column;
-        margin-bottom: 100px;
         align-items: start;
+        padding-bottom: 0px;
     }
 
-    .first_block img {
+    .animated {
         order: -1;
         z-index: 1;
-       
+        transform: translateY(-20px) translateX(40px);
     }
 
+
     .text {
-        transform: translateY(-80px);
+        margin-top: 50px;
     }
 
     .experts {
-        transform: translateY(-100px);
+        margin-top: 48px;
     }
 
     .directions p:first-child {
@@ -147,10 +152,7 @@
 }
 
 @media (max-width: 464px) {
-    .first_block img {
-        width: 130%;
-        transform: translateX(-50px);
-    }
+
 
     .text h1 {
         font-size: 34px;

@@ -179,12 +179,12 @@
 .active_logo {
     width: 64px;
     height: 64px;
-    padding: 16px 18px;
     background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
     border: 0.799999px solid #CBFA11;
     box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(22.6666px);
     border-radius: 7.99999px;
+    padding: 25% 25%;
 }
 
 .not_active_logo {
@@ -192,13 +192,14 @@
     height: 64px;
     left: 1103px;
     top: 3650px;
-    padding: 16px 18px;
     background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
     border: 0.8px solid #808080;
     box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(22.6666px);
     border-radius: 8px;
+    padding: 25% 25%;
 }
+
 
 .line {
     border: 1px solid #808080;

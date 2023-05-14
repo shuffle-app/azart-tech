@@ -16,6 +16,8 @@ import Question from '@/components/home/Question'
 import StagesWork from '@/components/home/StagesWork'
 import TeamSlider from '@/components/home/TeamSlider'
 import Zoom from '@/components/shared/Zoom'
+import Quiz from '@/components/shared/Quiz'
+import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -92,6 +94,16 @@ export async function getStaticProps() {
 
 
 export default function Home({projects, teamMembers}) {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 45000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <Head>
@@ -107,11 +119,10 @@ export default function Home({projects, teamMembers}) {
           <Section1/>
         </div>
 
+        {visible && <Quiz/>}
+
         <Section2/>
-
-
         <Websites/>
-
         <div className='container'>
           <Advantages/>
           <Product/>

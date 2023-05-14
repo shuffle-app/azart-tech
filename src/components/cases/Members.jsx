@@ -1,6 +1,6 @@
 import s from '@/styles/cases/Members.module.css'
 
-const Members = () => {
+const Members = ({cases}) => {
     return (
         <section className='container'>
             <h3 className={s.h3}>Members</h3>
@@ -52,13 +52,13 @@ const Members = () => {
                 <div>
                     <h4 className={s.h4}>Reviews</h4>
                     <div className={s.reviews_header}>
-                        <img src="./assets/images/vladimir.svg" alt="" />
-                        <button>Watch video</button>
-                        <button>Listen voice</button>
+                        <img src={cases.reviewsImg?.url} alt="" />
+                        <button>Watch video <img src="./assets/icons/play-btn.svg" alt="" /></button>
+                        <button>Listen voice <img src="./assets/icons/voice.svg" alt="" /></button>
                     </div>
                     <div className={s.review}>
-                        <h4>Vladimir Melnikov</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum, fugit dicta, nam earum, deleniti vero suscipit impedit rerum eligendi sed! Necessitatibus incidunt blanditiis </p>
+                        <h4>{cases.reviewsName}</h4>
+                        <p>{cases.reviewsText}</p>
                     </div>
                 </div>
                 <img className={s.img} src="./assets/images/6047.svg" alt="" />

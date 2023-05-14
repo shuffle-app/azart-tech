@@ -50,6 +50,12 @@
 }
 
 .reviews_header button {
+   display: flex;
+   gap: 22px;
+   align-items: center;
+}
+
+.reviews_header button {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;

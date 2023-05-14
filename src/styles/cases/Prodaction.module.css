@@ -77,6 +77,14 @@
     gap: 30px;
 }
 
+.promo_video span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #CBFA11;
+    padding-top: 8px;
+}
+
 .download h3 {
     font-weight: 700;
     font-size: 24px;

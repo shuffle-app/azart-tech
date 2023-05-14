@@ -1,3 +1,4 @@
+import { Cross as Hamburger } from 'hamburger-react'
 import s from '@/styles/Header.module.css'
 import { useState } from 'react'
 import MobileHeader from './MobileHeader'
@@ -5,9 +6,7 @@ import Link from 'next/link'
 
 const Header = () => {
     const [menu, setMenu] = useState(false)
-    const activeMenu = () => {
-        setMenu(!menu)
-    }
+
     return (
         <>
             <header className={`container ${s.header}`}>
@@ -47,22 +46,7 @@ const Header = () => {
                 </nav>
                 <div className={s.btns}>
                     <img src="./assets/icons/telegram.svg" alt="telegram" />
-                    {
-                        menu 
-                        ? (
-                            <div onClick={activeMenu} className={`${s.burger_button} ${s.active}`}>
-                                <span className={`${s.line} ${s.line1}`}></span>
-                                <span className={`${s.line} ${s.line2}`}></span>
-                            </div>
-                            )
-                        : (
-                            <div onClick={activeMenu} className={s.burger_button}>
-                                <span className={`${s.line} ${s.line1}`}></span>
-                                <span className={`${s.line} ${s.line2}`}></span>
-                            </div>
-                            )
-                    }
-
+                    <Hamburger color='#fff' toggled={menu} toggle={setMenu} />
                 </div>
             </header>
             <div className={s.mob_header}>

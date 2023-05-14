@@ -1,6 +1,7 @@
 import s from '@/styles/main/Section1.module.css'
 import t from '@/styles/Thanks.module.css'
 import { useState } from 'react'
+import ImgAnimation from '../shared/ImgAnimation'
 
 const Section1 = () => {
     const [form, setForm] = useState(false)
@@ -75,7 +76,9 @@ const Section1 = () => {
                         <button onClick={clickButton} className={s.btn}>Got an idea?</button>
                     </div>
                 </div>
-                <img src="./assets/images/cubs.png" alt="images" />
+                <div className={s.animated}>
+                    <ImgAnimation/>
+                </div>
             </div>
             <div className={s.experts}>
                 <h2 className='container'>We are experts in</h2>

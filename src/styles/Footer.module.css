@@ -36,7 +36,7 @@
 }
 
 .footer_block img {
-    transform: translateX(-40px);
+    transform: translateX(-40px) translateY(-8px);
 }
 
 @media (max-width: 500px) {
@@ -44,12 +44,14 @@
         flex-direction: column;
         gap: 30px;
         align-items: center;
-        padding-top: 30px;
     }
 
     .footer_block img {
-        order: -1;
         transform: translateX(-10px);
+    }
+
+    .email {
+        order: 1;
     }
 
     .social {

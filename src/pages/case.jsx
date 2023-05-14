@@ -4,6 +4,7 @@ import Link from 'next/link'
 import c from '@/styles/main/Projects.module.css'
 import Footer from '@/components/shared/Footer';
 import Form from '@/components/home/Form';
+import { useRouter } from 'next/router';
 
 
 export async function getStaticProps() {
@@ -45,6 +46,7 @@ export async function getStaticProps() {
   }
 
 const CasePage = ({projects}) => {
+    const router = useRouter();
     return (
         <main className='main_container'>
             <Header/>
@@ -135,7 +137,7 @@ const CasePage = ({projects}) => {
                                             <div className={c.preview}>
                                             <img src={project.coverImage.url} alt="Project preview" />
                                             <div className={c.detailis}>
-                                                <Link href="/case">more detailis</Link>
+                                                <Link href={`/cases/${project.slug}`}>more details</Link>
                                                 <p>{new Date(project.createdAt).toLocaleDateString()}</p>
                                             </div>
                                             </div>
@@ -168,7 +170,7 @@ const CasePage = ({projects}) => {
                                             <div className={c.preview}>
                                             <img src={project.coverImage.url} alt="Project preview" />
                                             <div className={c.detailis}>
-                                                <Link href="/case">more detailis</Link>
+                                            <Link href={`/cases/${project.slug}`}>more details</Link>
                                                 <p>{new Date(project.createdAt).toLocaleDateString()}</p>
                                             </div>
                                             </div>
@@ -201,7 +203,7 @@ const CasePage = ({projects}) => {
                                             <div className={c.preview}>
                                             <img src={project.coverImage.url} alt="Project preview" />
                                             <div className={c.detailis}>
-                                                <Link href="/case">more detailis</Link>
+                                            <Link href={`/cases/${project.slug}`}>more details</Link>
                                                 <p>{new Date(project.createdAt).toLocaleDateString()}</p>
                                             </div>
                                             </div>

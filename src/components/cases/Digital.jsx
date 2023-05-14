@@ -1,6 +1,6 @@
 import s from '@/styles/cases/Digital.module.css'
 
-const Digital = () => {
+const Digital = ({cases}) => {
     return (
         <section className="container">
             <div className={s.block_04}>

@@ -109,6 +109,93 @@ const TeamPage = ({ teamMembers }) => {
             </div>
           </section>
 
+
+          <section className={`${s.team_section}`}>
+            <h1 className={`container ${s.h1}`}>UX/UI</h1>
+            <div className={`${s.team_slider} ${s.container}`}>
+              {teamMembers &&
+                teamMembers
+                  .filter((teamMember) => teamMember.category.includes("design"))
+                  .map((teamMember, index) => (
+                    <div key={index} className={c.card}>
+                        <div onClick={(e) => router.push(`/cv/${teamMember.slug}`)} className={c.card_header}>
+                          <div className={s.photo}>
+                            <img src={teamMember.coverImage?.url} alt="" />
+                          </div>
+                          <div className={c.about}>
+                            <h4>{teamMember.name}</h4>
+                            <h5>{teamMember.profession}</h5>
+                            <p>{truncateText(teamMember.excerpt)}</p>
+                            <Link href={`/cv/${teamMember.slug}`}>more details</Link>
+                          </div>
+                        </div>
+                        <div className={c.awards_block}>
+                          <h3>Awards</h3>
+                          <div className={s.rewards_block}>
+                              <div className={s.rew}>
+                                  {
+                                      teamMember.awardsImg === null ? (<p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>)
+                                      : (<img src={teamMember.awardsImg.url}/>)
+                                  }
+                              </div>
+                          </div>
+                      </div>
+                      <div className={c.tags}>
+                        {teamMember.tags &&
+                          teamMember.tags.tagss.map((tag, index) => (
+                            <button className={c.tag} key={index}>
+                              {tag}
+                            </button>
+                          ))}
+                      </div>
+                    </div>
+                  ))}
+            </div>
+          </section>
+
+          <section className={`${s.team_section}`}>
+            <h1 className={`container ${s.h1}`}>Marketing</h1>
+            <div className={`${s.team_slider} ${s.container}`}>
+              {teamMembers &&
+                teamMembers
+                  .filter((teamMember) => teamMember.category.includes("marketing"))
+                  .map((teamMember, index) => (
+                    <div key={index} className={c.card}>
+                        <div onClick={(e) => router.push(`/cv/${teamMember.slug}`)} className={c.card_header}>
+                          <div className={s.photo}>
+                            <img src={teamMember.coverImage?.url} alt="" />
+                          </div>
+                          <div className={c.about}>
+                            <h4>{teamMember.name}</h4>
+                            <h5>{teamMember.profession}</h5>
+                            <p>{truncateText(teamMember.excerpt)}</p>
+                            <Link href={`/cv/${teamMember.slug}`}>more details</Link>
+                          </div>
+                        </div>
+                        <div className={c.awards_block}>
+                          <h3>Awards</h3>
+                          <div className={s.rewards_block}>
+                              <div className={s.rew}>
+                                  {
+                                      teamMember.awardsImg === null ? (<p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>)
+                                      : (<img src={teamMember.awardsImg.url}/>)
+                                  }
+                              </div>
+                          </div>
+                      </div>
+                      <div className={c.tags}>
+                        {teamMember.tags &&
+                          teamMember.tags.tagss.map((tag, index) => (
+                            <button className={c.tag} key={index}>
+                              {tag}
+                            </button>
+                          ))}
+                      </div>
+                    </div>
+                  ))}
+            </div>
+          </section>
+
           
   
           <Form />

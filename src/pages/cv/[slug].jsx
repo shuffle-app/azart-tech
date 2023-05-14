@@ -4,11 +4,12 @@ import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import s from '@/styles/cv/CV.module.css'
 import Link from "next/link";
+import { SwishSpinner } from "react-spinners-kit";
 
-const TeamMemberPage = () => {
+const TeamMemberPage = ({ initialData }) => {
   const router = useRouter();
   const { slug } = router.query;
-  const [teamMember, setTeamMember] = useState(null);
+  const [teamMember, setTeamMember] = useState(initialData);
 
   useEffect(() => {
     if (slug) {
@@ -17,7 +18,6 @@ const TeamMemberPage = () => {
   }, [slug]);
 
   const fetchTeamMember = async (slug) => {
-    
     const teamQuery = `
       query MyQuery {
         post(where: { slug: "${slug}" }) {
@@ -58,6 +58,12 @@ const TeamMemberPage = () => {
     const teamData = await teamResponse.json();
     setTeamMember(teamData.data.post);
   };
+
+  if (router.isFallback || !teamMember) {
+
+    return  <div className="loader"><SwishSpinner color="#7140FD"/></div>;
+  }
+
 
   return (
     <>
@@ -210,6 +216,7 @@ const TeamMemberPage = () => {
                                                 <img src={teamMember.awardsImg.url}/>
                                             )
                                         }
+                                        <p>There will be more rewards coming soon!</p>
                                     </div>
                                 </div>
                             </div>
@@ -224,5 +231,63 @@ const TeamMemberPage = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+  const teamQuery = `
+    query MyQuery {
+      post(where: { slug: "${slug}" }) {
+        name
+        profession
+        excerpt
+        experiences
+        experience
+        workYears
+        aboutMe
+        category
+        coverImage {
+          url
+        }
+        awards {
+          html
+        }
+        awardsImg{
+          url
+        }
+        advancedSkills
+        skills
+      }
+    }`;
+
+  const teamResponse = await fetch(
+    "https://api-us-west-2.hygraph.com/v2/clh4zdcwq5s5p01ue7mgtbapo/master",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({ query: teamQuery }),
+    }
+  );
+
+  const data = await teamResponse.json();
+
+  return {
+    props: {
+      initialData: data.data.post,
+    },
+    revalidate: 1,
+  };
+}
+
+export async function getStaticPaths() {
+  // Выполните запрос к API для получения всех возможных путей
+
+  return {
+    paths: [], // Замените этот массив на реальные пути
+    fallback: true,
+  };
+}
 
 export default TeamMemberPage;

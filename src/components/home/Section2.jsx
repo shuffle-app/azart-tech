@@ -1,5 +1,5 @@
 import s from '@/styles/main/Section2.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Section2 = () => {
     const cards = [
@@ -30,29 +30,47 @@ const Section2 = () => {
         },
     ];
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Listen to screen size at the start and update isMobile state
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        // Cleanup function
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     const Card = ({ card }) => {
         const [isHovered, setIsHovered] = useState(false);
 
         return (
             <div
                 className={s.card}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                onMouseEnter={() => !isMobile && setIsHovered(true)}
+                onMouseLeave={() => !isMobile && setIsHovered(false)}
+                onClick={() => isMobile && setIsHovered(!isHovered)}
             >
                 <h2>{card.title}</h2>
                 <div className={`${s.card_border} ${isHovered ? s.card_border_blurred : ''}`}>
                     <div className={`${s.card_product} ${isHovered ? s.card_product_blurred : ''}`}>
                         <div />
-                        <img src={card.image} alt="" />
+                        <img className={s.img} src={card.image} alt="" />
+                        {isMobile && (
+                            <button onClick={() => setIsHovered(true)}>
+                                <img src="./assets/icons/arr-plus.svg" alt="" />
+                            </button>
+                        )}
                     </div>
                     {isHovered && (
-                        <div className={s.card_product_text}>
-                            <div className={s.exit}>
-                                <button><img src="./assets/icons/arr-minus.svg" alt="" /></button>
-                            </div>
-                            <p>{card.text}</p>
+                    <div className={s.card_product_text}>
+                        <div className={s.exit}>
+                            <button onClick={() => setIsHovered(false)}><img src="./assets/icons/arr-minus.svg" alt="" /></button>
                         </div>
-                    )}
+                        <p>{card.text}</p>
+                    </div>
+                )}
                 </div>
             </div>
         );

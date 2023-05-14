@@ -19,7 +19,7 @@ const CaseCard = ({ project }) => {
         <div className={s.preview}>
           <img src={project.coverImage.url} alt="Project preview" />
           <div className={s.detailis}>
-            <Link href="/cases">more detailis</Link>
+            <Link href="/cases">more details</Link>
             <p>{new Date(project.createdAt).toLocaleDateString()}</p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 .cv_section {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 135px;
     position: relative;
 }
 
@@ -66,6 +66,7 @@
     line-height: 29px;
     color: #FFFFFF;
     margin-top: 15px;
+    max-width: 450px;
 }
 
 .person_link {
@@ -466,7 +467,13 @@
     color: #8F8F94;
 }
 
-
+.rewards_block p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #A8A8A8;
+    margin-top: 15px;
+}
 
 @media (max-width: 1024px) {
     .header_logo {
@@ -533,9 +540,19 @@
     .person_link {
         right: 15px;
     }
+
+    .rewards_block p {
+        font-size: 14px;
+        line-height: 120%;
+    }
 }
 
 @media (max-width: 600px) {
+
+    .page_nav {
+        margin-top: 135px;
+    }
+
     .rewards_block {
         flex-direction: column;
         gap: 15px;

@@ -108,6 +108,78 @@
     color: #FFFFFF;
 }
 
+.accordions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.accordion_header {
+    display: flex;
+    align-items: start;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255) 0%, rgba(255, 255, 255, 0) 70.45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.active_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.accordion {
+    display: flex;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 1px solid #808080;
+    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(28.3333px);
+    border-radius: 10px;
+    padding: 15px;
+    max-height: 67px;
+    overflow-y: hidden;
+}
+
+.active_accordion {
+    display: flex;
+    align-items: start;
+    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border: 1px solid #808080;
+    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(28.3333px);
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 120px;
+}
+
+.also h4 {
+    font-size: 24px;
+    line-height: 29px;
+    color: #CBFA11;
+    margin-bottom: 30px;
+}
+
+.dashed_p2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: 1px dashed #CBFA11;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+
+}
+
 @media (max-width: 1024px) {
     .rect{
         flex-direction: column-reverse;

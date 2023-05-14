@@ -18,12 +18,14 @@
       {
         "label": "Atomic Design",
         "tabText": "Atomic Design is a design methodology that breaks interfaces down into small, reusable components, helping to create consistent and efficient user interfaces, speed up development, and simplify project maintenance.",
-        "id": 3
+        "id": 3,
+        "image": "./assets/stacks/atomic.svg"
       },
       {
         "label": "Backend Driven UI",
         "tabText": "Backend Driven UI is an approach to UI development where business logic and data drive the structure and behavior of the user interface. Developers create APIs and backend services for data retrieval and processing, then use that data to dynamically generate the UI on the client-side.",
-        "id": 4
+        "id": 4,
+        "image": "./assets/stacks/draven-ui.svg"
       },
       {
         "label": "AWS",
