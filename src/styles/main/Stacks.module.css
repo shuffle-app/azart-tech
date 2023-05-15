@@ -1,263 +1,280 @@
 .stacks_block {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .stacks_block h1 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
 }
 
 .accordion {
-    margin-top: 18px;
+  margin-top: 18px;
 }
 
 .title {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
 }
 
 .title .number {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #FFFFFF;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 0.8px solid #808080;
-    box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(22.6666px);
-    border-radius: 8px;
-    padding: 20px 28px;
-    transition: 0.2s;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 0.8px solid #808080;
+  box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1),
+    inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(22.6666px);
+  border-radius: 8px;
+  padding: 20px 28px;
+  transition: 0.2s;
 }
 
 .title .number:hover {
-    border: 0.5px solid #CBFA11;
+  border: 0.5px solid #cbfa11;
 }
 
 .title h4 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
 }
 
 .not_active_accordion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 18px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 15px;
 }
-
 
 /* Стили для активного аккордиона */
 
 .accordion_content {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: start;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
 }
 
-
 .active_accordion {
-    margin-top: 15px;
-    padding: 15px;
-    background: linear-gradient(180deg, rgba(27, 27, 27, 0) 40%, #CBFA11 494.07%);
-    border: 1px solid #A8A8A8;
-    border-radius: 5px;
+  margin-top: 15px;
+  padding: 15px;
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 40%, #cbfa11 494.07%);
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
 }
 
 .active_accordion_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .active_accordion_header button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .title .active_number {
-    background: #CBFA11;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #000;
-    border: 0.8px solid #808080;
-    border-radius: 8px;
-    padding: 20px 28px;
+  background: #cbfa11;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
+  border: 0.8px solid #808080;
+  border-radius: 8px;
+  padding: 20px 28px;
 }
 
 .accordion_content {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .accordion_content p {
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    opacity: 0.8;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .tabs {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 15px;
-    max-width: 600px;
-    margin-top: 15px;
-    display: inline-table;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  max-width: 600px;
+  margin-top: 15px;
+  display: inline-table;
 }
 
 .active_tab {
-    background: #CBFA11;
-    border: 1px solid #808080;
-    border-radius: 10px;
-    padding: 20px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #21212B;
-    max-height: 63px;
-    white-space: nowrap;
-    margin-right: 15px;
-    margin-bottom: 15px;
+  background: #cbfa11;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #21212b;
+  max-height: 63px;
+  white-space: nowrap;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .not_active_tab {
-    border: 1px solid #808080;
-    border-radius: 10px;
-    padding: 20px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #fff;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 38.664px -38.664px 38.664px rgba(186, 186, 186, 0.1), inset -38.664px 38.664px 38.664px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(38.664px);
-    border-radius: 10px;
-    max-height: 63px;
-    white-space: nowrap;
-    margin-right: 15px;
-    margin-bottom: 15px;
-
+  border: 1px solid #808080;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 38.664px -38.664px 38.664px rgba(186, 186, 186, 0.1),
+    inset -38.664px 38.664px 38.664px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(38.664px);
+  border-radius: 10px;
+  max-height: 63px;
+  white-space: nowrap;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .tab_content {
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #CBFA11;
-    box-shadow: inset 28.3px -28.3px 28.3px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3px);
-    border-radius: 10px;
-    max-width: 464px;
-    padding: 15px;
-
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #cbfa11;
+  box-shadow: inset 28.3px -28.3px 28.3px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3px);
+  border-radius: 10px;
+  max-width: 464px;
+  padding: 15px;
 }
 
-.tabs_logo  {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(4,1fr);
-    margin-top: 30px;
+.tabs_logo {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
 }
 
 .tabs_logo img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .not_active_logo img {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .active_logo {
-    width: 64px;
-    height: 64px;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 0.799999px solid #CBFA11;
-    box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(22.6666px);
-    border-radius: 7.99999px;
-    padding: 25% 25%;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 0.799999px solid #cbfa11;
+  box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1),
+    inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(22.6666px);
+  border-radius: 7.99999px;
+  padding: 25% 25%;
 }
 
 .not_active_logo {
-    width: 64px;
-    height: 64px;
-    left: 1103px;
-    top: 3650px;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 0.8px solid #808080;
-    box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1), inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(22.6666px);
-    border-radius: 8px;
-    padding: 25% 25%;
+  width: 64px;
+  height: 64px;
+  left: 1103px;
+  top: 3650px;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 0.8px solid #808080;
+  box-shadow: inset 22.6666px -22.6666px 22.6666px rgba(186, 186, 186, 0.1),
+    inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(22.6666px);
+  border-radius: 8px;
+  padding: 25% 25%;
 }
 
-
 .line {
-    border: 1px solid #808080;
-    width: 100%;
-    margin-top: 30px;
+  border: 1px solid #808080;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .mob img {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .tabs_logo {
     display: none;
+  }
+
+  .mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mob img {
+    display: initial;
+  }
 }
 
+@media (max-width: 500px) {
+  .tabs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13px;
+    display: inline;
+    margin-top: 15px;
+  }
 
+  .active_tab {
+    padding: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
 
+  .not_active_tab {
+    padding: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
 
-@media  (max-width: 880px) {
-    .tabs_logo {
-        display: none;
-    }
-
-    .mob {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .mob img {
-        display: initial;
-    }
-}
-
-@media  (max-width: 500px) {
-    .tabs {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 13px;
-        display: inline;
-        margin-top: 15px;
-    }
-
-    .active_tab {
-        padding: 15px;
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
-
-    .not_active_tab {
-        padding: 15px;
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
-
-    .tabs_block p {
-        margin-bottom: 15px;
-    }
+  .tabs_block p {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 464px) {
-    .stacks_block h1 {
-        font-size: 34px;
-        line-height: 37px;
-    }
+  .stacks_block h1 {
+    font-size: 34px;
+    line-height: 37px;
+  }
 }
