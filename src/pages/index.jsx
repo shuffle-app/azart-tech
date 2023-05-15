@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
+import { Inter } from "next/font/google"
 import Header from '@/components/shared/Header'
 import Section1 from '@/components/home/Section1'
 import Section2 from '@/components/home/Section2'
