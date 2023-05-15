@@ -2,7 +2,6 @@ import s from '@/styles/main/Projects.module.css';
 import CaseCard from '../cards/CaseCard';
 import Link from 'next/link';
 
-
 export default function Projects({ projects }) {
   return (
     <section className={`${s.projects_section}`}>
@@ -20,13 +19,13 @@ export default function Projects({ projects }) {
 
       {/* Скролл бар слайдера, длинной линией */}
       <div className={`container ${s.slider_block}`}>
-        <Link href="/cases">all project</Link>
+        <Link href="/cases">all projects</Link>
         <div className={s.slider_scroll}></div>
       </div>
 
-      <div className={s.glow}/>
-      <div className={s.glow2}/>
-      <div className={s.glow3}/>
+      <div className={s.glow} />
+      <div className={s.glow2} />
+      <div className={s.glow3} />
     </section>
   );
 }

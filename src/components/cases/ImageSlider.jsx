@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import Slider from "react-slick";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import s from '@/styles/cases/Stack.module.css'
-
+import Slider from 'react-slick';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import s from '@/styles/cases/Stack.module.css';
 
 const images = [
-  "./assets/images/Welcome.png",
-  "./assets/images/Welcome.png",
-  "./assets/images/Welcome.png",
-  "./assets/images/Welcome.png",
-  "./assets/images/Welcome.png",
-  "./assets/images/Welcome.png",
+  './assets/images/Welcome.png',
+  './assets/images/Welcome.png',
+  './assets/images/Welcome.png',
+  './assets/images/Welcome.png',
+  './assets/images/Welcome.png',
+  './assets/images/Welcome.png',
 ];
 
-const ImageSlider = ({cases}) => {
+const ImageSlider = ({ cases }) => {
   const [imgIndex, setImgIndex] = useState(0);
 
   const NextArrow = ({ onClick }) => {
@@ -47,10 +46,12 @@ const ImageSlider = ({cases}) => {
 
   return (
     <div className="slider_container">
-
       <Slider {...settings}>
         {cases.imageSlider.slider.map((img, idx) => (
-          <div key={idx} className={idx === imgIndex ? "slide activeSlide" : "slide"}>
+          <div
+            key={idx}
+            className={idx === imgIndex ? 'slide activeSlide' : 'slide'}
+          >
             <img className={s.imgg} src={img} alt={idx} />
           </div>
         ))}

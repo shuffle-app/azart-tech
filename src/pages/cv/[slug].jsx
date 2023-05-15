@@ -5,6 +5,7 @@ import Footer from '@/components/shared/Footer';
 import s from '@/styles/cv/CV.module.css';
 import Link from 'next/link';
 import { SwishSpinner } from 'react-spinners-kit';
+import { fetchTeamMembers } from '@/api/queries/fetchTeamMembers';
 
 const TeamMemberPage = ({ initialData }) => {
   const router = useRouter();
@@ -311,30 +312,11 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  // Выполните запрос к API для получения всех возможных путей
-
-  const teamQuery = `query MyQuery {
-    posts {
-      slug
-    }
-  }`;
-
-  const data = await fetch(
-    'https://api-us-west-2.hygraph.com/v2/clh4zdcwq5s5p01ue7mgtbapo/master',
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({ query: teamQuery }),
-    }
-  ).then((res) => res.json());
-
-  const paths = data.data.posts.map((post) => `/cv/${post.slug}`);
+  const teamMembers = await fetchTeamMembers({ onlySlugs: true });
+  const paths = teamMembers.map((post) => `/cv/${post.slug}`);
 
   return {
-    paths: paths, // Замените этот массив на реальные пути
+    paths,
     fallback: false,
   };
 }
