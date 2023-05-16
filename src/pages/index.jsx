@@ -42,7 +42,19 @@ export default function Home({ projects, teamMembers }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    const alreadyShown = window.localStorage.getItem('quiz') === 'true';
+
+    if (alreadyShown) {
+      return;
+    }
+
     const timer = setTimeout(() => {
+      if (window.localStorage.getItem('showHeroForm') === 'true') {
+        return;
+      }
+
+      window.localStorage.setItem('quiz', 'true');
+
       setVisible(true);
     }, 45000);
 

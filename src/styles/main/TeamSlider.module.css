@@ -146,6 +146,7 @@
 }
 
 .from_input input {
+  color: #ffffff;
   background: linear-gradient(
     76.36deg,
     rgba(0, 0, 0, 0.1) 0%,
@@ -161,6 +162,13 @@
   width: 261px;
 }
 
+.form input[aria-invalid='true'] {
+  border: 1px solid #fa111f;
+}
+.form input[aria-invalid='true'][type='checkbox'] {
+  outline: 1px solid #fa111f;
+}
+
 .btn {
   padding: 23px;
   background: #cbfa11;
@@ -169,6 +177,9 @@
   display: flex;
   justify-content: center;
   height: 60px;
+}
+.btn:hover {
+  cursor: pointer;
 }
 
 .btn button {
