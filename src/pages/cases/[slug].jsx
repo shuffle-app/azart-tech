@@ -5,7 +5,7 @@ import Development from '@/components/cases/Development';
 import Digital from '@/components/cases/Digital';
 import Members from '@/components/cases/Members';
 import Preview from '@/components/cases/Preview';
-import Prodaction from '@/components/cases/Prodaction';
+import Production from '@/components/cases/Production';
 import Stack from '@/components/cases/Stack';
 import Form from '@/components/home/Form';
 import Footer from '@/components/shared/Footer';
@@ -27,8 +27,8 @@ const Case = ({ initialData: cases }) => {
       <Analytics cases={cases} />
       <Design cases={cases} />
       {cases.development && <Development cases={cases} />}
-      {cases.digital && <Digital cases={cases} />}
-      <Prodaction cases={cases} />
+      <Digital cases={cases} />
+      <Production cases={cases} />
       {cases.members && <Members cases={cases} />}
 
       <Form />
@@ -75,6 +75,9 @@ export async function getStaticProps({ params }) {
                 digitalResult
                 promoVideo1
                 promoVideo2
+                pitchPresentation {
+                  url
+                }
                 reviewsName
                 reviewsImg {
                     url

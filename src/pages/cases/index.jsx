@@ -4,7 +4,6 @@ import Link from 'next/link';
 import c from '@/styles/main/Projects.module.css';
 import Footer from '@/components/shared/Footer';
 import Form from '@/components/home/Form';
-import { useRouter } from 'next/router';
 
 export async function getStaticProps() {
   const query = `query Assets {
@@ -45,7 +44,6 @@ export async function getStaticProps() {
 }
 
 const CasePage = ({ projects }) => {
-  const router = useRouter();
   return (
     <main className="main_container">
       <Header />
@@ -53,7 +51,7 @@ const CasePage = ({ projects }) => {
         <section className={` ${s.bm_section}`}>
           <div className={s.text_content}>
             <h1>
-              Pay attention <br /> <span>to our our work</span>
+              Pay attention <br /> <span>to our work</span>
             </h1>
             <p className={s.p}>
               Here are collected cases on various topics. We specialize not only
@@ -69,7 +67,7 @@ const CasePage = ({ projects }) => {
             </div>
           </div>
           <div className={s.project_card}>
-            <h2>Resent project</h2>
+            <h2>Recent project</h2>
             <div className={s.card}>
               <div className={s.card_text}>
                 <h3>Shuffle start-up</h3>
@@ -83,7 +81,7 @@ const CasePage = ({ projects }) => {
                   <p>dev</p>
                 </div>
                 <div className={s.card_ft}>
-                  <a href="#">more datails</a>
+                  <Link href={`/cases/shuffle-start-up`}>more details</Link>
                   <p>28 jan. 2023</p>
                 </div>
               </div>
@@ -117,7 +115,7 @@ const CasePage = ({ projects }) => {
             <div className={c.preview}>
               <img src="./assets/img/shuffle.svg" alt="" />
               <div className={c.detailis}>
-                <Link href="/case">more detailis</Link>
+                <Link href={`/cases/shuffle-start-up`}>more details</Link>
                 <p>28 jan. 2023</p>
               </div>
             </div>

@@ -115,7 +115,8 @@
   bottom: 15px;
 }
 
-.download button {
+.download a {
+  display: inline-block;
   background: #cbfa11;
   border-radius: 10px;
   width: 201px;
@@ -126,6 +127,7 @@
   line-height: 21px;
   text-align: center;
   color: #21212b;
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {

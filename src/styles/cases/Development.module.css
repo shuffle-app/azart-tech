@@ -209,6 +209,7 @@
   display: flex;
   align-items: center;
   gap: 70px;
+  position: relative;
 }
 
 .tech span {
@@ -232,7 +233,31 @@
   display: none;
 }
 
+.lock_image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.glow1 {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: #7140fd;
+  filter: blur(50px);
+  top: -100px;
+  left: 75px;
+  z-index: -1;
+}
+
 @media (max-width: 768px) {
+  .lock_image {
+    left: initial;
+    bottom: 10px;
+    left: 100%;
+    transform: translateX(-80%);
+  }
+
   .accordions {
     grid-template-columns: 1fr;
     margin-top: 30px;

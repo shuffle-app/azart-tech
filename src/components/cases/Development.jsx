@@ -1,6 +1,9 @@
 import s from '@/styles/cases/Development.module.css';
 import { useState } from 'react';
 
+import lockPic from '../../../public/assets/images/6042.png';
+import Image from 'next/image';
+
 const Development = ({ cases }) => {
   const data = [
     {
@@ -35,7 +38,7 @@ const Development = ({ cases }) => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className={s.dev_section}>
@@ -96,6 +99,10 @@ const Development = ({ cases }) => {
                 <p key={index}>{stack}</p>
               ))}
             </div>
+          </div>
+          <div className={s.lock_image}>
+            <Image src={lockPic} alt="" />
+            <div className={s.glow1} />
           </div>
           <div>
             <div className={s.stacks}>
