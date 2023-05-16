@@ -76,7 +76,7 @@ export default function Home({ projects, teamMembers }) {
           <Section1 />
         </div>
 
-        {true && <Quiz />}
+        {visible && <Quiz />}
 
         <Section2 />
         <Websites />
