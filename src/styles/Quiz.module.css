@@ -57,7 +57,7 @@
   gap: 30px;
 }
 
-.promo_btns button:first-child {
+.promo_btns a:first-child {
   width: 210px;
   height: 60px;
   background: #cbfa11;
@@ -67,6 +67,7 @@
   font-size: 16px;
   line-height: 21px;
   color: #282835;
+  text-decoration: none;
 }
 
 .promo_btns button:last-child {
@@ -81,7 +82,8 @@
   color: #282835;
 }
 
-.promo_btns button {
+.promo_btns button,
+.promo_btns a {
   display: flex;
   align-items: center;
   justify-content: center;

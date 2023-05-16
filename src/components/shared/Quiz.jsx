@@ -75,8 +75,8 @@ const Quiz = () => {
       setEmailError('');
     }
 
-    if (!/^\d{10}$/.test(phone)) {
-      setPhoneError('Phone number is not valid');
+    if (phone === '') {
+      setPhoneError('Phone number is required');
       isValid = false;
     } else {
       setPhoneError('');
@@ -84,18 +84,24 @@ const Quiz = () => {
 
     if (isValid) {
       // отправить данные формы, например:
-      await submitForm({
-        messages: Object.values(answers).join('; '),
-        name,
-        email,
-        phone,
-      });
+      try {
+        await submitForm({
+          message: Object.values(answers).join('; '),
+          name,
+          email,
+          phone,
+        });
+      } catch (error) {
+        console.error(error);
+      }
 
       setName('');
       setEmail('');
       setPhone('');
 
       setSubmitted(true);
+
+      nextStep();
     }
   };
 
@@ -171,7 +177,12 @@ const Quiz = () => {
               development pursue?
             </p>
             <div className={s.input_container}>
-              <textarea rows="5" placeholder="Enter text"></textarea>
+              <textarea
+                rows="5"
+                placeholder="Enter text"
+                name="step3"
+                onChange={handleChange}
+              ></textarea>
             </div>
             <button className={s.btn} onClick={nextStep}>
               Next
@@ -187,7 +198,12 @@ const Quiz = () => {
               In which region is the implementation planned?
             </p>
             <div className={s.input_container}>
-              <textarea rows="5" placeholder="Enter text"></textarea>
+              <textarea
+                rows="5"
+                placeholder="Enter text"
+                name="step4"
+                onChange={handleChange}
+              ></textarea>
             </div>
             <button className={s.btn} onClick={nextStep}>
               Next
@@ -213,7 +229,7 @@ const Quiz = () => {
                   key={option}
                   name="step2"
                   value={option}
-                  onClick={() => handleOptionSelect(option, 'step2')}
+                  onClick={() => handleOptionSelect(option, 'step5')}
                   className={
                     selectedOption === option ? s.selected4 : s.quiz_btns4
                   }
@@ -246,7 +262,7 @@ const Quiz = () => {
                   key={option}
                   name="step2"
                   value={option}
-                  onClick={() => handleOptionSelect(option, 'step2')}
+                  onClick={() => handleOptionSelect(option, 'step6')}
                   className={
                     selectedOption === option ? s.selected4 : s.quiz_btns4
                   }
@@ -265,9 +281,16 @@ const Quiz = () => {
         )}
         {step === 6 && (
           <div className={s.from_block}>
-            <div className={t.form_header}>
+            <div className={t.form_header} style={{ padding: 30 }}>
               <h4>Thank you for completing the survey!</h4>
-              <p>
+              <p
+                style={{
+                  fontSize: 16,
+                  lineHeight: '21px',
+                  fontWeight: 400,
+                  marginTop: 10,
+                }}
+              >
                 On the next page, we are already waiting for a promo code for 7
                 free hours of interaction with the team. To receive, leave
                 contact details for communication
@@ -305,7 +328,7 @@ const Quiz = () => {
                   pattern="^\d{10}$"
                 />
               </div>
-              <button className={t.submit} onClick={nextStep} type="submit">
+              <button className={t.submit} type="submit">
                 Get a promo code
               </button>
               <div className={t.checkbox}>
@@ -333,10 +356,14 @@ const Quiz = () => {
             </p>
             <img className={s.gift} src="./assets/img/gift_front.svg" alt="" />
             <div className={s.promo_btns}>
-              <a href="/assets/files/checklist.pdf" download>
+              <a
+                className="promo_btn"
+                href="/assets/files/checklist.pdf"
+                download
+              >
                 Download <img src="./assets/icons/download.svg" alt="" />
               </a>
-              <button>
+              <button className="promo_btn">
                 Send <img src="./assets/icons/send.svg" alt="" />
               </button>
             </div>
