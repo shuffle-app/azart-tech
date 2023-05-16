@@ -27,9 +27,9 @@ const Case = ({ initialData: cases }) => {
       <Analytics cases={cases} />
       <Design cases={cases} />
       {cases.development && <Development cases={cases} />}
-      <Digital cases={cases} />
+      {cases.digital && <Digital cases={cases} />}
       <Prodaction cases={cases} />
-      <Members cases={cases} />
+      {cases.members && <Members cases={cases} />}
 
       <Form />
       <Footer />
@@ -81,6 +81,9 @@ export async function getStaticProps({ params }) {
                 }
                 reviewsText
                 imageSlider
+                analytics01
+                analytics02
+                analyticsResult
             }
         }`;
 

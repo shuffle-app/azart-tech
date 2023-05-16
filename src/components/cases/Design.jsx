@@ -18,13 +18,17 @@ const Design = ({ cases }) => {
       </div>
       <div className={s.text2}>
         <div className={s.text2_1}>
-          <div>
-            <p className={s.based}>{cases.design3}</p>
-          </div>
-          <div className={s.text_img2}>
-            <p>{cases.design3}</p>
-            <img src="./assets/images/9441.png" alt="case" />
-          </div>
+          {cases.design3 && (
+            <>
+              <div>
+                <p className={s.based}>{cases.design3}</p>
+              </div>
+              <div className={s.text_img2}>
+                <p>{cases.design3}</p>
+                <img src="./assets/images/9441.png" alt="case" />
+              </div>
+            </>
+          )}
         </div>
       </div>
       <p className={s.dashed_text}>{cases.designResult}</p>
