@@ -1,5 +1,6 @@
 import { submitForm } from '@/api/utils/submitForm';
 import s from '@/styles/main/Websites.module.css';
+import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 
 const Form = () => {
@@ -10,10 +11,12 @@ const Form = () => {
     reset,
   } = useForm();
 
+  const router = useRouter();
+
   const onSubmit = async (data) => {
     await submitForm(data);
 
-    reset();
+    router.push('/thank-you');
   };
 
   return (

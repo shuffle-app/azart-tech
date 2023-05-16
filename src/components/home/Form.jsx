@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 
 import Image from 'next/image';
 import fromImg from '../../../public/assets/images/from-img.svg';
+import { useRouter } from 'next/router';
 
 const Form = () => {
   const {
@@ -12,10 +13,12 @@ const Form = () => {
     formState: { errors },
   } = useForm();
 
+  const router = useRouter();
+
   const onSubmit = async (data) => {
     await submitForm(data);
 
-    reset();
+    router.push('/thank-you');
   };
 
   return (

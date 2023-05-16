@@ -10,6 +10,7 @@ import instagramPic from '../../../public/assets/icons/instagram.svg';
 import telegramPic from '../../../public/assets/icons/telegram.svg';
 import fbPic from '../../../public/assets/icons/fb.svg';
 import menuIcon from '../../../public/assets/icons/menu-btn.svg';
+import { useRouter } from 'next/router';
 
 const HeroForm = ({ handleBackClick }) => {
   const {
@@ -20,10 +21,12 @@ const HeroForm = ({ handleBackClick }) => {
 
   const [submitted, setSubmitted] = useState(false);
 
+  const router = useRouter();
+
   const onSubmit = async (data) => {
     await submitForm(data);
 
-    setSubmitted(true);
+    router.push('/thank-you');
   };
 
   if (submitted) {
