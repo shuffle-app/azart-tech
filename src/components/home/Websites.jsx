@@ -46,7 +46,10 @@ const Form = () => {
         />
         <div>
           I agree to the
-          <span> terms of personal data processing</span>
+          <span onClick={() => window.open('/privacy', { target: '_blank' })}>
+            {' '}
+            terms of personal data processing
+          </span>
         </div>
         <button type="submit">
           <img src="./assets/icons/arrow.svg" alt="arrow" />
@@ -148,7 +151,12 @@ const Websites = () => {
             <div className={s.checkbox}>
               <input type="checkbox" name="" id="" />
               <p>
-                I agree to the <span>terms of personal data processing</span>{' '}
+                I agree to the
+                <span
+                  onClick={() => window.open('/privacy', { target: '_blank' })}
+                >
+                  terms of personal data processing
+                </span>{' '}
               </p>
             </div>
           </div>

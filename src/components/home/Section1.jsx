@@ -76,7 +76,7 @@ const HeroForm = ({ handleBackClick }) => {
             {errors.email && <p className="error">This field is required</p>}
             <input
               type="email"
-              placeholder="Email"
+              placeholder="eMail"
               aria-invalid={errors.email ? 'true' : 'false'}
               {...register('email', { required: true })}
             />
@@ -99,7 +99,12 @@ const HeroForm = ({ handleBackClick }) => {
               {...register('tos', { required: true })}
             />
             <p>
-              I agree to the <span>terms of personal data processing</span>{' '}
+              I agree to the{' '}
+              <span
+                onClick={() => window.open('/privacy', { target: '_blank' })}
+              >
+                terms of personal data processing
+              </span>{' '}
             </p>
           </div>
         </form>

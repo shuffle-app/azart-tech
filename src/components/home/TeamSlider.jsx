@@ -69,7 +69,14 @@ const TeamSlider = ({ teamMembers }) => {
                   {...register('tos', { required: true })}
                 />
                 <p>
-                  I agree to the <span>terms of personal data processing</span>{' '}
+                  I agree to the{' '}
+                  <span
+                    onClick={() =>
+                      window.open('/privacy', { target: '_blank' })
+                    }
+                  >
+                    terms of personal data processing
+                  </span>{' '}
                 </p>
               </div>
             </div>
