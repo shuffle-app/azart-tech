@@ -1,8 +1,20 @@
 import Head from 'next/head';
 import '../styles/globals.css';
 import Script from 'next/script';
+import { Cookie } from '@/components/common/Cookie/Cookie';
+import { useEffect, useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
+  const [showCookie, setShowCookie] = useState(false);
+
+  useEffect(() => {
+    const alreadyShown = window.localStorage.getItem('cookie') === 'true';
+
+    if (!alreadyShown) {
+      setShowCookie(true);
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -51,6 +63,8 @@ function MyApp({ Component, pageProps }) {
         />
       </>
       <Component {...pageProps} />
+
+      {showCookie && <Cookie />}
     </>
   );
 }

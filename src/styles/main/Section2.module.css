@@ -135,7 +135,7 @@
 }
 
 .img {
-  transform: translateY(-40px) translateX(-10px);
+  transform: translateY(-45px) translateX(-30px);
 }
 
 .exit {
@@ -149,7 +149,7 @@
   }
 
   .img {
-    transform: translateY(-20px) translateX(-10px);
+    transform: translateY(-30px) translateX(-30px);
   }
 
   .card_product div {
