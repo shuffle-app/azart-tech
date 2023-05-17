@@ -74,6 +74,7 @@ const TeamSlider = ({ teamMembers }) => {
                     onClick={() =>
                       window.open('/privacy', { target: '_blank' })
                     }
+                    className="tos-link"
                   >
                     terms of personal data processing
                   </span>{' '}

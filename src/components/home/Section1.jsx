@@ -1,122 +1,10 @@
 import s from '@/styles/main/Section1.module.css';
-import t from '@/styles/Thanks.module.css';
 import { useRef, useState } from 'react';
 import ImgAnimation from '../shared/ImgAnimation';
-import { useForm } from 'react-hook-form';
 import { TypeAnimation } from 'react-type-animation';
 
-import Image from 'next/image';
-import thankYouPic from '../../../public/assets/images/1932.svg';
-import instagramPic from '../../../public/assets/icons/instagram.svg';
-import telegramPic from '../../../public/assets/icons/telegram.svg';
-import fbPic from '../../../public/assets/icons/fb.svg';
-import menuIcon from '../../../public/assets/icons/menu-btn.svg';
-import { useRouter } from 'next/router';
-import { useWindowSize } from '@/utils/hooks/useWindowSize';
-
-const HeroForm = ({ handleBackClick }) => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const router = useRouter();
-
-  const onSubmit = async (data) => {
-    await submitForm(data);
-
-    router.push('/thank-you');
-  };
-
-  if (submitted) {
-    return (
-      <section className={t.t_wrapper}>
-        <div className={t.thanks_block}>
-          <div className={t.thanks_text}>
-            <Image className={t.img} src={thankYouPic} alt="" />
-            <h3>
-              <span>Thank you</span> for your application!
-            </h3>
-
-            <p>Our manager will contact you soon</p>
-            <div className={t.line} />
-            <h5>By the way, visit our social networks</h5>
-            <div className={t.social}>
-              <Image src={instagramPic} alt="instagram" />
-              <Image src={telegramPic} alt="telegram" />
-              <Image src={fbPic} alt="fb" />
-            </div>
-          </div>
-          <button className={t.back_main} onClick={handleBackClick}>
-            Back to home page
-          </button>
-        </div>
-      </section>
-    );
-  }
-
-  return (
-    <section className={t.t_wrapper}>
-      <div className={t.form_block}>
-        <div className={t.form_header}>
-          <p>Fill out the feedback form for further cooperation</p>
-          <button onClick={handleBackClick}>
-            <Image src={menuIcon} alt="" />
-          </button>
-        </div>
-        <form className={t.form} onSubmit={handleSubmit(onSubmit)}>
-          <div>
-            {errors.name && <p className="error">This field is required</p>}
-            <input
-              type="text"
-              placeholder="Name"
-              aria-invalid={errors.name ? 'true' : 'false'}
-              {...register('name', { required: true })}
-            />
-          </div>
-          <div>
-            {errors.email && <p className="error">This field is required</p>}
-            <input
-              type="email"
-              placeholder="eMail"
-              aria-invalid={errors.email ? 'true' : 'false'}
-              {...register('email', { required: true })}
-            />
-          </div>
-          <div>
-            {errors.phone && <p className="error">This field is required</p>}
-            <input
-              placeholder="Phone"
-              aria-invalid={errors.phone ? 'true' : 'false'}
-              {...register('phone', { required: true })}
-            />
-          </div>
-          <button className={t.submit} type="submit">
-            Send
-          </button>
-          <div className={t.checkbox}>
-            <input
-              type="checkbox"
-              aria-invalid={errors.tos ? 'true' : 'false'}
-              {...register('tos', { required: true })}
-            />
-            <p>
-              I agree to the{' '}
-              <span
-                onClick={() => window.open('/privacy', { target: '_blank' })}
-              >
-                terms of personal data processing
-              </span>{' '}
-            </p>
-          </div>
-        </form>
-      </div>
-    </section>
-  );
-};
+import { ContactPopup } from '../common/ContactPopup/ContactPopup';
+import { createPortal } from 'react-dom';
 
 const Section1 = () => {
   const [showForm, setShowForm] = useState(false);
@@ -134,8 +22,6 @@ const Section1 = () => {
   };
 
   const ref = useRef(null);
-
-  const { width } = useWindowSize();
 
   return (
     <section className={s.section_block}>
@@ -195,7 +81,11 @@ const Section1 = () => {
         </div>
       </div>
 
-      {showForm && <HeroForm handleBackClick={handleBackClick} />}
+      {showForm &&
+        createPortal(
+          <ContactPopup handleBackClick={handleBackClick} />,
+          document.body
+        )}
     </section>
   );
 };

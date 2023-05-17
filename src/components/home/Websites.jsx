@@ -49,7 +49,10 @@ const Form = () => {
         />
         <div>
           I agree to the
-          <span onClick={() => window.open('/privacy', { target: '_blank' })}>
+          <span
+            onClick={() => window.open('/privacy', { target: '_blank' })}
+            className="tos-link"
+          >
             {' '}
             terms of personal data processing
           </span>
@@ -157,6 +160,7 @@ const Websites = () => {
                 I agree to the
                 <span
                   onClick={() => window.open('/privacy', { target: '_blank' })}
+                  className="tos-link"
                 >
                   terms of personal data processing
                 </span>{' '}
