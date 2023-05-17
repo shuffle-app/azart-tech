@@ -50,7 +50,7 @@ const Development = ({ cases }) => {
 
         <div className={s.accordion_block}>
           <div className={s.accordions}>
-            {cases.development.accordion.map((item, index) => {
+            {cases.development.accordion?.map((item, index) => {
               const isActive = index === activeIndex;
               const arrowIcon = isActive
                 ? './assets/icons/arrow-up.svg'
@@ -95,7 +95,7 @@ const Development = ({ cases }) => {
           <div className={s.stacks}>
             <h3>Stack</h3>
             <div>
-              {cases.stacks2.stack.map((stack, index) => (
+              {cases.stacks2.stack?.map((stack, index) => (
                 <p key={index}>{stack}</p>
               ))}
             </div>
@@ -108,7 +108,7 @@ const Development = ({ cases }) => {
             <div className={s.stacks}>
               <h3>Platforms</h3>
               <div className={s.platforms}>
-                {cases.platforms.platform.map((platform, index) => (
+                {cases.platforms.platform?.map((platform, index) => (
                   <p key={index}>{platform}</p>
                 ))}
               </div>
