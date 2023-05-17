@@ -6,7 +6,7 @@ import t from '@/styles/Thanks.module.css';
 import thankYouPic from '../../public/assets/images/1932.svg';
 import instagramPic from '../../public/assets/icons/instagram.svg';
 import telegramPic from '../../public/assets/icons/telegram.svg';
-import fbPic from '../../public/assets/icons/fb.svg';
+import linkedinPic from '../../public/assets/icons/linkedin.svg';
 import Script from 'next/script';
 import Head from 'next/head';
 
@@ -32,9 +32,9 @@ const ThankYouPage = () => {
                 'https://connect.facebook.net/en_US/fbevents.js');
                 fbq('init', '2002507826747915');
                 fbq('track', 'Lead');
-                } else {
-                    fbq('track', 'Lead');
-                }
+            } else {
+                fbq('track', 'Lead');
+            }
               `,
         }}
         strategy="afterInteractive"
@@ -57,8 +57,15 @@ const ThankYouPage = () => {
             <h5>By the way, visit our social networks</h5>
             <div className={t.social}>
               <Image src={instagramPic} alt="instagram" />
-              <Image src={telegramPic} alt="telegram" />
-              <Image src={fbPic} alt="fb" />
+              <a href="#" target="_blank">
+                <Image src={telegramPic} alt="telegram" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/azart-technologies-fzco/"
+                target="_blank"
+              >
+                <Image src={linkedinPic} alt="linkedin" />
+              </a>
             </div>
           </div>
           <button className={t.back_main} onClick={goHome}>

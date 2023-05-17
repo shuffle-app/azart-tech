@@ -10,7 +10,7 @@
   padding-right: 80px;
 }
 
-.text h1 {
+.text .hero h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
@@ -18,7 +18,7 @@
   margin-bottom: 10px;
 }
 
-.text span {
+.text .hero span {
   background: #7140fd;
   border-radius: 8px;
   padding: 0 5px;
@@ -27,6 +27,18 @@
   line-height: 58px;
   color: #ffffff;
   white-space: nowrap;
+}
+
+.text .subhero {
+  color: #cbfa11;
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  white-space: pre-line;
+  margin-top: 40px;
+  min-height: 60px;
 }
 
 .btn {
@@ -40,7 +52,7 @@
   width: 253px;
   height: 60px;
   margin-top: 75px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -155,7 +167,7 @@
 }
 
 @media (max-width: 464px) {
-  .text h1 {
+  .text .hero h1 {
     font-size: 34px;
     line-height: 37px;
   }
@@ -164,11 +176,16 @@
     display: initial;
   }
 
-  .text span {
+  .text .hero span {
     font-size: 34px;
     line-height: 37px;
     padding-right: 300px;
     white-space: nowrap;
+  }
+
+  .text .subhero {
+    max-width: 100vw;
+    min-height: 120px;
   }
 }
 

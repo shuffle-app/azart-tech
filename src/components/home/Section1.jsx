@@ -141,53 +141,35 @@ const Section1 = () => {
     <section className={s.section_block}>
       <div className={`container ${s.first_block}`}>
         <div className={s.text}>
-          {width > 768 ? (
-            <TypeAnimation
-              wrapper="h1"
-              style={{ whiteSpace: 'pre-line', minHeight: '200px' }}
-              // cursor={false}
-              sequence={[
-                'Web development that\nwins the hearts of the\ntarget audience',
-                () => {
-                  ref.current.innerHTML = `Web development that\nwins the hearts of the\n<span>target audience</span>`;
-                },
-                3000,
-                'In the clip of technology\ncreating digital products from\nlanding pages to applications',
-                () => {
-                  ref.current.innerHTML = `In the clip of technology\ncreating <span>digital products</span> from\nlanding pages to applications`;
-                },
-                3000,
-                'Business process analytics that\nwill take into account the user\nexperience of your audience',
-                () => {
-                  ref.current.innerHTML = `<span>Business process</span> analytics that\nwill take into account the user\nexperience of your audience`;
-                },
-                3000,
-                'In our state for your\ntasks - branding and\ndigital marketing',
-                () => {
-                  ref.current.innerHTML = `In our state for your\ntasks - branding and\n<span>digital marketing</span>`;
-                },
-                3000,
-                'inventing. developing.\nbranding. promoting\nanything',
-                () => {
-                  ref.current.innerHTML = `inventing. developing.\nbranding. promoting\n <span>anything</span>`;
-                },
-              ]}
-              ref={ref}
-            ></TypeAnimation>
-          ) : (
-            <>
-              <h1>
-                inventing.
-                <br className={s.br} />
-                developing. <br />
-                branding.
-                <br className={s.br} />
-                promoting.
-              </h1>
-              <span>anything</span>
-            </>
-          )}
+          <div className={s.hero}>
+            <h1>
+              Web development that <br />
+              wins the hearts of the
+            </h1>
+            <span>target audience</span>
+          </div>
 
+          <TypeAnimation
+            className={s.subhero}
+            wrapper="h2"
+            // cursor={false}
+            sequence={[
+              // 'In the clip of technology\ncreating digital products from\nlanding pages to applications',
+              // () => {
+              //   ref.current.innerHTML = `In the clip of technology\ncreating <span>digital products</span> from\nlanding pages to applications`;
+              // },
+              // 3000,
+              'Business process analytics that will take into\n account the user experience of your audience',
+              3000,
+              'In our state for your tasks -\nbranding and digital marketing',
+              3000,
+              'inventing. developing. branding.\npromoting. anything',
+              3000,
+            ]}
+            speed={70}
+            repeat={Infinity}
+            ref={ref}
+          ></TypeAnimation>
           <div>
             <button onClick={clickButton} className={s.btn}>
               Got an idea?

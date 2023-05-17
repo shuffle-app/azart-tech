@@ -32,7 +32,12 @@ const Footer = () => {
 
         <div className={s.social}>
           <div>
-            <a href="#">LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/company/azart-technologies-fzco/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
           </div>
           <div>
             <a href="#">Instagram</a>
