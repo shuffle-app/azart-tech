@@ -177,8 +177,6 @@
   display: flex;
   justify-content: center;
   height: 60px;
-}
-.btn:hover {
   cursor: pointer;
 }
 
@@ -188,6 +186,7 @@
   line-height: 21px;
   text-align: center;
   color: #21212b;
+  cursor: pointer;
 }
 
 .checkbox {

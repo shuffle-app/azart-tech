@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import t from '@/styles/Thanks.module.css';
 import menuIcon from '../../../../public/assets/icons/menu-btn.svg';
 import { useRouter } from 'next/router';
+import { submitForm } from '@/api/utils/submitForm';
 
 export const ContactPopup = ({ handleBackClick }) => {
   const {

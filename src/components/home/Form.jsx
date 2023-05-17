@@ -70,7 +70,9 @@ const Form = () => {
           </p>
         </div>
 
-        <button type="submit">Send</button>
+        <button type="submit" className="active-btn">
+          Send
+        </button>
 
         <div className={s.glow1} />
         <div className={s.glow2} />
