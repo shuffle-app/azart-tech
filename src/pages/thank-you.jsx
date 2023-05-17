@@ -12,13 +12,16 @@ import { IconLinkedin } from '@/components/common/icons/IconLinkedin';
 import { IconTelegram } from '@/components/common/icons/IconTelegram';
 import { IconInstagram } from '@/components/common/icons/IconInstagram';
 
+import * as fbq from '@/utils/fpixel';
+
 const ThankYouPage = () => {
   const router = useRouter();
   const goHome = () => {
     router.push('/');
   };
+
   useEffect(() => {
-    window.fbq('track', 'Lead');
+    fbq.event('Lead');
   }, []);
 
   return (
