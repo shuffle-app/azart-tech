@@ -37,7 +37,7 @@ const Tab = ({ isActive, label, onClick }) => (
 const TabContent = ({ isVisible, children }) =>
   isVisible && <div className={s.tab_content}>{children}</div>;
 
-const Stacks = () => {
+const Stacks = ({ stacks }) => {
   const [activeAccordion, setActiveAccordion] = useState(1);
   const [activeTab, setActiveTab] = useState(2);
 
@@ -51,22 +51,10 @@ const Stacks = () => {
     setActiveTab(tabIndex);
   };
 
-  const [uniqueTabs, setUniqueTabs] = useState([]);
-  const [accordions, setAccordions] = useState([]);
-
-  useEffect(() => {
-    fetch('/accordionData.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setUniqueTabs(data.uniqueTabs);
-        setAccordions(
-          data.accordions.map((accordion) => ({
-            ...accordion,
-            tabs: accordion.tabs.map((tabIndex) => data.uniqueTabs[tabIndex]),
-          }))
-        );
-      });
-  }, []);
+  const accordions = stacks.accordions.map((accordion) => ({
+    ...accordion,
+    tabs: accordion.tabs.map((tabIndex) => stacks.uniqueTabs[tabIndex]),
+  }));
 
   return (
     <section className={`${s.stacks_block}`}>

@@ -6,6 +6,8 @@ const Footer = () => {
     <footer className={s.footer}>
       <div className={`container ${s.footer_block}`}>
         <p className={s.footer_contacts}>
+          <span>azart technologies fzco</span> <br />
+          <br />
           Dubai Silicon Oasis, DDP, Building A2, Dubai, UAE
           <br />
           <br />

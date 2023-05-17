@@ -1,7 +1,7 @@
 import s from '@/styles/Animation.module.css';
 
 import Image from 'next/image';
-import mainImg from '../../../public/assets/img/3dr.svg';
+import mainImg from '../../../public/assets/img/3dr.png';
 import img2 from '../../../public/assets/img/ш1.svg';
 import img3 from '../../../public/assets/img/кк.svg';
 import img4 from '../../../public/assets/img/ш2.svg';

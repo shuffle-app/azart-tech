@@ -49,6 +49,8 @@
   min-height: 433px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .card_header {
@@ -131,8 +133,8 @@
 }
 
 .detailis {
-  bottom: 15px;
-  right: 15px;
+  bottom: 0;
+  right: 40px;
   position: absolute;
 }
 

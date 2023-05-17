@@ -1,5 +1,7 @@
 import { submitForm } from '@/api/utils/submitForm';
 import s from '@/styles/main/Websites.module.css';
+import { useWindowSize } from '@/utils/hooks/useWindowSize';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 
@@ -19,48 +21,73 @@ const Form = () => {
     router.push('/thank-you');
   };
 
+  const { width } = useWindowSize();
+
   return (
-    <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
-      <h3>Need something unusual?</h3>
-      <p>we can prepare unique format for your request</p>
-      <div className={s.inputs}>
-        <div>
-          <input
-            placeholder="phone"
-            aria-invalid={errors.phone ? 'true' : 'false'}
-            {...register('phone', { required: true })}
-          />
-        </div>
-        <div>
-          <input
-            className={s.desc}
-            type="text"
-            placeholder="description"
-            aria-invalid={errors.message ? 'true' : 'false'}
-            {...register('message', { required: true })}
-          />
+    <form onSubmit={handleSubmit(onSubmit)} className={s.form_form}>
+      <div className={s.form_block}>
+        <h4>any solutions for your request</h4>
+        <div className={s.form}>
+          <h3>Need something unusual?</h3>
+          <p>we can prepare unique format for your request</p>
+          <div className={s.inputs}>
+            <div>
+              <input
+                placeholder="phone"
+                aria-invalid={errors.phone ? 'true' : 'false'}
+                {...register('phone', { required: true })}
+              />
+            </div>
+            <div>
+              <input
+                className={s.desc}
+                type="text"
+                placeholder="description"
+                aria-invalid={errors.message ? 'true' : 'false'}
+                {...register('message', { required: true })}
+              />
+            </div>
+          </div>
+          {width > 768 && (
+            <div className={s.submits}>
+              <input
+                type="checkbox"
+                aria-invalid={errors.tos ? 'true' : 'false'}
+                {...register('tos', { required: true })}
+              />
+              <div>
+                I agree to the&nbsp;
+                <span
+                  onClick={() => window.open('/privacy', { target: '_blank' })}
+                  className="tos-link"
+                >
+                  terms of personal data processing
+                </span>
+              </div>
+              <button type="submit" className="active-btn">
+                <img src="./assets/icons/arrow.svg" alt="arrow" />
+              </button>
+            </div>
+          )}
         </div>
       </div>
-      <div className={s.submits}>
-        <input
-          type="checkbox"
-          aria-invalid={errors.tos ? 'true' : 'false'}
-          {...register('tos', { required: true })}
-        />
-        <div>
-          I agree to the
-          <span
-            onClick={() => window.open('/privacy', { target: '_blank' })}
-            className="tos-link"
-          >
-            {' '}
-            terms of personal data processing
-          </span>
+      {width <= 768 && (
+        <div className={s.mob_submit}>
+          <button type="submit">Send</button>
+          <div className={s.checkbox}>
+            <input type="checkbox" name="" id="" />
+            <p>
+              I agree to the&nbsp;
+              <span
+                onClick={() => window.open('/privacy', { target: '_blank' })}
+                className="tos-link"
+              >
+                terms of personal data processing
+              </span>{' '}
+            </p>
+          </div>
         </div>
-        <button type="submit">
-          <img src="./assets/icons/arrow.svg" alt="arrow" />
-        </button>
-      </div>
+      )}
     </form>
   );
 };
@@ -107,7 +134,7 @@ const Websites = () => {
               <p>
                 from <span>3000 $</span>
               </p>
-              <button>more details</button>
+              <Link href="/cases">more details</Link>
             </div>
           </div>
           <div className={s.sites}>
@@ -144,29 +171,11 @@ const Websites = () => {
               <p>
                 from <span>2000 $</span>
               </p>
-              <button>more details</button>
+              <Link href="/cases">more details</Link>
             </div>
-          </div>
-          <div className={s.form_block}>
-            <h4>any solutions for your request</h4>
-            <Form />
           </div>
 
-          <div className={s.mob_submit}>
-            <button>Send</button>
-            <div className={s.checkbox}>
-              <input type="checkbox" name="" id="" />
-              <p>
-                I agree to the
-                <span
-                  onClick={() => window.open('/privacy', { target: '_blank' })}
-                  className="tos-link"
-                >
-                  terms of personal data processing
-                </span>{' '}
-              </p>
-            </div>
-          </div>
+          <Form />
         </div>
       </div>
     </section>

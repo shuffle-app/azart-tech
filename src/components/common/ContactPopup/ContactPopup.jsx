@@ -16,7 +16,7 @@ export const ContactPopup = ({ handleBackClick }) => {
   const router = useRouter();
 
   const onSubmit = async (data) => {
-    await submitForm(data);
+    // await submitForm(data);
 
     router.push('/thank-you');
   };

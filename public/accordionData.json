@@ -1,266 +1,266 @@
 {
-    "uniqueTabs": [
-      {
-        "label": "TDD",
-        "tabText": "a software development methodology where tests are written before writing code. It allows faster and more reliable development of high-quality software.",
-        "id": 0
-      },
-      {
-        "label": "ML",
-        "tabText": "a subfield of artificial intelligence that allows computers to learn and make predictions based on data without explicit programming. It is used in many areas, such as speech and image recognition, medical diagnosis, financial analysis, and more. Python and R are often used for ML implementation, as well as libraries and frameworks such as TensorFlow and PyTorch. ",
-        "id": 1
-      },
-      {
-        "label": "UI-kit",
-        "tabText": "UI-kit (User Interface Kit) - a set of tools for creating a user interface. It includes standard design elements such as buttons, input fields, menus, etc. that can be easily reused when creating various web or mobile applications. Currently, there are many UI kits available for different platforms, such as Android, iOS, React Native, etc.",
-        "id": 2
-      },
-      {
-        "label": "Atomic Design",
-        "tabText": "Atomic Design is a design methodology that breaks interfaces down into small, reusable components, helping to create consistent and efficient user interfaces, speed up development, and simplify project maintenance.",
-        "id": 3,
-        "image": "./assets/stacks/atomic.svg"
-      },
-      {
-        "label": "Backend Driven UI",
-        "tabText": "Backend Driven UI is an approach to UI development where business logic and data drive the structure and behavior of the user interface. Developers create APIs and backend services for data retrieval and processing, then use that data to dynamically generate the UI on the client-side.",
-        "id": 4,
-        "image": "./assets/stacks/draven-ui.svg"
-      },
-      {
-        "label": "AWS",
-        "tabText": "AWS (Amazon Web Services) is a cloud platform provided by Amazon, which provides access to a wide range of cloud computing resources, such as storage, databases, computing power, and other services, allowing developers to build, deploy, and scale applications in the cloud.",
-        "image": "./assets/stacks/aws.svg",
-        "id": 5
-      },
-      {
-        "label": "Redis",
-        "tabText": "Redis is a fast and flexible data store that can be used for caching, session storage, task queues, and many other use cases.",
-        "image": "./assets/stacks/redis.svg",
-        "id": 6
-      },
-      {
-        "label": "Kafka",
-        "tabText": "Kafka is a distributed streaming data processing system. It provides high throughput, fault-tolerance, and delivery guarantees. It can be used for real-time data stream processing, data analytics, building streaming platforms, and other tasks.",
-        "image": "./assets/stacks/kafka.svg",
-        "id": 7
-      },
-      {
-        "label": "Kubernetes",
-        "tabText": "Kubernetes is an open-source software used to automate the deployment, scaling, and management of containerized applications. It is a solution that allows managing containers and services, deploying them in the required locations, and automatically scaling depending on the workload.",
-        "image": "./assets/stacks/kubernetes.svg",
-        "id": 8
-      },
-      {
-        "label": "SQL",
-        "tabText": "SQL (Structured Query Language) is a language used to manage relational databases. It is used for creating, modifying, and managing data in databases. SQL allows users to extract and manipulate data as well as manage the structures of tables and indexes.",
-        "image": "./assets/stacks/sql.svg",
-        "id": 9
-      },
-      {
-        "label": "MongoDB",
-        "tabText": "MongoDB is a document-oriented NoSQL database that allows storing and processing data in BSON (Binary JSON) format. Its main advantages are the flexibility of data structure, the ability for horizontal scaling, as well as support for indexing and searching based on document content.        ",
-        "image": "./assets/stacks/mongodb.svg",
-        "id": 10
-      },
-      {
-        "label": "Google Big Query",
-        "tabText": "Google Big Query is a cloud-based data analytics service that allows for fast and scalable analysis of large volumes of data using a SQL-like query language. The service enables real-time data analysis, extracting valuable insights for businesses, and provides easy access to data storage in the cloud.",
-        "image": "./assets/stacks/gbq.svg",
-        "id": 11
-      },
-      {
-        "label": "AWS Redshift",
-        "tabText": "AWS Redshift is a cloud-based service that provides high-performance data warehousing. It uses columnar data storage technology and can handle multi-terabyte data sets. Redshift can be used for analyzing large volumes of data, building reports, and business analytics.",
-        "image": "./assets/stacks/aws.svg",
-        "id": 12
-      },
-      {
-        "label": "Figma",
-        "tabText": "Figma is a design and prototyping tool that allows teams to collaborate on projects in real-time. It has a web-based interface and supports the creation of various UI elements such as page layouts, icons, and components that can be reused in other projects.",
-        "image": "./assets/stacks/figma.svg",
-        "id": 13
-      },
-      {
-        "label": "Photoshop",
-        "tabText": "Photoshop - a professional graphics editor developed by Adobe. It is widely used in design, advertising, publishing, and other fields where graphic image processing is required. Photoshop allows creating and editing images of various formats, including JPEG, PNG, GIF, PSD, and others.",
-        "image": "./assets/stacks/photoshop.svg",
-        "id": 14
-      },
-      {
-        "label": "Miro",
-        "tabText": "Miro (formerly known as RealtimeBoard) is an online collaboration tool that allows for creating diagrams, interface mockups, maps, charts, and other types of documents. With Miro, users can work in real-time, exchange comments and make annotations on documents, making it a useful tool for teamwork.",
-        "image": "./assets/stacks/miro.svg",
-        "id": 15
-      },
-      {
-        "label": "Responsible design",
-        "tabText": "Responsible design (or sustainable design) is an approach to design that considers the impact of design on the environment and society, and seeks to reduce the negative effects associated with the production, use, and disposal of a product. It includes many aspects, such as sustainability, accessibility, safety, ethics, and social responsibility.",
-        "id": 16
-      },
-      {
-        "label": "Version control",
-        "tabText": "Version control is the process of tracking changes to code or other documents and keeping each version under version control. This allows for managing changes, rolling back to previous versions, and collaborating on a project as a team, avoiding conflicts of changes.",
-        "id": 17
-      },
-      {
-        "label": "HTML5/CSS/JavaScript",
-        "tabText": "HTML5/CSS/JavaScript are the three main technologies of web development that allow creating interactive and responsive web pages and applications. HTML5 is used for content structuring, CSS for styling and layout, and JavaScript for creating dynamic effects and logic.",
-        "image": "./assets/stacks/HCJ.svg",
-        "id": 18
-      },
-      {
-        "label": "TypeScript",
-        "tabText": "TypeScript - an open-source programming language that is a superset of JavaScript, adding static typing to simplify the development of large and complex applications. Unlike JavaScript, TypeScript detects errors during the development stage, not just during code execution, increasing reliability and facilitating code maintenance.",
-        "image": "./assets/stacks/ts.svg",
-        "id": 19
-      },
-      {
-        "label": "React",
-        "tabText": "React - a JavaScript library used to build user interfaces (UI) for web applications. React is developed and maintained by Facebook and is one of the most popular libraries for creating interactive UI.",
-        "image": "./assets/stacks/react.svg",
-        "id": 20
-      },
-      {
-        "label": "Vue.js",
-        "tabText": "Vue is a progressive framework for building user interfaces. It allows for building reactive, modular, and scalable applications with its simple and flexible syntax. Vue has a strong ecosystem and integrates easily with other libraries and tools.",
-        "image": "./assets/stacks/vue.svg",
-        "id": 21
-      },
-      {
-        "label": "MobX",
-        "tabText": "MobX is a library for managing application state in React. It uses the observer pattern and updates components when data in the store changes. MobX provides a simple and intuitive API, and also supports asynchronous operations.",
-        "image": "./assets/stacks/mobx.svg",
-        "id": 22
-      },{
-        "label": "Effector",
-        "tabText": "Effector is a library for managing state in applications using a functional approach. It allows for easy and safe state management, handling of effects (asynchronous operations), and combining them in one place. Effector offers a declarative approach to working with effects and their combination with state, which simplifies the development of complex applications and makes testing easier.",
-        "image": "./assets/stacks/EFF.svg",
-        "id": 23
-      },
-      {
-        "label": "Redux",
-        "tabText": "Redux is a predictable state container for JavaScript apps. It helps manage and update application state in a consistent and reliable way.        ",
-        "image": "./assets/stacks/redux.svg",
-        "id": 24
-      },
-      {
-        "label": "Node.js",
-        "tabText": "Node.js is a JavaScript runtime environment based on Google's V8 engine that allows running code on the server-side.",
-        "image": "./assets/stacks/nodejs.svg",
-        "id": 25
-      },
-      {
-        "label": "Nest.js",
-        "tabText": "Nest.js is a framework for building scalable server-side applications on Node.js. It uses concepts from Angular to build applications with a high degree of abstraction and modularity.",
-        "image": "./assets/stacks/nestjs.svg",
-        "id": 26
-      },{
-        "label": "PostgreSQL",
-        "tabText": "PostgreSQL is a powerful and extensible open-source object-relational database management system that supports SQL and many other features such as indexes, triggers, stored procedures, and more.",
-        "image": "./assets/stacks/psql.svg",
-        "id": 27
-      },
-      {
-        "label": "Docker",
-        "tabText": "Docker - an open platform for developing, shipping, and running applications in containers. This allows isolating applications from the environment and simplifies their management on different servers.",
-        "image": "./assets/stacks/docker.svg",
-        "id": 28
-      },
-      {
-        "label": "Nginx",
-        "tabText": "Nginx is a popular web server and proxy server that can be used for serving static content files, processing reverse requests, load balancing, caching, protecting against attacks, and more. It has high performance and can be easily configured to work with various types of applications.        ",
-        "image": "./assets/stacks/nginx.svg",
-        "id": 29
-      },
-      {
-        "label": "MySQL",
-        "tabText": "MySQL is a popular open-source relational database management system (RDBMS). It is used to manage relational databases and perform various operations such as storing, querying, and updating data. MySQL is widely used in web applications due to its scalability, reliability, and ease of use.",
-        "image": "./assets/stacks/mysql.svg",
-        "id": 30
-      },
-      {
-        "label": "Weblow",
-        "tabText": "Webflow is a website builder and content management system that allows users to design, build, and launch responsive websites visually, without writing code. It offers a drag-and-drop interface, a range of pre-designed templates and components, and integrations with various third-party tools.",
-        "image": "./assets/stacks/weblow.svg",
-        "id": 31
-      },
-      {
-        "label": "Tilda",
-        "tabText": "Tilda is a cloud-based web service for creating websites without code. Tilda provides over 450 pre-designed blocks that can be combined and edited to create various types of websites.",
-        "image": "./assets/stacks/tilda.svg",
-        "id": 32
-      },
-      {
-        "label": "Albato",
-        "tabText": "Albato is a Russian service for quick integration of various IT systems, allowing you to create a single point of management for processes and tasks in the company. Albato enables automation of a variety of tasks, such as monitoring, data processing, analytics, and more, significantly streamlining operations and boosting business efficiency.",
-        "image": "./assets/stacks/albato.svg",
-        "id": 33
-      },
-      {
-        "label": "Carrotquest",
-        "tabText": "Carrotquest - an online service for collecting and analyzing data about website visitors in real time, allowing to optimize customer interaction.",
-        "image": "./assets/stacks/carrotquest.svg",
-        "id": 34
-      },
-      {
-        "label": "Unisender",
-        "tabText": "Unisender is an email and SMS marketing platform that allows businesses to create and manage email and SMS campaigns, automate their email and SMS workflows, and analyze the effectiveness of their campaigns through analytics and reporting.        ",
-        "image": "./assets/stacks/unisender.svg",
-        "id": 35
-      },
-      {
-        "label": "RabbitMQ",
-        "tabText": "RabbitMQ is a message broker used to organize message queues and exchange messages between application",
-        "image": "./assets/stacks/rabbitmq.svg",
-        "id": 36
-      },
-      {
-        "label": "Flutter",
-        "tabText": "Flutter is a framework for creating fast and beautiful mobile applications for Android and iOS using a single codebase in Dart language. Built-in widgets and effects help create user interfaces of any complexity and innovative applications.",
-        "image": "./assets/stacks/flutter.svg",
-        "id": 37
-      },
-      {
-        "label": "Dart",
-        "tabText": "Dart is a statically typed programming language with a fast JIT compiler and AOT compiler. It is used for creating web applications, mobile applications, server applications and other types of software, and is also the foundation of the Flutter framework for creating mobile applications.",
-        "id": 38
-      }
-    ],
-    "accordions": [
-      {
-        "title": "Development",
-        "text": "Creating tailored solutions for your business",
-        "tabs": [37, 38, 4, 25, 0, 1, 2, 3, 18]
-      },
-      {
-        "title": "Backend",
-        "text": "Providing business analysis to help your ideas shine",
-        "tabs": [25, 5, 6, 36, 7, 8, 9, 10]
-      },
-      {
-        "title": "Big Data",
-        "text": "Analyzing big data to make informed decisions",
-        "tabs": [11, 12]
-      },
-      {
-        "title": "UX/UI",
-        "text": "Crafting user-friendly interfaces for seamless experiences",
-        "tabs": [13, 4, 15, 16, 17, 14]
-      },
-      {
-        "title": "Web Code",
-        "text": "Programming web applications of any complexity",
-        "tabs": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ]
-      },
-      {
-        "title": "Web NoCode",
-        "text": "Rapidly building websites without writing code",
-        "tabs": [13, 32, 31, 33, 34, 35 ]
-      }
-    ]
-  }
-  
-
-
-
+  "uniqueTabs": [
+    {
+      "label": "TDD",
+      "tabText": "a software development methodology where tests are written before writing code. It allows faster and more reliable development of high-quality software.",
+      "id": 0,
+      "image": "./assets/icons/tdd.svg"
+    },
+    {
+      "label": "ML",
+      "tabText": "a subfield of artificial intelligence that allows computers to learn and make predictions based on data without explicit programming. It is used in many areas, such as speech and image recognition, medical diagnosis, financial analysis, and more. Python and R are often used for ML implementation, as well as libraries and frameworks such as TensorFlow and PyTorch. ",
+      "id": 1,
+      "image": "./assets/stacks/draven-ui.svg"
+    },
+    {
+      "label": "UI-kit",
+      "tabText": "UI-kit (User Interface Kit) - a set of tools for creating a user interface. It includes standard design elements such as buttons, input fields, menus, etc. that can be easily reused when creating various web or mobile applications. Currently, there are many UI kits available for different platforms, such as Android, iOS, React Native, etc.",
+      "id": 2
+    },
+    {
+      "label": "Atomic Design",
+      "tabText": "Atomic Design is a design methodology that breaks interfaces down into small, reusable components, helping to create consistent and efficient user interfaces, speed up development, and simplify project maintenance.",
+      "id": 3,
+      "image": "./assets/stacks/atomic.svg"
+    },
+    {
+      "label": "Backend Driven UI",
+      "tabText": "Backend Driven UI is an approach to UI development where business logic and data drive the structure and behavior of the user interface. Developers create APIs and backend services for data retrieval and processing, then use that data to dynamically generate the UI on the client-side.",
+      "id": 4
+    },
+    {
+      "label": "AWS",
+      "tabText": "AWS (Amazon Web Services) is a cloud platform provided by Amazon, which provides access to a wide range of cloud computing resources, such as storage, databases, computing power, and other services, allowing developers to build, deploy, and scale applications in the cloud.",
+      "image": "./assets/stacks/aws.svg",
+      "id": 5
+    },
+    {
+      "label": "Redis",
+      "tabText": "Redis is a fast and flexible data store that can be used for caching, session storage, task queues, and many other use cases.",
+      "image": "./assets/stacks/redis.svg",
+      "id": 6
+    },
+    {
+      "label": "Kafka",
+      "tabText": "Kafka is a distributed streaming data processing system. It provides high throughput, fault-tolerance, and delivery guarantees. It can be used for real-time data stream processing, data analytics, building streaming platforms, and other tasks.",
+      "image": "./assets/stacks/kafka.svg",
+      "id": 7
+    },
+    {
+      "label": "Kubernetes",
+      "tabText": "Kubernetes is an open-source software used to automate the deployment, scaling, and management of containerized applications. It is a solution that allows managing containers and services, deploying them in the required locations, and automatically scaling depending on the workload.",
+      "image": "./assets/stacks/kubernetes.svg",
+      "id": 8
+    },
+    {
+      "label": "SQL",
+      "tabText": "SQL (Structured Query Language) is a language used to manage relational databases. It is used for creating, modifying, and managing data in databases. SQL allows users to extract and manipulate data as well as manage the structures of tables and indexes.",
+      "image": "./assets/stacks/sql.svg",
+      "id": 9
+    },
+    {
+      "label": "MongoDB",
+      "tabText": "MongoDB is a document-oriented NoSQL database that allows storing and processing data in BSON (Binary JSON) format. Its main advantages are the flexibility of data structure, the ability for horizontal scaling, as well as support for indexing and searching based on document content.        ",
+      "image": "./assets/stacks/mongodb.svg",
+      "id": 10
+    },
+    {
+      "label": "Google Big Query",
+      "tabText": "Google Big Query is a cloud-based data analytics service that allows for fast and scalable analysis of large volumes of data using a SQL-like query language. The service enables real-time data analysis, extracting valuable insights for businesses, and provides easy access to data storage in the cloud.",
+      "image": "./assets/stacks/gbq.svg",
+      "id": 11
+    },
+    {
+      "label": "AWS Redshift",
+      "tabText": "AWS Redshift is a cloud-based service that provides high-performance data warehousing. It uses columnar data storage technology and can handle multi-terabyte data sets. Redshift can be used for analyzing large volumes of data, building reports, and business analytics.",
+      "image": "./assets/stacks/aws.svg",
+      "id": 12
+    },
+    {
+      "label": "Figma",
+      "tabText": "Figma is a design and prototyping tool that allows teams to collaborate on projects in real-time. It has a web-based interface and supports the creation of various UI elements such as page layouts, icons, and components that can be reused in other projects.",
+      "image": "./assets/stacks/figma.svg",
+      "id": 13
+    },
+    {
+      "label": "Photoshop",
+      "tabText": "Photoshop - a professional graphics editor developed by Adobe. It is widely used in design, advertising, publishing, and other fields where graphic image processing is required. Photoshop allows creating and editing images of various formats, including JPEG, PNG, GIF, PSD, and others.",
+      "image": "./assets/stacks/photoshop.svg",
+      "id": 14
+    },
+    {
+      "label": "Miro",
+      "tabText": "Miro (formerly known as RealtimeBoard) is an online collaboration tool that allows for creating diagrams, interface mockups, maps, charts, and other types of documents. With Miro, users can work in real-time, exchange comments and make annotations on documents, making it a useful tool for teamwork.",
+      "image": "./assets/stacks/miro.svg",
+      "id": 15
+    },
+    {
+      "label": "Responsible design",
+      "tabText": "Responsible design (or sustainable design) is an approach to design that considers the impact of design on the environment and society, and seeks to reduce the negative effects associated with the production, use, and disposal of a product. It includes many aspects, such as sustainability, accessibility, safety, ethics, and social responsibility.",
+      "id": 16
+    },
+    {
+      "label": "Version control",
+      "tabText": "Version control is the process of tracking changes to code or other documents and keeping each version under version control. This allows for managing changes, rolling back to previous versions, and collaborating on a project as a team, avoiding conflicts of changes.",
+      "id": 17
+    },
+    {
+      "label": "HTML5/CSS/JavaScript",
+      "tabText": "HTML5/CSS/JavaScript are the three main technologies of web development that allow creating interactive and responsive web pages and applications. HTML5 is used for content structuring, CSS for styling and layout, and JavaScript for creating dynamic effects and logic.",
+      "image": "./assets/stacks/HCJ.svg",
+      "id": 18
+    },
+    {
+      "label": "TypeScript",
+      "tabText": "TypeScript - an open-source programming language that is a superset of JavaScript, adding static typing to simplify the development of large and complex applications. Unlike JavaScript, TypeScript detects errors during the development stage, not just during code execution, increasing reliability and facilitating code maintenance.",
+      "image": "./assets/stacks/ts.svg",
+      "id": 19
+    },
+    {
+      "label": "React",
+      "tabText": "React - a JavaScript library used to build user interfaces (UI) for web applications. React is developed and maintained by Facebook and is one of the most popular libraries for creating interactive UI.",
+      "image": "./assets/stacks/react.svg",
+      "id": 20
+    },
+    {
+      "label": "Vue.js",
+      "tabText": "Vue is a progressive framework for building user interfaces. It allows for building reactive, modular, and scalable applications with its simple and flexible syntax. Vue has a strong ecosystem and integrates easily with other libraries and tools.",
+      "image": "./assets/stacks/vue.svg",
+      "id": 21
+    },
+    {
+      "label": "MobX",
+      "tabText": "MobX is a library for managing application state in React. It uses the observer pattern and updates components when data in the store changes. MobX provides a simple and intuitive API, and also supports asynchronous operations.",
+      "image": "./assets/stacks/mobx.svg",
+      "id": 22
+    },
+    {
+      "label": "Effector",
+      "tabText": "Effector is a library for managing state in applications using a functional approach. It allows for easy and safe state management, handling of effects (asynchronous operations), and combining them in one place. Effector offers a declarative approach to working with effects and their combination with state, which simplifies the development of complex applications and makes testing easier.",
+      "image": "./assets/stacks/EFF.svg",
+      "id": 23
+    },
+    {
+      "label": "Redux",
+      "tabText": "Redux is a predictable state container for JavaScript apps. It helps manage and update application state in a consistent and reliable way.        ",
+      "image": "./assets/stacks/redux.svg",
+      "id": 24
+    },
+    {
+      "label": "Node.js",
+      "tabText": "Node.js is a JavaScript runtime environment based on Google's V8 engine that allows running code on the server-side.",
+      "image": "./assets/stacks/nodejs.svg",
+      "id": 25
+    },
+    {
+      "label": "Nest.js",
+      "tabText": "Nest.js is a framework for building scalable server-side applications on Node.js. It uses concepts from Angular to build applications with a high degree of abstraction and modularity.",
+      "image": "./assets/stacks/nestjs.svg",
+      "id": 26
+    },
+    {
+      "label": "PostgreSQL",
+      "tabText": "PostgreSQL is a powerful and extensible open-source object-relational database management system that supports SQL and many other features such as indexes, triggers, stored procedures, and more.",
+      "image": "./assets/stacks/psql.svg",
+      "id": 27
+    },
+    {
+      "label": "Docker",
+      "tabText": "Docker - an open platform for developing, shipping, and running applications in containers. This allows isolating applications from the environment and simplifies their management on different servers.",
+      "image": "./assets/stacks/docker.svg",
+      "id": 28
+    },
+    {
+      "label": "Nginx",
+      "tabText": "Nginx is a popular web server and proxy server that can be used for serving static content files, processing reverse requests, load balancing, caching, protecting against attacks, and more. It has high performance and can be easily configured to work with various types of applications.        ",
+      "image": "./assets/stacks/nginx.svg",
+      "id": 29
+    },
+    {
+      "label": "MySQL",
+      "tabText": "MySQL is a popular open-source relational database management system (RDBMS). It is used to manage relational databases and perform various operations such as storing, querying, and updating data. MySQL is widely used in web applications due to its scalability, reliability, and ease of use.",
+      "image": "./assets/stacks/mysql.svg",
+      "id": 30
+    },
+    {
+      "label": "Weblow",
+      "tabText": "Webflow is a website builder and content management system that allows users to design, build, and launch responsive websites visually, without writing code. It offers a drag-and-drop interface, a range of pre-designed templates and components, and integrations with various third-party tools.",
+      "image": "./assets/stacks/weblow.svg",
+      "id": 31
+    },
+    {
+      "label": "Tilda",
+      "tabText": "Tilda is a cloud-based web service for creating websites without code. Tilda provides over 450 pre-designed blocks that can be combined and edited to create various types of websites.",
+      "image": "./assets/stacks/tilda.svg",
+      "id": 32
+    },
+    {
+      "label": "Albato",
+      "tabText": "Albato is a Russian service for quick integration of various IT systems, allowing you to create a single point of management for processes and tasks in the company. Albato enables automation of a variety of tasks, such as monitoring, data processing, analytics, and more, significantly streamlining operations and boosting business efficiency.",
+      "image": "./assets/stacks/albato.svg",
+      "id": 33
+    },
+    {
+      "label": "Carrotquest",
+      "tabText": "Carrotquest - an online service for collecting and analyzing data about website visitors in real time, allowing to optimize customer interaction.",
+      "image": "./assets/stacks/carrotquest.svg",
+      "id": 34
+    },
+    {
+      "label": "Unisender",
+      "tabText": "Unisender is an email and SMS marketing platform that allows businesses to create and manage email and SMS campaigns, automate their email and SMS workflows, and analyze the effectiveness of their campaigns through analytics and reporting.        ",
+      "image": "./assets/stacks/unisender.svg",
+      "id": 35
+    },
+    {
+      "label": "RabbitMQ",
+      "tabText": "RabbitMQ is a message broker used to organize message queues and exchange messages between application",
+      "image": "./assets/stacks/rabbitmq.svg",
+      "id": 36
+    },
+    {
+      "label": "Flutter",
+      "tabText": "Flutter is a framework for creating fast and beautiful mobile applications for Android and iOS using a single codebase in Dart language. Built-in widgets and effects help create user interfaces of any complexity and innovative applications.",
+      "image": "./assets/stacks/flutter.svg",
+      "id": 37
+    },
+    {
+      "label": "Dart",
+      "tabText": "Dart is a statically typed programming language with a fast JIT compiler and AOT compiler. It is used for creating web applications, mobile applications, server applications and other types of software, and is also the foundation of the Flutter framework for creating mobile applications.",
+      "image": "./assets/icons/dart.png",
+      "id": 38
+    }
+  ],
+  "accordions": [
+    {
+      "title": "Development",
+      "text": "Creating tailored solutions for your business",
+      "tabs": [37, 38, 25, 0, 1, 2, 4]
+    },
+    {
+      "title": "Backend",
+      "text": "Providing business analysis to help your ideas shine",
+      "tabs": [25, 5, 6, 36, 7, 8, 9, 10]
+    },
+    {
+      "title": "Big Data",
+      "text": "Analyzing big data to make informed decisions",
+      "tabs": [11, 12]
+    },
+    {
+      "title": "UX/UI",
+      "text": "Crafting user-friendly interfaces for seamless experiences",
+      "tabs": [13, 4, 15, 16, 17, 14]
+    },
+    {
+      "title": "Web Code",
+      "text": "Programming web applications of any complexity",
+      "tabs": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+    },
+    {
+      "title": "Web NoCode",
+      "text": "Rapidly building websites without writing code",
+      "tabs": [13, 32, 31, 33, 34, 35]
+    }
+  ]
+}

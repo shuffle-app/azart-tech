@@ -5,8 +5,15 @@ import { useForm } from 'react-hook-form';
 import Image from 'next/image';
 import fromImg from '../../../public/assets/images/from-img.svg';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 const Form = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const {
     register,
     handleSubmit,
@@ -20,6 +27,8 @@ const Form = () => {
 
     router.push('/thank-you');
   };
+
+  if (!mounted) return null;
 
   return (
     <section className={`${s.form_block}`}>

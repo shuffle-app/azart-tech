@@ -222,6 +222,15 @@
   cursor: pointer;
 }
 
+.social a {
+  transition: 0.3s;
+  color: #fff;
+}
+
+.social a:hover {
+  color: #cbfa11 !important;
+}
+
 .back_main {
   background: #cbfa11;
   border-radius: 10px;

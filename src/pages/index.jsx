@@ -22,6 +22,8 @@ import Image from 'next/image';
 import { fetchProjects } from '@/api/queries/fetchProjects';
 import { fetchTeamMembers } from '@/api/queries/fetchTeamMembers';
 
+import accordionData from '../../public/accordionData.json';
+
 import linesPic from '../../public/assets/images/3d-lines.png';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -66,8 +68,6 @@ export default function Home({ projects, teamMembers }) {
       <Head>
         <title>Azart tech</title>
         <meta name="description" content="Azart Tech" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main_container">
         <div>
@@ -83,7 +83,7 @@ export default function Home({ projects, teamMembers }) {
         <div className="container">
           <Advantages />
           <Product />
-          <Stacks />
+          <Stacks stacks={accordionData} />
           <Messenger />
         </div>
         <Projects projects={projects} />

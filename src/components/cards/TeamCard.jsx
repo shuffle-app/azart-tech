@@ -1,11 +1,11 @@
-import s from "@/styles/main/TeamCard.module.css";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import s from '@/styles/main/TeamCard.module.css';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const truncateText = (text, maxLength = 4) => {
-  const words = text.split(" ");
+  const words = text.split(' ');
   return words.length > maxLength
-    ? words.slice(0, maxLength).join(" ") + "..."
+    ? words.slice(0, maxLength).join(' ') + '...'
     : text;
 };
 
