@@ -33,36 +33,38 @@ const Analytics = ({ cases }) => {
           <div className={s.glow1} />
         </div>
       </div>
-      <div className={s.also}>
-        <h4>Also</h4>
-        <div className={s.accordions}>
-          {data.map((item, index) => {
-            const isActive = index === activeIndex;
-            const arrowIcon = isActive
-              ? './assets/icons/arr-minus.svg'
-              : './assets/icons/arr-plus.svg';
+      {(cases.also1 || cases.also2) && (
+        <div className={s.also}>
+          <h4>Also</h4>
+          <div className={s.accordions}>
+            {data.map((item, index) => {
+              const isActive = index === activeIndex;
+              const arrowIcon = isActive
+                ? './assets/icons/arr-minus.svg'
+                : './assets/icons/arr-plus.svg';
 
-            return (
-              <div
-                className={isActive ? s.active_accordion : s.accordion}
-                key={index}
-              >
-                <div className={s.accordion_header}>
-                  <p className={isActive ? s.active_text : s.text}>
-                    {item.content}
-                  </p>
-                  <button
-                    onClick={() => setActiveIndex(isActive ? null : index)}
-                  >
-                    <img src={arrowIcon} alt="" />
-                  </button>
+              return (
+                <div
+                  className={isActive ? s.active_accordion : s.accordion}
+                  key={index}
+                >
+                  <div className={s.accordion_header}>
+                    <p className={isActive ? s.active_text : s.text}>
+                      {item.content}
+                    </p>
+                    <button
+                      onClick={() => setActiveIndex(isActive ? null : index)}
+                    >
+                      <img src={arrowIcon} alt="" />
+                    </button>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+          <p className={s.dashed_p2}>{cases.alsoResult}</p>
         </div>
-        <p className={s.dashed_p2}>{cases.alsoResult}</p>
-      </div>
+      )}
     </section>
   );
 };

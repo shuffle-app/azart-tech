@@ -31,7 +31,9 @@ const Design = ({ cases }) => {
           )}
         </div>
       </div>
-      <p className={s.dashed_text}>{cases.designResult}</p>
+      {cases.designResult && (
+        <p className={s.dashed_text}>{cases.designResult}</p>
+      )}
     </section>
   );
 };

@@ -26,7 +26,7 @@ const Stack = ({ cases }) => {
           ))}
         </div>
 
-        <ImageSlider cases={cases} />
+        {cases.imageSlider && <ImageSlider cases={cases} />}
         <div></div>
       </div>
     </section>
