@@ -17,22 +17,30 @@ const MobileHeader = () => {
         {menu ? (
           <ul>
             <li>
-              <a href="#">Web development</a>
+              <a href="#webdev" onClick={() => setMenu(false)}>
+                Web development
+              </a>
             </li>
             <li>
-              <a href="#">All services</a>
+              <a href="#services" onClick={() => setMenu(false)}>
+                All services
+              </a>
             </li>
             <li>
-              <a href="#">Stack</a>
+              <a href="#stacks" onClick={() => setMenu(false)}>
+                Stack
+              </a>
             </li>
             <li>
-              <Link href="/case">Cases</Link>
+              <Link href="/cases">Cases</Link>
             </li>
             <li>
               <Link href="/team">Team</Link>
             </li>
             <li>
-              <a href="#">Scheme of work</a>
+              <a href="#" onClick={() => setMenu(false)}>
+                Scheme of work
+              </a>
             </li>
             <li>
               <a href="#">Free zoom</a>

@@ -19,16 +19,16 @@ const Header = () => {
           {menu ? (
             <ul>
               <li>
-                <a href="#">Web development</a>
+                <a href="#webdev">Web development</a>
               </li>
               <li>
-                <a href="#">All services</a>
+                <a href="#services">All services</a>
               </li>
               <li>
-                <a href="#">Stack</a>
+                <a href="#stacks">Stack</a>
               </li>
               <li>
-                <Link href="/case">Cases</Link>
+                <Link href="/cases">Cases</Link>
               </li>
               <li>
                 <Link href="/team">Team</Link>

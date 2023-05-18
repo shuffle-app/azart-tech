@@ -57,7 +57,7 @@ const Stacks = ({ stacks }) => {
   }));
 
   return (
-    <section className={`${s.stacks_block}`}>
+    <section className={`${s.stacks_block}`} id="stacks">
       <div className={s.mob}>
         <h1>Stacks</h1>
         {/* <Image src={stacksPic} alt="" /> */}

@@ -158,3 +158,10 @@ button {
 .active-btn {
   cursor: pointer;
 }
+
+/**
+ * Smooth scrolling on the whole document
+ */
+html {
+  scroll-behavior: smooth;
+}

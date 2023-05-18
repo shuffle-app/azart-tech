@@ -19,13 +19,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 0 0 15px;
-    margin: 0;
-  }
-}
-
 .team_section {
   position: relative;
   margin-top: 150px;
@@ -285,5 +278,18 @@
     font-size: 34px;
     line-height: 37px;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0 0 15px;
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 34px;
+    line-height: 37px;
+    text-align: center;
   }
 }

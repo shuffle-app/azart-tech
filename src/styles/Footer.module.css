@@ -103,4 +103,17 @@
   .social div + div {
     margin-top: 0;
   }
+
+  .footer_center {
+    order: 1;
+  }
+
+  .footer_contacts {
+    order: 2;
+    text-align: center;
+  }
+
+  .social {
+    order: 3;
+  }
 }

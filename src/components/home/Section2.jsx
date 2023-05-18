@@ -1,21 +1,13 @@
 import s from '@/styles/main/Section2.module.css';
+import { useWindowSize } from '@/utils/hooks/useWindowSize';
 import { useEffect, useState } from 'react';
 
 const Card = ({ card }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const [isMobile, setIsMobile] = useState(false);
+  const { width } = useWindowSize();
 
-  // Listen to screen size at the start and update isMobile state
-  useEffect(() => {
-    const checkMobile = () =>
-      setIsMobile(window.matchMedia('(max-width: 768px)').matches);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-
-    // Cleanup function
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  const isMobile = width < 768;
 
   return (
     <div
@@ -28,6 +20,19 @@ const Card = ({ card }) => {
       <div
         className={`${s.card_border} ${isHovered ? s.card_border_blurred : ''}`}
       >
+        {isMobile && (
+          <>
+            {isHovered ? (
+              <button onClick={() => setIsHovered(false)}>
+                <img src="./assets/icons/arr-minus.svg" alt="" />
+              </button>
+            ) : (
+              <button onClick={() => setIsHovered(true)}>
+                <img src="./assets/icons/arr-plus.svg" alt="" />
+              </button>
+            )}
+          </>
+        )}
         <div
           className={`${s.card_product} ${
             isHovered ? s.card_product_blurred : ''
@@ -35,19 +40,10 @@ const Card = ({ card }) => {
         >
           <div />
           <img className={s.img} src={card.image} alt="" />
-          {isMobile && (
-            <button onClick={() => setIsHovered(true)}>
-              <img src="./assets/icons/arr-plus.svg" alt="" />
-            </button>
-          )}
         </div>
         {isHovered && (
           <div className={s.card_product_text}>
-            <div className={s.exit}>
-              <button onClick={() => setIsHovered(false)}>
-                <img src="./assets/icons/arr-minus.svg" alt="" />
-              </button>
-            </div>
+            <div className={s.exit}></div>
             <p>{card.text}</p>
           </div>
         )}

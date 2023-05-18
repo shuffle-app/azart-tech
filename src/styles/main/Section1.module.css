@@ -176,10 +176,19 @@
     display: initial;
   }
 
+  .first_block {
+    padding-right: 15px;
+  }
+
+  .text .hero span:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
   .text .hero span {
     font-size: 34px;
     line-height: 37px;
-    padding-right: 300px;
     white-space: nowrap;
   }
 
