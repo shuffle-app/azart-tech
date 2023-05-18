@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Projects({ projects }) {
   return (
     <section className={`${s.projects_section}`}>
-      <h1 className="container">Resent projects</h1>
+      <h1 className="container">Recent projects</h1>
       {/* Карточки проектов */}
       <div className={`${s.slide} ${s.container}`}>
         {projects && projects.length > 0 ? (

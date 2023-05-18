@@ -25,6 +25,7 @@ import { fetchTeamMembers } from '@/api/queries/fetchTeamMembers';
 import accordionData from '../../public/accordionData.json';
 
 import linesPic from '../../public/assets/images/3d-lines.png';
+import { Background3dLines } from '@/components/common/background/Background3dLines';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -71,7 +72,9 @@ export default function Home({ projects, teamMembers }) {
       </Head>
       <main className="main_container">
         <div>
-          <Image className="lines" src={linesPic} alt="Hero background" />
+          {/* <Image className="lines" src={linesPic} alt="Hero background" /> */}
+          <div className="lines" />
+          {/* <Background3dLines className="lines" /> */}
           <Header />
           <Section1 />
         </div>

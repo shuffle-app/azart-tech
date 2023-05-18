@@ -49,8 +49,10 @@ const Section1 = () => {
               3000,
               'In our state for your tasks -\nbranding and digital marketing',
               3000,
-              'inventing. developing. branding.\npromoting. anything',
+              'The stack of technologies allows us to create websites\nfrom landing pages to marketplaces.',
               3000,
+              'inventing. developing. branding.\npromoting. anything',
+              6000,
             ]}
             speed={70}
             repeat={Infinity}

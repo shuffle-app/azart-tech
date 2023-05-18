@@ -1,7 +1,12 @@
 import s from '@/styles/Footer.module.css';
+import { useMounted } from '@/utils/hooks/useMounted';
 import Link from 'next/link';
 
 const Footer = () => {
+  const mounted = useMounted();
+
+  if (!mounted) return null;
+
   return (
     <footer className={s.footer}>
       <div className={`container ${s.footer_block}`}>

@@ -1,7 +1,15 @@
 import s from '@/styles/main/Projects.module.css';
+import { useMounted } from '@/utils/hooks/useMounted';
 import Link from 'next/link';
+import { format } from 'date-fns';
+
+const FormattedDate = ({ date }) => {
+  return <p>{format(new Date(date), 'd MMM. yyyy').toLowerCase()}</p>;
+};
 
 const CaseCard = ({ project }) => {
+  const mounted = useMounted();
+
   return (
     <div className={s.card}>
       <div className={s.card_header}>
@@ -21,7 +29,7 @@ const CaseCard = ({ project }) => {
         <img src={project.coverImage.url} alt="Project preview" />
         <div className={s.detailis}>
           <Link href={`/cases/${project.slug}`}>more details</Link>
-          <p>{new Date(project.createdAt).toLocaleDateString()}</p>
+          {mounted && <FormattedDate date={project.createdAt} />}
         </div>
       </div>
     </div>

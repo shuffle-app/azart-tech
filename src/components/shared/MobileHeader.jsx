@@ -2,9 +2,12 @@ import s from '@/styles/MobileHeader.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Cross as Hamburger } from 'hamburger-react';
+import { ContactPopup } from '../common/ContactPopup/ContactPopup';
+import { createPortal } from 'react-dom';
 
 const MobileHeader = () => {
   const [menu, setMenu] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   return (
     <header className={`container ${menu ? s.active_header : s.header}`}>
@@ -43,8 +46,23 @@ const MobileHeader = () => {
               </a>
             </li>
             <li>
-              <a href="#">Free zoom</a>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+
+                  setShowForm(true);
+                }}
+              >
+                Free zoom
+              </a>
             </li>
+
+            {showForm &&
+              createPortal(
+                <ContactPopup handleBackClick={() => setShowForm(false)} />,
+                document.body
+              )}
           </ul>
         ) : (
           ''

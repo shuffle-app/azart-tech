@@ -6,13 +6,10 @@ import Image from 'next/image';
 import fromImg from '../../../public/assets/images/from-img.svg';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import { useMounted } from '@/utils/hooks/useMounted';
 
 const Form = () => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useMounted();
 
   const {
     register,

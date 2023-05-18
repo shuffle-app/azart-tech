@@ -3,9 +3,12 @@ import s from '@/styles/Header.module.css';
 import { useState } from 'react';
 import MobileHeader from './MobileHeader';
 import Link from 'next/link';
+import { ContactPopup } from '../common/ContactPopup/ContactPopup';
+import { createPortal } from 'react-dom';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   return (
     <>
@@ -37,8 +40,23 @@ const Header = () => {
                 <a href="#">Scheme of work</a>
               </li>
               <li>
-                <a href="#">Free zoom</a>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+
+                    setShowForm(true);
+                  }}
+                >
+                  Free zoom
+                </a>
               </li>
+
+              {showForm &&
+                createPortal(
+                  <ContactPopup handleBackClick={() => setShowForm(false)} />,
+                  document.body
+                )}
             </ul>
           ) : (
             ''

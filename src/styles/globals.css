@@ -41,8 +41,21 @@
   position: absolute;
   top: 0;
   z-index: 1;
+
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+
   width: 100%;
   height: 100%;
+  background: url(/assets/images/3d-lines.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .lines {
+    background-position-x: -300px;
+  }
 }
 
 .lines2 {
