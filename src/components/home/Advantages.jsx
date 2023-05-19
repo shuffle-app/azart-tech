@@ -17,7 +17,7 @@ const Advantages = () => {
           <div className={s.bg2} />
           <p className={s.number}>02</p>
           <div>
-            <p className={s.title}>Top business</p>
+            <p className={s.title}>top business</p>
             <p className={s.text}>
               analysis due to the fact that we have our own business projects
             </p>
@@ -27,7 +27,7 @@ const Advantages = () => {
           <div className={s.bg3} />
           <p className={s.number}>03</p>
           <div>
-            <p className={s.title}>Great digital - marketing</p>
+            <p className={s.title}>great digital-marketing</p>
             <p className={s.text}>
               due to our expertise in business and business analysis
             </p>
@@ -37,7 +37,7 @@ const Advantages = () => {
           <div className={s.bg2} />
           <p className={s.number}>04</p>
           <div>
-            <p className={s.title}>Well-built</p>
+            <p className={s.title}>well-built</p>
             <p className={s.text}>onboarding process</p>
           </div>
         </div>
@@ -46,8 +46,8 @@ const Advantages = () => {
             <div className={s.bg3} />
             <p className={s.number}>05</p>
             <div>
-              <p className={s.title}>more coming soon</p>
-              <p className={s.text}>more coming soon</p>
+              <p className={s.title}>100+ cases</p>
+              <p className={s.text}>worked out, developed, participated in 100+ various projects</p>
             </div>
           </div>
         </div>
@@ -56,8 +56,8 @@ const Advantages = () => {
             <div className={s.bg1} />
             <p className={s.number}>06</p>
             <div>
-              <p className={s.title}>more coming soon</p>
-              <p className={s.text}>more coming soon</p>
+              <p className={s.title}>11+ years</p>
+              <p className={s.text}>11+ years of practice and experience</p>
             </div>
           </div>
         </div>
