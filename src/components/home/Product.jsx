@@ -15,7 +15,7 @@ const Product = () => {
   const productsData = [
     {
       title: 'analytics',
-      desc: 'Powerful analytical systems',
+      desc: 'powerful analytical systems',
       cards: [
         {
           cardTitle: 'business analysis',
@@ -31,7 +31,7 @@ const Product = () => {
         {
           cardTitle: 'analytics + monitoring systems',
           cardDesc:
-            'We use advanced system monitoring systems so that your product does not get stuck at the development stages, but enters the market on time, without hints of bugs and failures.',
+            'we use advanced system monitoring systems so that your product does not get stuck at the development stages, but enters the market on time, without hints of bugs and failures.',
         },
         {
           cardTitle: 'bigdata + machine learning',
@@ -43,7 +43,7 @@ const Product = () => {
 
     {
       title: 'app and web',
-      desc: 'Ideal approaches to minimal models developing',
+      desc: 'ideal approaches to minimal models developing',
       cards: [
         {
           cardTitle:
@@ -64,19 +64,19 @@ const Product = () => {
         },
         {
           cardTitle: 'code mvp',
-          cardDesc: '',
+          cardDesc: 'we create a high-quality model in code that takes into account passed market&focus groups tests and and includes only the necessary functions. You spend money on a specific product, not for testing hypotheses with code',
         },
       ],
     },
 
     {
       title: 'digital',
-      desc: 'Maximum expertise in the digital environment',
+      desc: 'maximum expertise in the digital environment',
       cards: [
         {
           cardTitle: 'digital instruments',
           cardDesc:
-            '- together with you, we are creating a product, and who but we, as part of our marketers, clearly know which digital marketing tools to use and how to achieve target KPIs',
+            'together with you, we are creating a product, and who but we, as part of our marketers, clearly know which digital marketing tools to use and how to achieve target KPIs',
         },
         {
           cardTitle: 'digital forecast modeling',
@@ -86,14 +86,14 @@ const Product = () => {
         {
           cardTitle: '3 months guarantee',
           cardDesc:
-            'Providing statistic analysis and digital support after product launch. We provide development advising, regardless of the final goals',
+            'providing statistic analysis and digital support after product launch. We provide development advising, regardless of the final goals',
         },
       ],
     },
 
     {
       title: 'product packaging',
-      desc: '',
+      desc: 'idea development & unique positioning',
       cards: [
         {
           cardTitle:
@@ -103,7 +103,7 @@ const Product = () => {
         },
         {
           cardTitle: 'production',
-          cardDesc: 'Creating of professional promo-video',
+          cardDesc: 'editing, graphics, motion, concept and media plans, scripts... Ex: professional promo-video creating',
         },
         {
           cardTitle: 'ideas expert audit',
@@ -112,7 +112,7 @@ const Product = () => {
         },
         {
           cardTitle: 'unique ui items',
-          cardDesc: 'Parts of an interface – part of branding system',
+          cardDesc: 'parts of an interface – part of branding system',
         },
       ],
     },
