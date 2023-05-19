@@ -8,7 +8,7 @@ import { submitForm } from '@/api/utils/submitForm';
 import { BackgroundBlur } from '../common/background/BackgroundBlur';
 
 const Quiz = ({ handleExit }) => {
-  const [step, setStep] = useState(7);
+  const [step, setStep] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [answers, setAnswers] = useState({
     step2: '',
