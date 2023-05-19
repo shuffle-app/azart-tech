@@ -12,7 +12,7 @@ export async function getStaticProps() {
         excerpt
         niche
         tags
-        createdAt
+        date
         category
         slug
         coverImage {
@@ -150,7 +150,7 @@ const CasePage = ({ projects }) => {
                           more details
                         </Link>
                         <p>
-                          {new Date(project.createdAt).toLocaleDateString()}
+                          {new Date(project.date).toLocaleDateString('en-GB')}
                         </p>
                       </div>
                     </div>
@@ -187,7 +187,7 @@ const CasePage = ({ projects }) => {
                           more details
                         </Link>
                         <p>
-                          {new Date(project.createdAt).toLocaleDateString()}
+                          {new Date(project.date).toLocaleDateString('en-GB')}
                         </p>
                       </div>
                     </div>
@@ -224,7 +224,7 @@ const CasePage = ({ projects }) => {
                           more details
                         </Link>
                         <p>
-                          {new Date(project.createdAt).toLocaleDateString()}
+                          {new Date(project.date).toLocaleDateString('en-GB')}
                         </p>
                       </div>
                     </div>
