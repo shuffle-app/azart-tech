@@ -82,6 +82,12 @@
   line-height: 21px;
   color: #21212b;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.order_btn:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
 }
 
 .free {

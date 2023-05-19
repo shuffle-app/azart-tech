@@ -51,6 +51,11 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.card:hover {
+  border: #cbfa11 1px solid;
 }
 
 .card_header {

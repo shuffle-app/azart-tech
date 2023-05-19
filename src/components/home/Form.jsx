@@ -76,7 +76,7 @@ const Form = () => {
           </p>
         </div>
 
-        <button type="submit" className="active-btn">
+        <button type="submit" className={`${s.submit_btn} active-btn`}>
           Send
         </button>
 

@@ -45,11 +45,11 @@ export default function Home({ projects, teamMembers }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const alreadyShown = window.localStorage.getItem('quiz') === 'true';
+    // const alreadyShown = window.localStorage.getItem('quiz') === 'true';
 
-    if (alreadyShown) {
-      return;
-    }
+    // if (alreadyShown) {
+    //   return;
+    // }
 
     const timer = setTimeout(() => {
       if (window.localStorage.getItem('showHeroForm') === 'true') {
@@ -59,7 +59,7 @@ export default function Home({ projects, teamMembers }) {
       window.localStorage.setItem('quiz', 'true');
 
       setVisible(true);
-    }, 45000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -104,7 +104,7 @@ export default function Home({ projects, teamMembers }) {
           <Section1 />
         </div>
 
-        {visible && <Quiz />}
+        {visible && <Quiz handleExit={() => setVisible(false)} />}
 
         <Section2 />
         <Websites />

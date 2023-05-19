@@ -164,3 +164,11 @@
     display: none;
   }
 }
+
+.submit_btn {
+  transition: 0.3s ease-in-out;
+}
+
+.submit_btn:hover {
+  transform: translateY(-10px);
+}
