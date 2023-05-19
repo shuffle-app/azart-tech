@@ -1,81 +1,216 @@
 .block_04 {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .block_04 p {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #21212B;
-    background: #CBFA11;
-    border-radius: 5px;
-    padding: 10px 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #21212b;
+  background: #cbfa11;
+  border-radius: 5px;
+  padding: 10px 12px;
 }
 
 .block_04 h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
 }
 
 .digital_block {
-    display: grid;
+  /* display: grid;
     gap: 15px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
 }
 
 .digital_content {
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    margin-top: 40px;
-    position: relative;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  margin-top: 40px;
+  position: relative;
 }
 
-.digital_content p {
-    font-family: 'Chakra Petch';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    padding: 15px;
+.purpose {
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  padding: 15px;
+  color: #ffffff;
+
+  font-family: Chakra Petch;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 528px;
 }
 
-.digital_content div {
-    padding: 10px;
-    background: rgb(84, 93, 52);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    position: absolute;
-    top: -35px;
-    left: 50%;
-    transform: translateX(-50%);
+.purpose_label {
+  color: #cbfa11;
 }
 
-.dashed_p {
-    border: 1px dashed #CBFA11;
-    border-radius: 10px;
-    padding: 15px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFf;
-    margin-top: 15px;
+.digital_block {
+  margin-top: 60px;
+}
+
+.digital_block_heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.digital_heading {
+  font-family: Chakra Petch;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cbfa11;
+  max-width: 316px;
+}
+
+.digital_content_items {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 @media (max-width: 768px) {
-    .digital_block {
-        grid-template-columns: 1fr;
-        row-gap: 10px;
-    }
+  .digital_content {
+    min-width: 100%;
+  }
+}
+
+.digital_content p {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.digital_content div {
+  padding: 10px;
+  background: rgb(84, 93, 52);
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dashed_p {
+  border: 1px dashed #cbfa11;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.digital_content_text {
+  margin-top: 5px;
+}
+
+.digital_content_stats_desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.digital_content_stats_mobile {
+  display: none;
+}
+
+.digital_content_stats {
+  white-space: nowrap;
+  font-family: Chakra Petch;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  min-width: 260px;
+}
+
+.digital_content_stat + .digital_content_stat {
+  margin-top: 16px;
+}
+
+.digital_content_stats_second {
+  background: #7140fd;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .digital_content_stats_desktop {
+    display: none;
+  }
+
+  .digital_content_stats_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 32px;
+  }
+
+  .digital_content_stat + .digital_content_stat {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .digital_block_heading {
+    flex-direction: column;
+  }
+
+  .digital_heading {
+    max-width: 100%;
+  }
+
+  .purpose {
+    margin-top: 15px;
+    max-width: 100%;
+  }
+
+  .digital_block {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
 }

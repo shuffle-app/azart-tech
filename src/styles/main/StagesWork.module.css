@@ -1,8 +1,8 @@
 .container {
-	max-width: 1240px; /* Максимальная ширина контейнера */
-	margin: 0 auto; /* Выравнивание контейнера по центру */
-	width: 100%; /* Ширина контейнера по умолчанию */
-	position: relative;
+  max-width: 1240px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Выравнивание контейнера по центру */
+  width: 100%; /* Ширина контейнера по умолчанию */
+  position: relative;
   margin-bottom: 100px;
 }
 
@@ -10,37 +10,37 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 100px;
 }
 
 @media (max-width: 1440px) {
-	.container {
-	  padding: 0 100px; /* Отступы для контейнера на экранах меньше 1440px */
-	  max-width: 1440px;
-	}
+  .container {
+    padding: 0 100px; /* Отступы для контейнера на экранах меньше 1440px */
+    max-width: 1440px;
+  }
 }
 
 @media (max-width: 1024px) {
-	.container {
-		padding: 0 40px; /* Отступы для контейнера на экранах меньше 1440px */
-	}
+  .container {
+    padding: 0 40px; /* Отступы для контейнера на экранах меньше 1440px */
+  }
 }
 
 @media (max-width: 768px) {
-	.container {
-		padding: 0 15px;
-	}
+  .container {
+    padding: 0 15px;
+  }
 }
 
 .slider {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 20px;
-    height: 270px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  height: 270px;
+}
+
 .item {
   display: flex;
   flex-direction: column;
@@ -55,7 +55,11 @@
 .inactive {
   width: 20px;
   height: 196px;
-  background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
   border: 1px solid #808080;
   backdrop-filter: blur(15px);
   border-radius: 7px;
@@ -64,7 +68,11 @@
 .active {
   width: 300px;
   height: 196px;
-  background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
   border: 1px solid #808080;
   backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -74,11 +82,14 @@
   width: 70%;
 }
 
-
 .active-center {
   width: 405px;
   height: 219px;
-  background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
   border: 1px solid #808080;
   backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -91,9 +102,9 @@
   font-size: 10px;
   line-height: 110%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 6px;
-  background: #7140FD;
+  background: #7140fd;
   border-radius: 50%;
 }
 
@@ -103,18 +114,16 @@
   font-weight: 700;
   font-size: 12px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 20px;
-  background: #7140FD;
+  background: #7140fd;
   border-radius: 12px;
 }
-
 
 .item-text {
   display: none;
   margin-top: 10px;
 }
-
 
 .item-number-active {
   position: absolute;
@@ -123,12 +132,12 @@
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 20px;
-  background: #7140FD;
+  background: #7140fd;
   border-radius: 12px;
 }
-  
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -138,12 +147,11 @@
   }
 }
 
-
 .item-text-side {
   display: flex;
   margin-top: 0;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #ffffff;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -155,12 +163,12 @@
   animation-delay: 0.1s; /* Adjust this value to control the delay */
   opacity: 0.8;
 }
-  
+
 .item-text-center {
   display: flex;
   margin-top: 0; /* Change this from 20px to 0 */
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   flex-direction: column;
   justify-content: left;
   align-items: center;
@@ -172,7 +180,7 @@
 }
 
 .item-number-special {
-  background: #CBFA11;
+  background: #cbfa11;
   color: #000;
 }
 
@@ -181,7 +189,7 @@
   display: block;
   margin-top: 10px;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   position: absolute;
   bottom: -40px;
@@ -189,16 +197,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-  
 
 .stages_work {
   position: relative;
 }
 
 .glow {
-  background: #7140FD;
+  background: #7140fd;
   filter: blur(100px);
   width: 83px;
   height: 83px;
@@ -212,7 +219,7 @@
   position: absolute;
   width: 95px;
   height: 95px;
-  background: linear-gradient(105.09deg, #55A1FF -2.98%, #4087FD 92.91%);
+  background: linear-gradient(105.09deg, #55a1ff -2.98%, #4087fd 92.91%);
   filter: blur(100px);
 }
 
@@ -220,7 +227,7 @@
   position: absolute;
   width: 95px;
   height: 95px;
-  background: #CBFA11;
+  background: #cbfa11;
   filter: blur(100px);
   right: -100px;
   bottom: -200px;
@@ -236,13 +243,13 @@
   }
 }
 
-@media  (max-width: 900px) {
+@media (max-width: 900px) {
   .slider {
     display: none;
   }
 
   .adaptive_slider {
-    display: initial;
+    display: block;
     width: 100%;
   }
 
@@ -252,16 +259,20 @@
   }
 }
 
-
 .zoom {
   margin-top: 120px;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
   border: 1px solid #808080;
-  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(28.3333px);
   border-radius: 10px;
   max-height: 101px;
@@ -277,7 +288,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .zoom button {
@@ -285,15 +296,15 @@
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
-  background: linear-gradient(105.09deg, #55A1FF -2.98%, #4087FD 92.91%);
+  color: #ffffff;
+  background: linear-gradient(105.09deg, #55a1ff -2.98%, #4087fd 92.91%);
   border-radius: 10px;
   padding: 20px 30px;
 }
 
 @media (max-width: 768px) {
   .zoom {
-      display: none;
+    display: none;
   }
 
   .h1 {
@@ -301,5 +312,4 @@
     line-height: 37px;
     text-align: center;
   }
-
 }

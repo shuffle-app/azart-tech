@@ -1,154 +1,153 @@
 .section {
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: end;
-    justify-content: space-between;
-    min-width: 100%;
-    position: relative;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-width: 100%;
+  position: relative;
 }
 
 .img_slider {
-    min-width: 700px;
+  min-width: 700px;
 }
 
 .stack_header {
-    margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid #808080;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #808080;
 }
 
 .stacks {
-    margin-top: 30px;
-    max-width: 505px;
+  margin-top: 30px;
+  max-width: 505px;
 }
 
 .stacks p {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 38.664px -38.664px 38.664px rgba(186, 186, 186, 0.1), inset -38.664px 38.664px 38.664px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(38.664px);
-    border-radius: 10px;
-    display: inline-block;
-    padding: 20px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 38.664px -38.664px 38.664px rgba(186, 186, 186, 0.1),
+    inset -38.664px 38.664px 38.664px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(38.664px);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
-    
 .ds {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    width: 60%;
-    height: 300px;
-  }
-  
-  .slide {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    transition: all 0.5s ease;
-    width: 100%;
-  }
-   
-  
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 60%;
+  height: 300px;
+}
+
+.slide {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
 .stack_header h2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
-    opacity: 0.8;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .stack_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .slider_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    min-width: 750px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  min-width: 750px;
 }
 
 .slider_header h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
-    opacity: 0.8;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .slider_btn {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .slider_button {
-    width: 80px;
-    height: 40px;
-    background: #CBFA11;
-    border-radius: 43px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+  width: 80px;
+  height: 40px;
+  background: #cbfa11;
+  border-radius: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .slider_button div {
-    width: 32px;
-    height: 32px;
-    background: #21212B;
-    border-radius: 50%;
-    margin-left: 4px;
+  width: 32px;
+  height: 32px;
+  background: #21212b;
+  border-radius: 50%;
+  margin-left: 4px;
 }
 
-.slider_btn span{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #CBFA11;
+.slider_btn span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #cbfa11;
 }
 
 .slider_btn p {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #808080
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #808080;
 }
 
 .imgg {
-    max-width: 238px;
-    border-radius: 5px;
+  max-width: 238px;
+  border-radius: 5px;
 }
 
 @media (max-width: 800px) {
-    .slider_header {
-        display: none;
-    }
+  .slider_header {
+    display: none;
+  }
 
-    .stacks {
-        max-width: 350px;
-    }
+  .stacks {
+    max-width: 350px;
+  }
 }
 
-    
-
 @media (max-width: 1024px) {
-    .section {
-        grid-template-columns: 1fr;
-    }
-
+  .section {
+    grid-template-columns: 1fr;
+  }
 }

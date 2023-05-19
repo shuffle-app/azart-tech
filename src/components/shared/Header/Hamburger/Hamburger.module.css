@@ -1,0 +1,45 @@
+.hamburger {
+  height: 30px;
+  width: 30px;
+}
+
+.hamburger::after {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url(./assets/Base.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hamburger:hover:not(.toggled)::after {
+  width: 43px;
+
+  background-image: url(./assets/Hovered.svg);
+}
+
+.hamburger.toggled::after {
+  color: #c4c4c4;
+  background-image: url(./assets/Toggled.svg);
+}
+
+.hamburgerA {
+  /* height: 30px;
+  width: 30px; */
+  color: #fff;
+}
+
+.hamburgerA .line {
+  transition: 1s;
+  transform-origin: center;
+}
+
+.hamburgerA:hover .bottom {
+  x2: 43px;
+}
+
+/* .hamburgerA[aria-expanded="true"] .top {
+
+} */

@@ -1,357 +1,411 @@
 .quiz_start_text {
-    width: 506px;
-    height: 423px;
-    background: #21212B;
-    border: 1.01266px solid #808080;
+  width: 506px;
+  height: 423px;
+  background: #21212b;
+  border: 1.01266px solid #808080;
 }
 
-
 .quiz_block {
-    min-width: 506px;
-    max-width: 506.1px;
-    min-height: 538px;
-    padding: 30px;
-    border: 1.01266px solid #808080;
-    position: relative;
-    background: #21212B;
-    border-radius: 10px;
+  min-width: 506px;
+  max-width: 506.1px;
+  min-height: 538px;
+  padding: 30px;
+  border: 1.01266px solid #808080;
+  position: relative;
+  background: #21212b;
+  border-radius: 10px;
 }
 
 .promocode_block {
-    min-width: 506px;
-    min-height: 538px;
-    position: relative;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1.01266px solid #808080;
-    box-shadow: inset 28.692px -28.692px 28.692px rgba(186, 186, 186, 0.1), inset -28.692px 28.692px 28.692px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.692px);
-    border-radius: 10px;
-    padding: 30px;
+  min-width: 506px;
+  min-height: 538px;
+  position: relative;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1.01266px solid #808080;
+  box-shadow: inset 28.692px -28.692px 28.692px rgba(186, 186, 186, 0.1),
+    inset -28.692px 28.692px 28.692px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.692px);
+  border-radius: 10px;
+  padding: 30px;
 }
 
-.promocode_block h2{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #CBFA11;
-    margin-bottom: 10px;
+.promocode_block h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #cbfa11;
+  margin-bottom: 10px;
 }
 
 .promocode_block p {
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .promo_btns {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 30px;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: calc(100% - 60px);
+  bottom: 30px;
 }
 
-.promo_btns button:first-child {
-    width: 210px;
-    height: 60px;
-    background: #CBFA11;
-    border: 1.01266px solid #808080;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #282835;
+.promo_btns a:first-child {
+  width: 100%;
+  height: 60px;
+  background: #cbfa11;
+  border: 1.01266px solid #808080;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #282835;
+  text-decoration: none;
 }
 
 .promo_btns button:last-child {
-    width: 210px;
-    height: 60px;
-    background: #7140FD;
-    border: 1.01266px solid #808080;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #282835;
+  width: 210px;
+  height: 60px;
+  background: #7140fd;
+  border: 1.01266px solid #808080;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #282835;
 }
 
-.promo_btns button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+.promo_btns button,
+.promo_btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .glow {
-    position: absolute;
-    width: 224.37px;
-    height: 126.83px;
-    left: 128.63px;
-    top: 200px;
-    background: #7140FD;
-    filter: blur(82px);
-    transform: rotate(-17.88deg);
-    z-index: -1;
+  position: absolute;
+  width: 224.37px;
+  height: 126.83px;
+  left: 128.63px;
+  top: 200px;
+  background: #7140fd;
+  filter: blur(82px);
+  transform: rotate(-17.88deg);
+  z-index: -1;
 }
 
 .promocode_block .gift {
-    margin: 30px 20%;
+  margin: 30px 20%;
 }
 
 .from_block {
-    min-width: 506px;
-    max-width: 506.1px;
-    min-height: 538px;
-    padding: 30px;
+  min-width: 506px;
+  max-width: 506.1px;
+  min-height: 538px;
+  padding: 30px;
 }
 
 .quiz_block1 {
-    min-width: 506px;
-    max-width: 506.1px;
-    min-height: 538px;
-    border: 1.01266px solid #808080;
-    position: relative;
-    background: #21212B;
-    border-radius: 10px;
-    
+  min-width: 506px;
+  max-width: 506.1px;
+  min-height: 538px;
+  border: 1.01266px solid #808080;
+  position: relative;
+  background: #21212b;
+  border-radius: 10px;
 }
 
 .quiz {
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1.01266px solid #808080;
-    backdrop-filter: blur(15.1899px);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 99;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1.01266px solid #808080;
+  backdrop-filter: blur(15.1899px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
 }
 
 .quiz_blocks {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .quizz_header {
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1.01266px solid #808080;
-    box-shadow: inset 28.692px -28.692px 28.692px rgba(186, 186, 186, 0.1), inset -28.692px 28.692px 28.692px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.692px);
-    padding: 30px;
-    border-radius: 10px 10px 0 0;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1.01266px solid #808080;
+  box-shadow: inset 28.692px -28.692px 28.692px rgba(186, 186, 186, 0.1),
+    inset -28.692px 28.692px 28.692px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.692px);
+  padding: 30px;
+  border-radius: 10px 10px 0 0;
 }
 
 .quizz_header p {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .quizz_start_text p {
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .quizz_start_text {
-    padding: 30px;
+  padding: 30px;
 }
 
 .btn {
-    background: #7140FD;
-    border: 1.01266px solid #808080;
-    border-radius: 10px;
-    padding: 20px;
-    width: 446px;
-    margin-top: 30px;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-top: 30px;
+  background: #7140fd;
+  border: 1.01266px solid #808080;
+  border-radius: 10px;
+  padding: 20px;
+  width: 446px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.quiz_block1 .btn {
+  position: relative;
+  bottom: 30px;
+}
+
+.welcomeImages {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .promocode {
-    background: #CBFA11;
-    border: 1.01266px solid #808080;
-    border-radius: 10px;
-    padding: 20px;
-    width: 446px;
-    margin-top: 30px;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #000000;
-    margin-top: 30px;
+  background: #cbfa11;
+  border: 1.01266px solid #808080;
+  border-radius: 10px;
+  padding: 20px;
+  width: 446px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  margin-top: 30px;
 }
 
 .btns {
-    background: #7140FD;
-    border: 1.01266px solid #808080;
-    border-radius: 10px;
-    padding: 20px;
-    width: 446px;
-    margin-top: 30px;
-    bottom: 30px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-top: 30px;
+  background: #7140fd;
+  border: 1.01266px solid #808080;
+  border-radius: 10px;
+  padding: 20px;
+  width: 446px;
+  margin-top: 30px;
+  bottom: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 30px;
 }
 .exit {
-    position: absolute;
-    right: 0;
-    top: -50px;
+  position: absolute;
+  right: 0;
+  top: -50px;
 }
 
 .text_header {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .quiz_btn {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .quiz_btns {
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1.01266px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.8;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1.01266px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .selected {
-    border: 1px solid #CBFA11;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.8;
+  border: 1px solid #cbfa11;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .selected4 {
-    border: 1px solid #CBFA11;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    width: 100%;
-    padding: 20px;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.8;
+  border: 1px solid #cbfa11;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .quiz_btns4 {
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1.01266px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    width: 100%;
-    padding: 20px;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.8;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1.01266px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .input {
-    width: 100%;
-    height: 266px;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1.01266px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    padding: 15px;
-    color: #fff;
-    vertical-align: top;
+  width: 100%;
+  height: 266px;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1.01266px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  padding: 15px;
+  color: #fff;
+  vertical-align: top;
 }
 
 .input::placeholder {
-    vertical-align: top;
+  vertical-align: top;
 }
 
-
 .input_container {
-    display: flex;
-    align-items: flex-start;
-    height: 266px;
-  }
-  
-  .input_container textarea {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1.01266px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    padding: 15px;
-    color: #fff;
-  }
-  
-  
+  display: flex;
+  align-items: flex-start;
+  height: 266px;
+}
+
+.input_container textarea {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1.01266px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  padding: 15px;
+  color: #fff;
+}
+
 @media (max-width: 550px) {
-    .quiz_block1 {
-        transform: scale(0.7);
-    }
-    .quiz_block {
-        transform: scale(0.7);
-    }
+  .quiz_block1 {
+    transform: scale(0.7);
+  }
+  .quiz_block {
+    transform: scale(0.7);
+  }
 
-    .from_block {
-        transform: scale(0.7);
-    }
+  .from_block {
+    transform: scale(0.7);
+  }
 
-    .promocode_block {
-        transform: scale(0.7);
-
-    }
+  .promocode_block {
+    transform: scale(0.7);
+  }
 }

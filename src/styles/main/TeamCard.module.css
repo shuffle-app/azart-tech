@@ -1,219 +1,225 @@
 .card {
-    padding: 15px;
-    min-width: 348px;
-    max-width: 348.1px;
-    background: #282835;
-    border: 1px solid #808080;
-    border-radius: 10px;
+  padding: 15px;
+  min-width: 348px;
+  max-width: 348.1px;
+  background: #282835;
+  border: 1px solid #808080;
+  border-radius: 10px;
 }
 
 .card_header {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 10px;
-    position: relative;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .photo {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .photo img {
-    min-width: 130px;
-    min-height: 130px;
-    border: 1px solid #808080;
-    border-radius: 11px;
+  min-width: 157px;
+  min-height: 157px;
+  border: 1px solid #808080;
+  border-radius: 11px;
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .about h4 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
 }
 
 .about h5 {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 13px;
-    color: #CBFA11;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #cbfa11;
 }
 
 .about p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 140.45%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 140.45%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .about a {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration-line: underline;
-    color: #CBFA11;
-    position: absolute;
-    bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #cbfa11;
+  position: absolute;
+  bottom: 0;
 }
 
 .awards_block {
-    padding: 10px 0;
-    border-bottom: 1px solid #808080;
-    border-top: 1px solid #808080;
+  padding: 10px 0;
+  border-bottom: 1px solid #808080;
+  border-top: 1px solid #808080;
 }
 
 .awards_block h3 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #7140FD;
-    margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #7140fd;
+  margin-bottom: 15px;
 }
 
 .awards {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .award {
-    width: 52px;
-    height: 52px;
-    background: #282835;
-    border: 0.584269px solid #CBFA11;
-    border-radius: 12.0421px;
-    padding: 12px;
+  width: 52px;
+  height: 52px;
+  background: #282835;
+  border: 0.584269px solid #cbfa11;
+  border-radius: 12.0421px;
+  padding: 12px;
 }
 
-.award h6{
-    font-weight: 500;
-    font-size: 8.75789px;
-    text-align: center;
-    color: #CBFA11;
+.award h6 {
+  font-weight: 500;
+  font-size: 8.75789px;
+  text-align: center;
+  color: #cbfa11;
 }
 
 .award p {
-    font-weight: 500;
-    font-size: 8.7px;
-    color: #FFFFFF;
+  font-weight: 500;
+  font-size: 8.7px;
+  color: #ffffff;
 }
-
 
 .tags {
-    margin-top: 15px;
-    display: inline-block;
+  margin-top: 15px;
+  display: inline-block;
 }
 
-.tags  {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .tag {
-    flex: 0 0 auto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;  
-    color: #CBFA11;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 7px;
-    padding: 7px 10px;
+  flex: 0 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #cbfa11;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 7px;
+  padding: 7px 10px;
 }
 
-
-.rewards_block .rew{
-    display: flex;
-    gap: 10px;
+.rewards_block .rew {
+  display: flex;
+  gap: 10px;
 }
 
 .rewards_block {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .rewards_block .willbe {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #A8A8A8;
-    max-width: 160px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #a8a8a8;
+  max-width: 160px;
 }
 
 .rewards {
-    display: flex; /* Добавлено */
-    flex-direction: column;
-    align-items: center; /* Добавлено */
-    justify-content: center; /* Добавлено */
-    background: #282835;
-    border: 1px solid #CBFA11;
-    border-radius: 12px;
-    width: 55px;
-    height: 55px;
-    padding: 10px;
-    text-align: center;
+  display: flex; /* Добавлено */
+  flex-direction: column;
+  align-items: center; /* Добавлено */
+  justify-content: center; /* Добавлено */
+  background: #282835;
+  border: 1px solid #cbfa11;
+  border-radius: 12px;
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  text-align: center;
 }
 
 .rewards span {
-    color: #CBFA11;
-    font-weight: 500;
-    font-size: 8.75789px;
-    line-height: 11px;
+  color: #cbfa11;
+  font-weight: 500;
+  font-size: 8.75789px;
+  line-height: 11px;
 }
 
 .rewards p {
-    font-weight: 500;
-    font-size: 8.75789px;
-    line-height: 11px;
-    color: #FFFFFF;
+  font-weight: 500;
+  font-size: 8.75789px;
+  line-height: 11px;
+  color: #ffffff;
 }
 
 .comming {
-    font-size: 16px;
-    line-height: 21px;
-    color: #808080
+  font-size: 16px;
+  line-height: 21px;
+  color: #808080;
 }
 
-
 @media (max-width: 1024px) {
-    .card {
-        min-width: 320px;
-    }
+  .card {
+    min-width: 320px;
+  }
 }
 
 @media (max-width: 768px) {
-    .photo img {
-        width: 116px;
-        height: 116px;
-    }
+  .photo img {
+    width: 116px;
+    height: 116px;
+  }
 
-    .about p {
-        font-size: 14px;
-        line-height: 17px;
-    }
+  .about p {
+    font-size: 14px;
+    line-height: 17px;
+  }
 
-    .about h5 {
-        font-size: 12px;
-        line-height: 13px;
-    }
+  .about h5 {
+    font-size: 12px;
+    line-height: 13px;
+  }
 
-    .about h4 {
-        font-size: 16px;
-        line-height: 21px;
-    }
+  .about h4 {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }

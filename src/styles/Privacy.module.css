@@ -1,0 +1,25 @@
+.page {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10rem 1rem;
+  width: 100%;
+
+  color: #fff;
+}
+
+.page h1 {
+  margin-bottom: 30px;
+}
+
+.page h2 {
+  margin: 30px 0;
+}
+
+.page p {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.page p + p {
+  margin-top: 1rem;
+}

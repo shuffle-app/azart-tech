@@ -1,120 +1,119 @@
 .img_container {
-    position: relative;
-    margin-top: 50px;
+  position: relative;
+  margin-top: 50px;
 }
+
 .img2 {
-    position: absolute;
-    left: -10px;
-    top: -50px;
-    transition: transform 0.3s ease-out;
+  position: absolute;
+  left: -10px;
+  top: -50px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .img3 {
-    position: absolute;
-    right: 0px;
-    top: -10px;
-    transition: transform 0.3s ease-out;
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .img4 {
-    position: absolute;
-    left: 25px;
-    bottom: -60px;
-    transition: transform 0.3s ease-out;
+  position: absolute;
+  left: 25px;
+  bottom: -60px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .img5 {
-    position: absolute;
-    right: 100px;
-    top: -10px;
-    transition: transform 0.3s ease-out;
+  position: absolute;
+  right: 100px;
+  top: -10px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .img6 {
-    position: absolute;
-    left: 0px;
-    top: 60px;
-    transition: transform 0.3s ease-out;
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .img7 {
-    position: absolute;
-    right: 150px;
-    bottom: -30px;
-    transition: transform 0.3s ease-out;
+  position: absolute;
+  right: 150px;
+  bottom: -30px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .glow {
-    position: absolute;
-    z-index: -1;
-    top: 20%;
-    left: 17%;
-    width: 186px;
-    height: 186px;
-    background: #7140FD;
-    filter: blur(100px);
-    transition: 0.3s;
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+  left: 17%;
+  width: 186px;
+  height: 186px;
+  background: #7140fd;
+  filter: blur(100px);
+  transition: 0.3s;
 }
 
 .img_container:hover .glow {
-    width: 230px;
-    height: 230px;
-    top: 20%;
-    left: 10%;
-    filter: blur(100px);
+  width: 230px;
+  height: 230px;
+  top: 20%;
+  left: 10%;
+  filter: blur(100px);
 }
 
 .img_container:hover .img2 {
-    transform: translateX(-50px) translateY(-20px) rotate(-50deg);
+  transform: translateX(-50px) translateY(-20px) rotate(-50deg);
 }
 
 .img_container:hover .img3 {
-    transform: translateY(-30px) translateX(20px) rotate(50deg);
+  transform: translateY(-30px) translateX(20px) rotate(50deg);
 }
 
 .img_container:hover .img4 {
-    transform: translateX(-50px) translateY(30px) rotate(-50deg);
+  transform: translateX(-50px) translateY(30px) rotate(-50deg);
 }
 
 .img_container:hover .img5 {
-    transform: translateY(-30px) rotate(50deg);
+  transform: translateY(-30px) rotate(50deg);
 }
 
 .img_container:hover .img6 {
-    transform: translate(-50px) rotate(-50deg);
+  transform: translate(-50px) rotate(-50deg);
 }
 
 .img_container:hover .img7 {
-    transform: translate(50px, 50px) rotate(50deg);
+  transform: translate(50px, 50px) rotate(50deg);
 }
 
-
-
 @media (max-width: 768px) {
-    .main_img {
-        width: 274.28px;
-        height: 234.89px;
-    }
+  .main_img {
+    width: 274.28px;
+    height: 234.89px;
+  }
 
-    
+  .img2 {
+    width: 81.02px;
+    height: 84.74px;
+  }
 
-    .img2 {
-        width: 81.02px;
-        height: 84.74px;
-    }
+  .img3 {
+    width: 81.02px;
+    height: 84.74px;
+  }
 
-    .img3 {
-        width: 81.02px;
-        height: 84.74px;
-    }
+  .img4 {
+    width: 81.02px;
+    height: 84.74px;
+  }
 
-    .img4 {
-        width: 81.02px;
-        height: 84.74px;
-    }
-
-    .img5, .img6, .img7 {
-        width: 31.96px;
-        height: 26.76px;
-    }
+  .img5,
+  .img6,
+  .img7 {
+    width: 31.96px;
+    height: 26.76px;
+  }
 }

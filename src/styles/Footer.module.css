@@ -1,62 +1,119 @@
 .footer {
-    background: #21212B;
-    padding-bottom: 66px;
+  background: #21212b;
+  padding-bottom: 66px;
 }
 
 .footer_block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  min-height: 200px;
 }
 
 .email {
-    font-size: 16px;
-    line-height: 21px;
-    color: #CBFA11;
+  font-size: 16px;
+  line-height: 21px;
+  color: #cbfa11;
 }
 
 .social {
-    margin-top: 50px;
+  /* margin-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.social div {
-    margin-bottom: 30px;
+/* .social div {
+  margin-bottom: 30px;
+} */
+
+.social div + div {
+  margin-top: 26px;
 }
 
-.social a{
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: 0.3s;
+.social a {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .social a:hover {
-    color: #CBFA11;
+  color: #cbfa11;
 }
 
-.footer_block img {
-    transform: translateX(-40px) translateY(-8px);
+.footer_contacts {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+
+  /* Neutral - 200 */
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_contacts span {
+  font-size: 14px;
+}
+
+/* .footer_block img {
+  transform: translateX(-40px) translateY(-8px);
+} */
+
+.footer_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1;
 }
 
 @media (max-width: 500px) {
-    .footer_block {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
+  .footer_contacts {
+    margin-top: 32px;
+  }
+  .footer_block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 
-    .footer_block img {
-        transform: translateX(-10px);
-    }
+  .footer_block img {
+    transform: translateX(-10px);
+  }
 
-    .email {
-        order: 1;
-    }
+  .email {
+    order: 1;
+  }
 
-    .social {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
+  .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .social div + div {
+    margin-top: 0;
+  }
+
+  .footer_center {
+    order: 1;
+  }
+
+  .footer_contacts {
+    order: 2;
+    text-align: center;
+  }
+
+  .social {
+    order: 3;
+  }
 }

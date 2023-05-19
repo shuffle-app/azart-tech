@@ -1,267 +1,295 @@
 .container {
-	max-width: 1240px; /* Максимальная ширина контейнера */
-	margin: 0 auto; /* Выравнивание контейнера по центру */
-	width: 100%; /* Ширина контейнера по умолчанию */
-	position: relative;
+  max-width: 1240px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Выравнивание контейнера по центру */
+  width: 100%; /* Ширина контейнера по умолчанию */
+  position: relative;
 }
 
-
 @media (max-width: 1440px) {
-	.container {
-	  padding: 0 100px; /* Отступы для контейнера на экранах меньше 1440px */
-	  max-width: 1440px;
-	}
+  .container {
+    padding: 0 100px; /* Отступы для контейнера на экранах меньше 1440px */
+    max-width: 1440px;
+  }
 }
 
 @media (max-width: 1024px) {
-	.container {
-		padding: 0 40px; /* Отступы для контейнера на экранах меньше 1440px */
-		overflow: hidden;
-	}
-}
-
-@media (max-width: 768px) {
-	.container {
-		padding: 0 0 0 15px;
-        margin: 0;
-	}
+  .container {
+    padding: 0 40px; /* Отступы для контейнера на экранах меньше 1440px */
+    overflow: hidden;
+  }
 }
 
 .team_section {
-    position: relative;
-    margin-top: 150px;
+  position: relative;
+  margin-top: 150px;
 }
 
 .photo img {
-    min-width: 130px;
-    min-height: 130px;
-    border: 1px solid #808080;
-    border-radius: 11px;
+  min-width: 130px;
+  min-height: 130px;
+  border: 1px solid #808080;
+  border-radius: 11px;
 }
 
 .h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    color: #FFFFFF;
-    margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .img1 {
-    position: absolute;
-    z-index: -1;
-    left: 20%;
-    top: 0;
+  position: absolute;
+  z-index: -1;
+  left: 20%;
+  top: 0;
 }
 
 .img2 {
-    position: absolute;
-    z-index: -1;
-    right: 18%;
-    top: 30px;
-    transform: rotate(-50.82deg);
+  position: absolute;
+  z-index: -1;
+  right: 18%;
+  top: 30px;
+  transform: rotate(-50.82deg);
 }
 
 .header h1 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    text-align: center;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .header p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    max-width: 703px;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    padding: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 703px;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  padding: 15px;
 }
 
 .team_slider {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    overflow: scroll;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  overflow: scroll;
 }
 
 .download_block {
-    margin-top: 60px;
-    display: flex;
-    align-items: start;
-    gap: 30px;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    padding: 15px;
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  padding: 15px;
 }
 
-.download_block  .text {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #FFFFFF;
-    max-width: 364px;
+.download_block .text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+  max-width: 364px;
 }
 
 .form {
-    display: flex;
-    gap: 15px;
-    align-items: start;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
 }
 
 .from_input {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .from_input input {
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    padding: 21px;
-    text-align: center;
-    width: 261px;
+  color: #ffffff;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  padding: 21px;
+  text-align: center;
+  width: 261px;
+}
+
+.form input[aria-invalid='true'] {
+  border: 1px solid #fa111f;
+}
+.form input[aria-invalid='true'][type='checkbox'] {
+  outline: 1px solid #fa111f;
 }
 
 .btn {
-    padding: 23px;
-    background: #CBFA11;
-    border-radius: 10px;
-    width: 261px;
-    display: flex;
-    justify-content: center;
-    height: 60px;
+  padding: 23px;
+  background: #cbfa11;
+  border-radius: 10px;
+  width: 261px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  cursor: pointer;
 }
 
 .btn button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;  
-    text-align: center;
-    color: #21212B;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #21212b;
+  cursor: pointer;
 }
 
 .checkbox {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .checkbox p {
-    font-size: 10px;
-    line-height: 110%;
-    color: #A8A8A8;
+  font-size: 10px;
+  line-height: 110%;
+  color: #a8a8a8;
 }
 
 .checkbox span {
-    color: #CBFA11;
+  color: #cbfa11;
 }
 
 .glow {
-    position: absolute;
-    width: 83px;
-    height: 83px;
-    background: #CBFA11;
-    filter: blur(100px);
-    right: 0;
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  background: #cbfa11;
+  filter: blur(100px);
+  right: 0;
 }
 
 .glow2 {
-    position: absolute;
-    width: 83px;
-    height: 83px;
-    background: #CBFA11;
-    filter: blur(100px);
-    right: -100px;
-    top: 0;
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  background: #cbfa11;
+  filter: blur(100px);
+  right: -100px;
+  top: 0;
 }
 
 @media (max-width: 1024px) {
-    .download_block {
-        flex-direction: column;
-    }
+  .download_block {
+    flex-direction: column;
+  }
 
-    .team_slider {
-        gap: 15px;
-    }
+  .team_slider {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 764px) {
-    .from_input input {
-        width: 100%;
-    }
+  .from_input input {
+    width: 100%;
+  }
 
-    .img1 {
-        left: -10px;
-    }
-    
-    .img2 {
-        right: 0;
-        top: -5px;
-    }
+  .img1 {
+    left: -10px;
+  }
 
-    .team_section {
-        margin-top: 77px;
-    }
+  .img2 {
+    right: 0;
+    top: -5px;
+  }
 
-    .photo img {
-        width: 116px;
-        height: 116px;
-    }
-    
+  .team_section {
+    margin-top: 77px;
+  }
+
+  .photo img {
+    width: 116px;
+    height: 116px;
+  }
 }
 
 @media (max-width: 600px) {
-    .form {
-        flex-direction: column;
-        min-width: 100%;
-        align-items:inherit ;
-        display: block;
-    }
+  .form {
+    flex-direction: column;
+    min-width: 100%;
+    align-items: inherit;
+    display: block;
+  }
 
-    .from_input {
-        flex-direction: column;
-        min-width: 100%;
-        align-items: center;
-    }
+  .from_input {
+    flex-direction: column;
+    min-width: 100%;
+    align-items: center;
+  }
 
-    .from_input input {
-        min-width: 100%;
-    }
+  .from_input input {
+    min-width: 100%;
+  }
 
-    .btn {
-       width: 100%;
-       margin-top: 15px;
-    }
+  .btn {
+    width: 100%;
+    margin-top: 15px;
+  }
 
-    .h1 {
-        font-size: 34px;
-        line-height: 37px;
-        margin-bottom: 15px;
-    }
+  .h1 {
+    font-size: 34px;
+    line-height: 37px;
+    margin-bottom: 15px;
+  }
+}
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0 0 15px;
+    margin: 0;
+  }
+
+  .header h1 {
+    font-size: 34px;
+    line-height: 37px;
+    text-align: center;
+  }
 }

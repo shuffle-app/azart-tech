@@ -1,232 +1,242 @@
 .bm_section {
-    margin-top: 135px;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    position: relative;
+  margin-top: 135px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
 }
 
 .text_content h1 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
 }
 
 .text_content {
-    z-index: 5;
+  z-index: 5;
 }
 
 .text_content h1 span {
-    background: #7140FD;
-    border-radius: 8px;
-    padding: 0 5px;
+  background: #7140fd;
+  border-radius: 8px;
+  padding: 0 5px;
 }
 
 .text_content p {
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    max-width: 301px;
-    padding: 15px;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  max-width: 301px;
+  padding: 15px;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
 }
 
 .text_content h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #CBFA11;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #cbfa11;
 }
 
 .tags {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .member_card h2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #CBFA11;
-    text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #cbfa11;
+  text-align: left;
 }
 
 .member_card {
-    z-index: 5;
+  z-index: 5;
 }
 
 .card {
-    margin-top: 15px;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    display: flex;
-    align-items: start;
-    gap: 100px;
+  margin-top: 15px;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
 }
 
 .name h3 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
 }
 
 .about {
-    padding: 15px;
+  padding: 15px;
 }
 
 .people {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .name p {
-    margin-top: 15px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #CBFA11;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #cbfa11;
 }
 
 .about_person h2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #CBFA11;
-    margin-top: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #cbfa11;
+  margin-top: 15px;
 }
 
 .about_person p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    max-width: 272px;
-    margin-top: 15px;
-    margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  max-width: 272px;
+  margin-top: 15px;
+  margin-bottom: 36px;
 }
 
 .about_person a {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration-line: underline;
-    color: #CBFA11;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #cbfa11;
 }
 
 .marks {
-    display: flex;
-    gap: 30px;
-    margin-right: 30px;
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
 }
 
 .glow1 {
-    width: 134px;
-    height: 134px;
-    background: #7140FD;
-    filter: blur(100px);
-    position: absolute;
-    z-index: 1;
+  width: 134px;
+  height: 134px;
+  background: #7140fd;
+  filter: blur(100px);
+  position: absolute;
+  z-index: 1;
 }
 
 .glow2 {
-    width: 134px;
-    height: 134px;
-    background: #7140FD;
-    filter: blur(100px);
-    position: absolute;
-    z-index: 1;
-    right: 0;
+  width: 134px;
+  height: 134px;
+  background: #7140fd;
+  filter: blur(100px);
+  position: absolute;
+  z-index: 1;
+  right: 0;
 }
 
 .glow3 {
-    width: 90px;
-    height: 90px;
-    bottom: -100px;
-    left: 40%;
-    background: #7140FD;
-    filter: blur(100px);
-    position: absolute;
-    z-index: 1;
+  width: 90px;
+  height: 90px;
+  bottom: -100px;
+  left: 40%;
+  background: #7140fd;
+  filter: blur(100px);
+  position: absolute;
+  z-index: 1;
 }
 
 .scroll_down {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
 }
 
 @media (max-width: 1024px) {
-    .bm_section {
-        flex-direction: column;
-        gap: 30px;
-    }
+  .bm_section {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 764px) {
-    .marks {
-        position: absolute;
-        right: 0;
-    }
+  .marks {
+    position: absolute;
+    right: 0;
+  }
 
-    .marks img {
-        width: 58.29px;
-        height: 85px;
-    }
+  .marks img {
+    width: 58.29px;
+    height: 85px;
+  }
 
-    .tp {
-        min-width: 100%;
-    }
+  .tp {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 530px) {
-    .people {
-        flex-direction: column;
-        align-items: start;
-    }
+  .people {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .name {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 
-    .name p {
-        margin-top: 0;
-    }
+  .name p {
+    margin-top: 0;
+  }
 
-    .text_content h1 span {
-        min-width: 100%;
-        padding-right: 400px;
-        white-space: nowrap;
-    }
+  .text_content h1 span {
+    min-width: 100%;
+    padding-right: 400px;
+    white-space: nowrap;
+  }
 
-    .text_content h1 {
-        font-size: 34px;
-        line-height: 37px;
-    }
+  .text_content h1 {
+    font-size: 34px;
+    line-height: 37px;
+  }
 
-    .br {
-        display: none;
-    }
+  .br {
+    display: none;
+  }
 
-    .about_person h2 {
-        font-size: 16px;
-        line-height: 19px;
-    }
+  .about_person h2 {
+    font-size: 16px;
+    line-height: 19px;
+  }
 
-    .about_person p {
-        min-width: 100%;
-    }
+  .about_person p {
+    min-width: 100%;
+  }
 }

@@ -1,12 +1,9 @@
-import s from '@/styles/cases/Stack.module.css'
-import ImageSlider from './ImageSlider'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import s from '@/styles/cases/Stack.module.css';
+import ImageSlider from './ImageSlider';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-
-
-const Stack = ({cases}) => {
-
+const Stack = ({ cases }) => {
   return (
     <section className={`container main_container`}>
       <div className={s.stack_header}>
@@ -16,25 +13,24 @@ const Stack = ({cases}) => {
           <div className={s.slider_btn}>
             <span>Mobile</span>
             <div className={s.slider_button}>
-              <div/>
+              <div />
             </div>
             <p>Desktop</p>
           </div>
         </div>
       </div>
-          <div className={s.section}>
-              <div className={s.stacks}>
-                {cases.stacks.stack.map((stack, index) => (
-                  <p key={index}>{stack}</p>
-                ))}
-              </div>
-              
-              <ImageSlider cases={cases}/>
-          <div>
+      <div className={s.section}>
+        <div className={s.stacks}>
+          {cases.stacks.stack.map((stack, index) => (
+            <p key={index}>{stack}</p>
+          ))}
         </div>
+
+        {cases.imageSlider && <ImageSlider cases={cases} />}
+        <div></div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Stack
+export default Stack;

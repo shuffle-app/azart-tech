@@ -1,155 +1,166 @@
 .form_block {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    position: relative;
-    margin-bottom: 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  margin-bottom: 100px;
 }
 
 .form_header h1 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    text-align: center;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .form_header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .form_header img {
-    transform: translateY(-25px);
-    max-width: 100%;
+  transform: translateY(-25px);
+  max-width: 100%;
 }
 
 .from {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .from input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
 }
 
 .from input {
-    padding: 20px 0;
-    text-align: center;
-    color: #FFFFFF;
-    opacity: 0.5;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    width: 400px;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  width: 400px;
 }
 
 .agree {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .agree input {
-    width: inherit;
+  width: inherit;
 }
 
 .agree p {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 13px;
-    text-align: center;
-    color: #A8A8A8;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  color: #a8a8a8;
 }
 
 .agree p span {
-    color: #CBFA11;
+  color: #cbfa11;
 }
 
 .from button {
-    background: #CBFA11;
-    border-radius: 10px;
-    padding: 20px 80px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #21212B;
-    margin-top: 15px;
+  background: #cbfa11;
+  border-radius: 10px;
+  padding: 20px 80px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #21212b;
+  margin-top: 15px;
+}
+
+.from input[aria-invalid='true'] {
+  border: 1px solid #fa111f;
+}
+.from input[aria-invalid='true'][type='checkbox'] {
+  outline: 1px solid #fa111f;
 }
 
 .glow1 {
-    width: 90px;
-    height: 90px;
-    background: #7140FD;
-    filter: blur(90px);
-    z-index: -1;
-    position: absolute;
-    left: 400px;
-    top: 0;
+  width: 90px;
+  height: 90px;
+  background: #7140fd;
+  filter: blur(90px);
+  z-index: -1;
+  position: absolute;
+  left: 400px;
+  top: 0;
 }
 
 .glow2 {
-    width: 190px;
-    height: 190px;
-    background: #7140FD;
-    filter: blur(200px);
-    z-index: -1;
-    position: absolute;
-    bottom: -200px;
-    left: -300px;
+  width: 190px;
+  height: 190px;
+  background: #7140fd;
+  filter: blur(200px);
+  z-index: -1;
+  position: absolute;
+  bottom: -200px;
+  left: -300px;
 }
 
 .glow3 {
-    width: 150px;
-    height: 150px;
-    background: #7140FD;
-    filter: blur(120px);
-    z-index: -1;
-    position: absolute;
-    bottom: -200px;
-    right: 0px;
+  width: 150px;
+  height: 150px;
+  background: #7140fd;
+  filter: blur(120px);
+  z-index: -1;
+  position: absolute;
+  bottom: -200px;
+  right: 0px;
 }
 
 @media (max-width: 500px) {
-    .form_header h1 {
-        font-size: 34px;
-        line-height: 37px;
-    }
+  .form_header h1 {
+    font-size: 34px;
+    line-height: 37px;
+  }
 
-    .form_header img {
-        transform: translateY(0);
-        max-width: 100%;
-    }
+  .form_header img {
+    transform: translateY(0);
+    max-width: 100%;
+  }
 
+  .from input {
+    width: 358px;
+  }
 
-    .from input {
-        width: 358px;
-    }
+  .agree input {
+    width: inherit;
+  }
 
-    .agree input {
-        width: inherit;
-    }
+  .glow3 {
+    display: none;
+  }
 
-    .glow3 {
-        display: none;
-    }
-
-    .glow1 {
-        display: none;
-    }
+  .glow1 {
+    display: none;
+  }
 }
