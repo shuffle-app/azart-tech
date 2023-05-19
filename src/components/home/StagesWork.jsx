@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { ContactPopup } from '../common/ContactPopup/ContactPopup';
 import { createPortal } from 'react-dom';
 import { useWindowSize } from '@/utils/hooks/useWindowSize';
-import MobileSlider from './MobileSlider';
 
 const stagesData = [
   {

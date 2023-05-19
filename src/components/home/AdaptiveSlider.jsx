@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import s from '@/styles/main/AdaptiveSlider.module.css';
 import { useWindowSize } from '@/utils/hooks/useWindowSize';
@@ -38,6 +38,33 @@ const slidesData = [
   },
 ];
 
+const Card = ({ slide, type, index, onClick }) => {
+  const ref = useRef(null);
+
+  const className =
+    type === 'left'
+      ? s.sliderLeftCard
+      : type === 'right'
+      ? s.sliderRightCard
+      : type == 'center'
+      ? s.activeBlock
+      : s.sliderInactiveCard;
+
+  return (
+    <div
+      key={index}
+      className={`${s.sliderBlock} ${className}`}
+      onClick={() => type === 'center' && onClick()}
+      ref={ref}
+    >
+      <div className={s.slideContent}>
+        <img src={slide.image} className={s.slideImage} alt={`Slide ${type}`} />
+        <div className={s.slideNumber}>{index + 1}</div>
+      </div>
+    </div>
+  );
+};
+
 const AdaptiveSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -65,34 +92,6 @@ const AdaptiveSlider = () => {
   const rightIndex = activeIndex === 7 ? 0 : activeIndex + 1;
   const centerIndex = activeIndex;
 
-  const renderCard = ({ slide, type, index }) => {
-    const className =
-      type === 'left'
-        ? s.sliderLeftCard
-        : type === 'right'
-        ? s.sliderRightCard
-        : type == 'center'
-        ? s.activeBlock
-        : s.sliderInactiveCard;
-
-    return (
-      <div
-        key={index}
-        className={`${s.sliderBlock} ${className}`}
-        onClick={nextSlide}
-      >
-        <div className={s.slideContent}>
-          <img
-            src={slide.image}
-            className={s.slideImage}
-            alt={`Slide ${type}`}
-          />
-          <div className={s.slideNumber}>{index + 1}</div>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div className={s.sliderWrapper}>
       <div className={s.sliderContainer} {...handlers}>
@@ -109,7 +108,15 @@ const AdaptiveSlider = () => {
             ? 'center'
             : 'inactive';
 
-          return renderCard({ slide, type: type, index });
+          return (
+            <Card
+              key={index}
+              slide={slide}
+              type={type}
+              index={index}
+              onClick={nextSlide}
+            />
+          );
         })}
       </div>
       {slidesData.map((slide, index) => (

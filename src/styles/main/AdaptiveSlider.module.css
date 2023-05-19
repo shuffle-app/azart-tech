@@ -7,7 +7,8 @@
   gap: 15px;
   justify-content: center;
   align-items: flex-end;
-  overflow: hidden;
+  /* overflow-x: scroll; */
+  /* scroll-snap-type: x mandatory; */
   position: relative;
   min-width: 100%;
   height: 200px;
@@ -30,6 +31,8 @@
   border-radius: 10px;
   transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
   padding: 10px;
+  /* scroll-snap-align: center; */
+  /* scroll-snap-stop: always; */
 }
 
 .activeBlock {
@@ -112,7 +115,7 @@
 
 .sliderLeftCard,
 .sliderRightCard {
-  position: absolute;
+  /* position: absolute; */
   flex-grow: 1;
   max-width: 180px;
   height: 150px;
@@ -135,6 +138,7 @@
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  order: 0;
 }
 
 .sliderLeftCard img,
@@ -147,10 +151,16 @@
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  order: 2;
 }
 
 .slideContent img {
   width: 100%;
+}
+
+.activeBlock {
+  order: 1;
+  min-width: 250px;
 }
 
 .sliderInactiveCard {
