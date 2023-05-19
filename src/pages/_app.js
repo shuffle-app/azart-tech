@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import '../styles/globals.css';
 import { Cookie } from '@/components/common/Cookie/Cookie';
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import TagManager from 'react-gtm-module';
 import * as fbq from '@/utils/fpixel';

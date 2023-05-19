@@ -14,7 +14,7 @@ const Accordion = ({ isActive, title, children, onToggle, number }) => {
       <div onClick={onToggle} className={s.active_accordion_header}>
         <div className={s.title}>
           <p className={isActive ? s.active_number : s.number}>{number}</p>
-          <h4>{title}</h4>
+          <h4 dangerouslySetInnerHTML={{ __html: title }}></h4>
         </div>
         <button onClick={onToggle}>
           <img src={arrowIcon} alt="" />
@@ -29,9 +29,8 @@ const Tab = ({ isActive, label, onClick }) => (
   <button
     className={isActive ? s.active_tab : s.not_active_tab}
     onClick={onClick}
-  >
-    {label}
-  </button>
+    dangerouslySetInnerHTML={{ __html: label }}
+  ></button>
 );
 
 const TabContent = ({ isVisible, children }) =>

@@ -23,7 +23,8 @@ const Product = () => {
             'business process specialists in our team are able to spot-scan the product concept already at the start and assemble a working business model in it that will achieve the necessary KPIs',
         },
         {
-          cardTitle: 'customer development',
+          cardTitle:
+            '<span class="question" id="customer-development">customer development</span>',
           cardDesc:
             'we do not work by portraits, but we know by sight, starting interaction with potential consumers of the product even before its launch, through field marketing research',
         },
@@ -45,7 +46,8 @@ const Product = () => {
       desc: 'Ideal approaches to minimal models developing',
       cards: [
         {
-          cardTitle: 'test driven development',
+          cardTitle:
+            '<span class="question" id="tdd">test driven development</span>',
           cardDesc:
             'we specially assembled a team of developers capable of correctly writing code using the TDD - premature testing methodology (out of 112 applicants, only 7 were capable) in order to avoid code failures after the product launch and in the process',
         },
@@ -55,7 +57,8 @@ const Product = () => {
             'creating a product, before its launch, the MPV version became an integral part. at the same time, everyone focuses on usability, we will take this into account, but first of all we will not forget about conversion triggers',
         },
         {
-          cardTitle: 'minimum loveable product',
+          cardTitle:
+            '<span class="question" id="minimum-loveable-product">minimum loveable product</span>',
           cardDesc:
             'MVP is not always enough, depending on the product, then MLP is required, which will be based on user experience, because MLP is the best way to interact with end consumers and evoke emotions in them',
         },
@@ -93,7 +96,8 @@ const Product = () => {
       desc: '',
       cards: [
         {
-          cardTitle: 'pitch creating',
+          cardTitle:
+            'span class="question" id="pitch creating">pitch creating</span>',
           cardDesc:
             "in the pursuit of making an MVP faster, many ignore the importance of the pitch deck, making it for the sake of a “tick”, but we invest the lion's share of efforts in it, because numbers and risk guarantees are more important to the investor/ partner",
         },
@@ -155,7 +159,12 @@ const Product = () => {
                     activeProductIndex === index ? s.active_card : s.card
                   }
                 >
-                  <h2 className={s.card_h2}>{card.cardTitle}</h2>
+                  <h2
+                    className={s.card_h2}
+                    dangerouslySetInnerHTML={{
+                      __html: card.cardTitle,
+                    }}
+                  ></h2>
                   <p className={s.card_p}>{card.cardDesc}</p>
                 </div>
               ))}

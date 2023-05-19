@@ -17,7 +17,7 @@ import StagesWork from '@/components/home/StagesWork';
 import TeamSlider from '@/components/home/TeamSlider';
 import Zoom from '@/components/shared/Zoom';
 import Quiz from '@/components/shared/Quiz';
-import { useEffect, useState } from 'react';
+import { createRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { fetchProjects } from '@/api/queries/fetchProjects';
 import { fetchTeamMembers } from '@/api/queries/fetchTeamMembers';
@@ -62,6 +62,31 @@ export default function Home({ projects, teamMembers }) {
     }, 45000);
 
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const questions = document.querySelectorAll('.question');
+
+    questions.forEach((question) => {
+      question.addEventListener('click', () => {
+        const answer = document.querySelector(`#${question.id}-answer`);
+
+        answer.scrollIntoView();
+
+        var scrollTimeout;
+        const handle = function (e) {
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(function () {
+            const button = answer.querySelector('button');
+
+            button.click();
+            removeEventListener('scroll', handle);
+          }, 100);
+        };
+
+        addEventListener('scroll', handle);
+      });
+    });
   }, []);
 
   return (

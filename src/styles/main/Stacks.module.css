@@ -174,7 +174,7 @@
 .tabs_logo {
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 30px;
 }
 

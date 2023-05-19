@@ -20,8 +20,7 @@
     {
       "label": "Atomic Design",
       "tabText": "Atomic Design is a design methodology that breaks interfaces down into small, reusable components, helping to create consistent and efficient user interfaces, speed up development, and simplify project maintenance.",
-      "id": 3,
-      "image": "./assets/stacks/atomic.svg"
+      "id": 3
     },
     {
       "label": "Backend Driven UI",
@@ -227,15 +226,21 @@
     {
       "label": "Dart",
       "tabText": "Dart is a statically typed programming language with a fast JIT compiler and AOT compiler. It is used for creating web applications, mobile applications, server applications and other types of software, and is also the foundation of the Flutter framework for creating mobile applications.",
-      "image": "./assets/icons/dart.png",
+      "image": "./assets/stacks/dart.png",
       "id": 38
+    },
+    {
+      "label": "JS",
+      "tabText": "JavaScript is one of the three main technologies of web development that allow creating interactive and responsive web pages and applications. HTML5 is used for content structuring, CSS for styling and layout, and JavaScript for creating dynamic effects and logic.",
+      "image": "./assets/stacks/js.svg",
+      "id": 39
     }
   ],
   "accordions": [
     {
       "title": "Development",
       "text": "Creating tailored solutions for your business",
-      "tabs": [37, 38, 25, 0, 1, 2, 4]
+      "tabs": [37, 38, 39, 25, 0, 1, 2, 3, 4]
     },
     {
       "title": "Backend",
@@ -243,7 +248,7 @@
       "tabs": [25, 5, 6, 36, 7, 8, 9, 10]
     },
     {
-      "title": "Big Data",
+      "title": "<span class='question' id='big-data'>Big Data</span>",
       "text": "Analyzing big data to make informed decisions",
       "tabs": [11, 12]
     },

@@ -2,7 +2,7 @@ import s from '@/styles/MobileHeader.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Cross as Hamburger } from 'hamburger-react';
-import { ContactPopup } from '../common/ContactPopup/ContactPopup';
+import { ContactPopup } from '@/components/common/ContactPopup/ContactPopup';
 import { createPortal } from 'react-dom';
 
 const MobileHeader = () => {

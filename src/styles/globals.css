@@ -178,3 +178,53 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+.hamburgerA {
+  width: 43px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hamburgerA .line {
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.hamburgerA:hover .bottom {
+  width: 30px;
+}
+
+.hamburgerA[aria-expanded='true'] .top {
+  transform: rotate(45deg);
+  y: 10;
+  width: 33px;
+  fill: #cbfa11;
+}
+
+.hamburgerA[aria-expanded='true'] .bottom {
+  width: 33px;
+  transform: rotate(-45deg);
+  x: 0;
+  y: 0;
+  fill: #cbfa11;
+}
+
+.question {
+  position: relative;
+}
+
+.question::after {
+  top: -8px;
+  right: -16px;
+  position: absolute;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: url(/assets/icons/question-mark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.3s;
+}

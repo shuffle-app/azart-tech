@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import minusIcon from '../../../public/assets/icons/arr-minus.svg';
 import plusIcon from '../../../public/assets/icons/arr-plus.svg';
+import { useRouter } from 'next/router';
 
 const data = [
   {
@@ -49,7 +50,11 @@ const Question = () => {
       <h1>Questions</h1>
 
       {data.map((item, index) => (
-        <div className={s.accordion} key={item.id}>
+        <div
+          className={s.accordion}
+          key={item.id}
+          id={`${item.title.toLowerCase().replaceAll(/\s/g, '-')}-answer`}
+        >
           <div className={s.accordion_header}>
             <h4>{item.title}</h4>
             <button onClick={() => onClickAccordion(index)}>

@@ -10,8 +10,12 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={`container ${s.footer_block}`}>
-        <p className={s.footer_contacts}>
-          <span>azart technologies fzco</span> <br />
+        <div className={s.footer_contacts}>
+          <div>
+            <span>azart technologies fzco</span>
+            <span style={{ marginLeft: 16 }}>2023</span>
+          </div>
+          <br />
           <br />
           Dubai Silicon Oasis, DDP, Building A2, Dubai, UAE
           <br />
@@ -27,7 +31,7 @@ const Footer = () => {
           <br />
           <br />
           General manager phone number +971585025388
-        </p>
+        </div>
         <div className={s.footer_center}>
           <Link href="/">
             <img src="./assets/icons/footer-logo.svg" alt="logo" />

@@ -364,9 +364,6 @@ const Quiz = () => {
               >
                 Download <img src="./assets/icons/download.svg" alt="" />
               </a>
-              <button className="promo_btn">
-                Send <img src="./assets/icons/send.svg" alt="" />
-              </button>
             </div>
             <div className={s.glow} />
             <button onClick={handleExit} className={s.exit}>

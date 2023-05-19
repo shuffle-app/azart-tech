@@ -9,7 +9,13 @@ const VideoAudit = () => {
   return (
     <section className={`${s.video_audit}`}>
       <div className={s.section_header}>
-        <h1>Video audit of the UI system</h1>
+        <h1>
+          Video audit of the{' '}
+          <span className="question" id="ui">
+            UI
+          </span>{' '}
+          system
+        </h1>
         <button className={s.free}>free</button>
       </div>
       <div className={s.main}>
