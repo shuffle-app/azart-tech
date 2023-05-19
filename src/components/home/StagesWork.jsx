@@ -6,6 +6,8 @@ import zoomPic from '../../../public/assets/icons/zm.svg';
 import Image from 'next/image';
 import { ContactPopup } from '../common/ContactPopup/ContactPopup';
 import { createPortal } from 'react-dom';
+import { useWindowSize } from '@/utils/hooks/useWindowSize';
+import MobileSlider from './MobileSlider';
 
 const stagesData = [
   {
@@ -106,18 +108,30 @@ const StagesWork = () => {
     );
   };
 
+  const { width } = useWindowSize();
+
   return (
     <section className={`${s.stages_work} ${s.container}`}>
-      <h1 className={s.h1}>Stages of works</h1>
-      <div className={s.slider}>
-        {Array.from({ length: 8 }, (_, index) =>
-          renderItem(index, stagesData[index])
-        )}
-      </div>
+      <h1 className={s.h1}>Stages of work</h1>
+      {width >= 900 && (
+        <div className={s.slider}>
+          {Array.from({ length: 8 }, (_, index) =>
+            renderItem(index, stagesData[index])
+          )}
+        </div>
+      )}
 
-      <div className={s.adaptive_slider}>
-        <AdaptiveSlider />
-      </div>
+      {/* {width < 900 && (
+        <div className={s.adaptive_slider}>
+          <MobileSlider />
+        </div>
+      )} */}
+
+      {width < 900 && (
+        <div className={s.adaptive_slider}>
+          <AdaptiveSlider />
+        </div>
+      )}
 
       <div className={s.zoom}>
         <div>

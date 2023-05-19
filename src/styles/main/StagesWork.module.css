@@ -249,7 +249,7 @@
   }
 
   .adaptive_slider {
-    display: initial;
+    display: block;
     width: 100%;
   }
 
