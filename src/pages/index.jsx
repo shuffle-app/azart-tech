@@ -71,7 +71,7 @@ export default function Home({ projects, teamMembers }) {
       question.addEventListener('click', () => {
         const answer = document.querySelector(`#${question.id}-answer`);
 
-        answer.scrollIntoView();
+        answer.scrollIntoView({ block: 'center', inline: 'center' });
 
         var scrollTimeout;
         const handle = function (e) {
