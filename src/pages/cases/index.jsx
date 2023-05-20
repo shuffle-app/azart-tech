@@ -4,6 +4,11 @@ import Link from 'next/link';
 import c from '@/styles/main/Projects.module.css';
 import Footer from '@/components/shared/Footer';
 import Form from '@/components/home/Form';
+import { format } from 'date-fns';
+
+const FormattedDate = ({ date }) => {
+  return <p>{format(new Date(date), 'd MMM. yyyy').toLowerCase()}</p>;
+};
 
 export async function getStaticProps() {
   const query = `query Assets {
@@ -149,9 +154,7 @@ const CasePage = ({ projects }) => {
                         <Link href={`/cases/${project.slug}`}>
                           more details
                         </Link>
-                        <p>
-                          {new Date(project.date).toLocaleDateString('en-GB')}
-                        </p>
+                        <FormattedDate date={project.date} />
                       </div>
                     </div>
                   </div>
@@ -186,9 +189,7 @@ const CasePage = ({ projects }) => {
                         <Link href={`/cases/${project.slug}`}>
                           more details
                         </Link>
-                        <p>
-                          {new Date(project.date).toLocaleDateString('en-GB')}
-                        </p>
+                        <FormattedDate date={project.date} />
                       </div>
                     </div>
                   </div>
@@ -223,9 +224,7 @@ const CasePage = ({ projects }) => {
                         <Link href={`/cases/${project.slug}`}>
                           more details
                         </Link>
-                        <p>
-                          {new Date(project.date).toLocaleDateString('en-GB')}
-                        </p>
+                        <FormattedDate date={project.date} />
                       </div>
                     </div>
                   </div>
