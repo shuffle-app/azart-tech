@@ -64,7 +64,8 @@ const Product = () => {
         },
         {
           cardTitle: 'code mvp',
-          cardDesc: 'we create a high-quality model in code that takes into account passed market&focus groups tests and and includes only the necessary functions. You spend money on a specific product, not for testing hypotheses with code',
+          cardDesc:
+            'we create a high-quality model in code that takes into account passed market&focus groups tests and and includes only the necessary functions. You spend money on a specific product, not for testing hypotheses with code',
         },
       ],
     },
@@ -97,13 +98,14 @@ const Product = () => {
       cards: [
         {
           cardTitle:
-            'span class="question" id="pitch creating">pitch creating</span>',
+            '<span class="question" id="pitch creating">pitch creating</span>',
           cardDesc:
             "in the pursuit of making an MVP faster, many ignore the importance of the pitch deck, making it for the sake of a “tick”, but we invest the lion's share of efforts in it, because numbers and risk guarantees are more important to the investor/ partner",
         },
         {
           cardTitle: 'production',
-          cardDesc: 'editing, graphics, motion, concept and media plans, scripts... Ex: professional promo-video creating',
+          cardDesc:
+            'editing, graphics, motion, concept and media plans, scripts... Ex: professional promo-video creating',
         },
         {
           cardTitle: 'ideas expert audit',
