@@ -7,6 +7,7 @@ export const fetchProjects = async (params) => {
     }`
     : `query Assets {
         posts {
+          date
           title
           excerpt
           niche

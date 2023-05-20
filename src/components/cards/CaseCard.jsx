@@ -29,7 +29,7 @@ const CaseCard = ({ project }) => {
         <img src={project.coverImage.url} alt="Project preview" />
         <div className={s.detailis}>
           <Link href={`/cases/${project.slug}`}>more details</Link>
-          {mounted && <FormattedDate date={project.createdAt} />}
+          {mounted && <FormattedDate date={project.date} />}
         </div>
       </div>
     </div>
