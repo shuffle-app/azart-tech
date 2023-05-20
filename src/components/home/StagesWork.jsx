@@ -132,6 +132,7 @@ const StagesWork = () => {
         </div>
       )}
 
+      {/* 
       <div className={s.zoom}>
         <div>
           <Image src={zoomPic} alt="people" />
@@ -140,7 +141,7 @@ const StagesWork = () => {
         <button className="active-btn" onClick={() => setShowForm(true)}>
           go zoom
         </button>
-      </div>
+      </div>  */}
 
       {showForm &&
         createPortal(

@@ -119,7 +119,11 @@ export default function Home({ projects, teamMembers }) {
           <Zoom />
           <VideoAudit />
         </div>
-        <StagesWork />
+        <div className="container">
+          <StagesWork />
+          <Zoom />
+        </div>
+
         <TeamSlider teamMembers={teamMembers} />
         <div className="container">
           <Question />
