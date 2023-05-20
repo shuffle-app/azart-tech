@@ -92,7 +92,7 @@ export default function Home({ projects, teamMembers }) {
   return (
     <>
       <Head>
-        <title>Azart tech</title>
+        <title>azart technologies</title>
         <meta name="description" content="Azart Tech" />
       </Head>
       <main className="main_container">
