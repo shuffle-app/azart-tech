@@ -170,5 +170,13 @@
 }
 
 .submit_btn:hover {
-  transform: translateY(-10px);
+  background-color: #a7ce0c;
+}
+
+.submit_btn:active {
+  background-color: #7140fd;
+}
+
+.submit_btn:focus {
+  background-color: #7140fd;
 }

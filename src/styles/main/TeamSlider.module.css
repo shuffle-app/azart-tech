@@ -173,6 +173,18 @@
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #a7ce0c;
+}
+
+.btn:active {
+  background-color: #7140fd;
+}
+
+.btn:focus {
+  background-color: #7140fd;
+}
+
 .btn button {
   font-weight: 700;
   font-size: 16px;

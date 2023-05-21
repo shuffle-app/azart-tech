@@ -1,61 +1,76 @@
 .zoom {
-    margin-top: 60px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    max-height: 101px;
+  margin-top: 60px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  max-height: 101px;
 }
 
 .zoom div {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .zoom p {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
 }
 
 .zoom button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    background: linear-gradient(105.09deg, #55A1FF -2.98%, #4087FD 92.91%);
-    border-radius: 10px;
-    padding: 20px 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(105.09deg, #55a1ff -2.98%, #4087fd 92.91%);
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.zoom button:hover {
+  outline: 2px solid #ffffff;
+}
+
+.zoom button:active,
+.zoom button:focus {
+  outline: none;
+  background: linear-gradient(105.09deg, #a055ff -2.98%, #4048fd 92.91%);
 }
 
 @media (max-width: 768px) {
-    .zoom {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+  .zoom {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 
-    .zoom div{
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        transform: translateY(-50px);
-    }
+  .zoom div {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transform: translateY(-50px);
+  }
 
-    .zoom button {
-        transform: translateY(-50px);
-    }
+  .zoom button {
+    transform: translateY(-50px);
+  }
 
-    .zoom p {
-        font-size: 16px;
-        line-height: 21px;
-    }
+  .zoom p {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
