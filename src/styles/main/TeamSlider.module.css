@@ -177,11 +177,11 @@
   background-color: #a7ce0c;
 }
 
-.btn:hover:active {
+.btn:active {
   background-color: #7140fd;
 }
 
-.btn:hover:focus {
+.btn:focus {
   background-color: #7140fd;
 }
 

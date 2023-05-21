@@ -90,11 +90,11 @@
   background-color: #a7ce0c;
 }
 
-.order_btn:hover:active {
+.order_btn:active {
   background-color: #7140fd;
 }
 
-.order_btn:hover:focus {
+.order_btn:focus {
   background-color: #7140fd;
 }
 

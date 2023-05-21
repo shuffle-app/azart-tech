@@ -162,25 +162,12 @@
 .btn a:hover {
   color: #cbfa11;
 }
-.btn a:hover:active {
+.btn a:active {
   color: #7140fd;
 }
-.btn a:hover:focus {
+.btn a:focus {
   color: #7140fd;
 }
-
-.submit_btn:hover {
-  background-color: #a7ce0c;
-}
-
-.submit_btn:hover:active {
-  background-color: #7140fd;
-}
-
-.submit_btn:hover:focus {
-  background-color: #7140fd;
-}
-
 /* SITES */
 
 .sites h4 {
@@ -312,6 +299,18 @@
   border-radius: 7px;
 }
 
+.submits button:hover {
+  background-color: #4726a6;
+}
+
+.submit button:active {
+  background-color: #cbfa11;
+}
+
+.submits button:focus {
+  background-color: #cbfa11;
+}
+
 .form_block h4 {
   font-weight: 700;
   font-size: 20px;
@@ -426,6 +425,15 @@
     line-height: 115%;
     color: #a8a8a8;
   }
+
+  /* .checkbox:hover {
+    color: linear-gradient(0deg, #7140fd, #7140fd),
+      linear-gradient(
+        76.36deg,
+        rgba(113, 64, 253, 0.5) 0%,
+        rgba(113, 64, 253, 0.5) 100%
+      );
+  } */
 
   .checkbox span {
     color: #7140fd;
