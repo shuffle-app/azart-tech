@@ -6,12 +6,12 @@ import { useState } from 'react';
 import { ContactPopup } from '../common/ContactPopup/ContactPopup';
 import { createPortal } from 'react-dom';
 
-const Zoom = () => {
+const Zoom = ({ className }) => {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <div>
-      <div className={s.zoom}>
+    <>
+      <div className={`${s.zoom} ${className}`}>
         <div>
           <Image src={zoomPic} alt="people" />
           <p>Have a zoom meeting with an expert!</p>
@@ -26,7 +26,7 @@ const Zoom = () => {
           <ContactPopup handleBackClick={() => setShowForm(false)} />,
           document.body
         )}
-    </div>
+    </>
   );
 };
 

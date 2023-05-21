@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { ContactPopup } from '../common/ContactPopup/ContactPopup';
 import { createPortal } from 'react-dom';
 import { useWindowSize } from '@/utils/hooks/useWindowSize';
+import Zoom from '../shared/Zoom';
 
 const stagesData = [
   {
@@ -152,6 +153,8 @@ const StagesWork = () => {
       <div className={s.glow} />
       <div className={s.glow2} />
       <div className={s.glow3} />
+
+      <Zoom className={s.zoom} />
     </section>
   );
 };

@@ -45,10 +45,9 @@
   outline: 2px solid #ffffff;
 }
 
-.zoom button:active {
-  background: linear-gradient(105.09deg, #a055ff -2.98%, #4048fd 92.91%);
-}
+.zoom button:active,
 .zoom button:focus {
+  outline: none;
   background: linear-gradient(105.09deg, #a055ff -2.98%, #4048fd 92.91%);
 }
 
