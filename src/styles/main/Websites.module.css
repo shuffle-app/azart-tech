@@ -159,6 +159,28 @@
   color: #7140fd;
 }
 
+.btn a:hover {
+  color: #cbfa11;
+}
+.btn a:hover:active {
+  color: #7140fd;
+}
+.btn a:hover:focus {
+  color: #7140fd;
+}
+
+.submit_btn:hover {
+  background-color: #a7ce0c;
+}
+
+.submit_btn:hover:active {
+  background-color: #7140fd;
+}
+
+.submit_btn:hover:focus {
+  background-color: #7140fd;
+}
+
 /* SITES */
 
 .sites h4 {

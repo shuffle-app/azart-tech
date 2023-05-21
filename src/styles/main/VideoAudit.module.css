@@ -87,7 +87,15 @@
 
 .order_btn:hover {
   cursor: pointer;
-  transform: translateY(-10px);
+  background-color: #a7ce0c;
+}
+
+.order_btn:hover:active {
+  background-color: #7140fd;
+}
+
+.order_btn:hover:focus {
+  background-color: #7140fd;
 }
 
 .free {
