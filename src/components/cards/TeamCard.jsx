@@ -11,6 +11,8 @@ const truncateText = (text, maxLength = 4) => {
 
 const TeamCard = ({ teamMembers }) => {
   const router = useRouter();
+  // const onClick = () => {
+  //   router.push(`/cv/${teamMember.slug}`);
 
   return (
     <>

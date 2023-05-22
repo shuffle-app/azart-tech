@@ -7,6 +7,7 @@ import fromImg from '../../../public/assets/images/from-img.svg';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { useMounted } from '@/utils/hooks/useMounted';
+import { Checkbox } from '../common/checkbox/Checkbox';
 
 const Form = () => {
   const mounted = useMounted();
@@ -58,13 +59,19 @@ const Form = () => {
           />
         </div>
         <div className={s.agree}>
-          <input
+          <Checkbox
+            name="checkbox"
+            id=""
+            aria-invalid={errors.tos ? 'true' : 'false'}
+            {...register('tos', { required: true })}
+          />
+          {/* <input
             type="checkbox"
             name=""
             id=""
             aria-invalid={errors.tos ? 'true' : 'false'}
             {...register('tos', { required: true })}
-          />
+          /> */}
           <p>
             I agree to the{' '}
             <span

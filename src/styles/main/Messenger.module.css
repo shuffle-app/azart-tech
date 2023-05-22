@@ -64,6 +64,21 @@
   gap: 15px;
   text-decoration: none;
   white-space: nowrap;
+  transition: 0.3s ease-in-out;
+}
+
+.contact a:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  background-color: #a7ce0c;
+}
+
+.contact a:active {
+  background-color: #7140fd;
+}
+
+.contact a:focus {
+  background-color: #7140fd;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,3 +1,5 @@
+import Footer from '@/components/shared/Footer';
+import Header from '@/components/shared/Header';
 import styles from '@/styles/Privacy.module.css';
 import Head from 'next/head';
 
@@ -7,6 +9,8 @@ const PrivacyPage = () => {
       <Head>
         <title>Privacy Policy</title>
       </Head>
+      <Header />
+
       <div className={styles.page}>
         <h1>Privacy Policy</h1>
 
@@ -274,6 +278,7 @@ const PrivacyPage = () => {
           posted on this page.
         </p>
       </div>
+      <Footer />
     </>
   );
 };

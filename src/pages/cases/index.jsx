@@ -5,6 +5,7 @@ import c from '@/styles/main/Projects.module.css';
 import Footer from '@/components/shared/Footer';
 import Form from '@/components/home/Form';
 import { format } from 'date-fns';
+import { useRouter } from 'next/router';
 
 const FormattedDate = ({ date }) => {
   return <p>{format(new Date(date), 'd MMM. yyyy').toLowerCase()}</p>;
@@ -49,6 +50,7 @@ export async function getStaticProps() {
 }
 
 const CasePage = ({ projects }) => {
+  const router = useRouter();
   return (
     <main className="main_container">
       <Header />
@@ -134,7 +136,11 @@ const CasePage = ({ projects }) => {
               projects
                 .filter((project) => project.category.includes('IT'))
                 .map((project, index) => (
-                  <div key={index} className={c.card}>
+                  <div
+                    key={index}
+                    className={c.card}
+                    onClick={(e) => router.push(`/cases/${project.slug}`)}
+                  >
                     <div className={c.card_header}>
                       <div className={c.card_text}>
                         <h4>
@@ -169,7 +175,11 @@ const CasePage = ({ projects }) => {
               projects
                 .filter((project) => project.category.includes('digital'))
                 .map((project, index) => (
-                  <div key={index} className={c.card}>
+                  <div
+                    key={index}
+                    className={c.card}
+                    onClick={(e) => router.push(`/cases/${project.slug}`)}
+                  >
                     <div className={c.card_header}>
                       <div className={c.card_text}>
                         <h4>
@@ -204,7 +214,11 @@ const CasePage = ({ projects }) => {
               projects
                 .filter((project) => project.category.includes('service'))
                 .map((project, index) => (
-                  <div key={index} className={c.card}>
+                  <div
+                    key={index}
+                    className={c.card}
+                    onClick={(e) => router.push(`/cases/${project.slug}`)}
+                  >
                     <div className={c.card_header}>
                       <div className={c.card_text}>
                         <h4>
