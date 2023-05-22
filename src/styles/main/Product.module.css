@@ -77,7 +77,7 @@
   border: 1px solid #808080;
   border-radius: 10px;
   padding: 10px 15px;
-  height: 200px;
+  min-height: 158px;
   transition: 0.3s;
 }
 
