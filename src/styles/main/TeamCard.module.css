@@ -5,6 +5,7 @@
   background: #282835;
   border: 1px solid #808080;
   border-radius: 10px;
+  cursor: pointer;
   transition: border-color 0.3s ease-in-out;
 }
 

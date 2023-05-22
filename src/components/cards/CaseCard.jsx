@@ -2,6 +2,7 @@ import s from '@/styles/main/Projects.module.css';
 import { useMounted } from '@/utils/hooks/useMounted';
 import Link from 'next/link';
 import { format } from 'date-fns';
+import { useRouter } from 'next/router';
 
 const FormattedDate = ({ date }) => {
   return <p>{format(new Date(date), 'd MMM. yyyy').toLowerCase()}</p>;
@@ -9,9 +10,13 @@ const FormattedDate = ({ date }) => {
 
 const CaseCard = ({ project }) => {
   const mounted = useMounted();
+  const router = useRouter();
+  const onClick = () => {
+    router.push(`/cases/${project.slug}`);
+  };
 
   return (
-    <div className={s.card}>
+    <div className={s.card} onClick={onClick}>
       <div className={s.card_header}>
         <div className={s.card_text}>
           <h4>

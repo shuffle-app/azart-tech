@@ -4,6 +4,7 @@ import { useWindowSize } from '@/utils/hooks/useWindowSize';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
+import { Checkbox } from '../common/checkbox/Checkbox';
 
 const Form = () => {
   const {
@@ -50,11 +51,19 @@ const Form = () => {
           </div>
           {width > 768 && (
             <div className={s.submits}>
-              <input
-                type="checkbox"
+              <Checkbox
+                name=""
+                id=""
                 aria-invalid={errors.tos ? 'true' : 'false'}
                 {...register('tos', { required: true })}
               />
+              {/* <input
+                type="checkbox"
+                name=""
+                id=""
+                aria-invalid={errors.tos ? 'true' : 'false'}
+                {...register('tos', { required: true })}
+              /> */}
               <div>
                 I agree to the&nbsp;
                 <span
