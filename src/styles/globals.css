@@ -196,7 +196,7 @@ html {
 
 .hamburgerA[aria-expanded='true'] .top {
   transform: rotate(45deg);
-  y: 10;
+  y: 10px;
   width: 33px;
   fill: #cbfa11;
 }
