@@ -48,7 +48,6 @@
   font-size: 24px;
   line-height: 29px;
   color: #ffffff;
-  margin-bottom: 10px;
 }
 
 .product_header p {
@@ -78,7 +77,7 @@
   border: 1px solid #808080;
   border-radius: 10px;
   padding: 10px 15px;
-  height: 158px;
+  height: 200px;
   transition: 0.3s;
 }
 
@@ -167,8 +166,12 @@
 
 .title {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 26px;
+}
+
+.title h2 {
+  margin-bottom: -3px;
 }
 
 @media (max-width: 1024px) {
