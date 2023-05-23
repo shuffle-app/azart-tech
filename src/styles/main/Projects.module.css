@@ -138,6 +138,16 @@
   text-align: end;
 }
 
+.detailis a:hover {
+  color: #a7ce0c;
+}
+.detailis a:active {
+  color: #7140fd;
+}
+
+.detailis a:focus {
+  color: #7140fd;
+}
 .detailis {
   bottom: 0;
   right: 40px;
@@ -167,6 +177,17 @@
   line-height: 19px;
   text-decoration-line: underline;
   color: #cbfa11;
+}
+
+.slider_block a:hover {
+  color: #a7ce0c;
+}
+.slider_block a:active {
+  background-color: #7140fd;
+}
+
+.slider_block a:focus {
+  background-color: #7140fd;
 }
 
 .zoom {

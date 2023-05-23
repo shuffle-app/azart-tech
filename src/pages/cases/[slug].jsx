@@ -20,17 +20,14 @@ const Case = ({ initialData: cases }) => {
   return (
     <main>
       <Header />
-
       <Preview cases={cases} />
       {cases.stacks && <Stack cases={cases} />}
-
       <Analytics cases={cases} />
       <Design cases={cases} />
       {cases.development && <Development cases={cases} />}
       <Digital cases={cases} />
       <Production cases={cases} />
       {cases.members && <Members cases={cases} />}
-
       <Form />
       <Footer />
     </main>

@@ -61,7 +61,10 @@ const Development = ({ cases }) => {
                   className={isActive ? s.active_accordion : s.accordion}
                   key={index}
                 >
-                  <div className={s.accordion_header}>
+                  <div
+                    className={s.accordion_header}
+                    onClick={() => setActiveIndex(isActive ? null : index)}
+                  >
                     <div>
                       <h4 className={isActive ? s.setNumber : s.number}>
                         {index + 1}

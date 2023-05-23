@@ -1,73 +1,82 @@
 .preview_block {
-    margin-top: 135px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  margin-top: 135px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.text h1{
-    font-size: 48px;
-    line-height: 58px;
-    color: #FFFFFF;
+.text h1 {
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
 }
 
 .text h1 span {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #CBFA11
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #cbfa11;
 }
 
 .t_block h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-top: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 15px;
 }
 
 .t_block p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    background: linear-gradient(76.36deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-    border: 1px solid #808080;
-    box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1), inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(28.3333px);
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.preview_block img {
+  margin-top: 8px;
 }
 
 @media (max-width: 1024px) {
-    .preview_block {
-        flex-direction: column;
-        gap: 15px;
-    }
+  .preview_block {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    .preview_block img {
-        width: 100%;
-    }
+  .preview_block img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-    .text h1 {
-        font-size: 34px;
-        line-height: 37px;
-    }
+  .text h1 {
+    font-size: 34px;
+    line-height: 37px;
+  }
 
-    .text p {
-        font-size: 14px;
-        line-height: 17px;
-    }
+  .text p {
+    font-size: 14px;
+    line-height: 17px;
+  }
 
-    .t_block h3 {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FFFFFF;
-        opacity: 0.8
-    }
+  .t_block h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    opacity: 0.8;
+  }
 }
