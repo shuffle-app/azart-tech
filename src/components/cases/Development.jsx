@@ -109,8 +109,9 @@ const Development = ({ cases }) => {
           </div>
           <div>
             <div className={s.stacks}>
-              <h3>Platforms</h3>
+              {/* <h3>Platforms</h3> */}
               <div className={s.platforms}>
+                <h3>Platforms</h3>
                 {cases.platforms.platform?.map((platform, index) => (
                   <p key={index}>{platform}</p>
                 ))}
