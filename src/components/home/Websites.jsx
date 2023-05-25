@@ -51,19 +51,19 @@ const Form = () => {
           </div>
           {width > 768 && (
             <div className={s.submits}>
-              <Checkbox
-                name=""
-                id=""
-                aria-invalid={errors.tos ? 'true' : 'false'}
-                {...register('tos', { required: true })}
-              />
-              {/* <input
-                type="checkbox"
+              {/* <Checkbox
                 name=""
                 id=""
                 aria-invalid={errors.tos ? 'true' : 'false'}
                 {...register('tos', { required: true })}
               /> */}
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                aria-invalid={errors.tos ? 'true' : 'false'}
+                {...register('tos', { required: true })}
+              />
               <div>
                 I agree to the&nbsp;
                 <span

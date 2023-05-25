@@ -59,19 +59,19 @@ const Form = () => {
           />
         </div>
         <div className={s.agree}>
-          <Checkbox
+          {/* <Checkbox
             name="checkbox"
             id=""
             aria-invalid={errors.tos ? 'true' : 'false'}
             {...register('tos', { required: true })}
-          />
-          {/* <input
+          /> */}
+          <input
             type="checkbox"
             name=""
             id=""
             aria-invalid={errors.tos ? 'true' : 'false'}
             {...register('tos', { required: true })}
-          /> */}
+          />
           <p>
             I agree to the{' '}
             <span
