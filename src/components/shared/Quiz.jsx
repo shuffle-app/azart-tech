@@ -86,12 +86,15 @@ const Quiz = ({ handleExit }) => {
     if (isValid) {
       // отправить данные формы, например:
       try {
-        await submitForm({
-          message: Object.values(answers).join('; '),
-          name,
-          email,
-          phone,
-        });
+        await submitForm(
+          {
+            message: Object.values(answers).join('\n'),
+            name,
+            email,
+            phone,
+          },
+          'Квиз'
+        );
       } catch (error) {
         console.error(error);
       }

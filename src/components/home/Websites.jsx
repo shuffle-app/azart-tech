@@ -17,7 +17,7 @@ const Form = () => {
   const router = useRouter();
 
   const onSubmit = async (data) => {
-    await submitForm(data);
+    await submitForm(data, 'Форма Что-то необычное');
 
     router.push('/thank-you');
   };
