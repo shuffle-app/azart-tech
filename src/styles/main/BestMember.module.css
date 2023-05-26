@@ -81,6 +81,11 @@
   display: flex;
   align-items: flex-start;
   gap: 100px;
+  transition: border-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  border: #cbfa11 1px solid;
 }
 
 .name h3 {
@@ -132,6 +137,18 @@
   line-height: 19px;
   text-decoration-line: underline;
   color: #cbfa11;
+}
+
+.about_person a:hover {
+  color: #a7ce0c;
+}
+
+.about_person a:active {
+  color: #7140fd;
+}
+
+.about_person a:focus {
+  color: #7140fd;
 }
 
 .marks {

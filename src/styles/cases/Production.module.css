@@ -130,6 +130,18 @@
   text-decoration: none;
 }
 
+.download a:hover {
+  background-color: #a7ce0c;
+}
+
+.download a:active {
+  background-color: #7140fd;
+}
+
+.download a:focus {
+  background-color: #7140fd;
+}
+
 @media (max-width: 1024px) {
   .promo_block {
     flex-direction: column;
