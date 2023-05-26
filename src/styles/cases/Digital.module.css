@@ -93,10 +93,138 @@
   max-width: 316px;
 }
 
+.icons_Apple {
+  display: flex;
+  flex-direction: row;
+}
+.icons_Google {
+  display: flex;
+  flex-direction: row;
+}
+.icons_Meta {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons_Apple img {
+  padding: 10px;
+  background: rgb(84, 93, 52);
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  margin-top: 17px;
+}
+
+.icons_Apple p {
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 15px;
+  margin-top: 17px;
+  margin-left: 15px;
+}
+
+.icons_Google p {
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 14px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.icons_Meta p {
+  background: linear-gradient(
+    76.36deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.tools_heading {
+  font-family: Chakra Petch;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cbfa11;
+  max-width: 316px;
+}
+
+.tools {
+  margin-top: 22px;
+  margin-right: 45px;
+}
+
+.icons_Google img {
+  padding: 10px;
+  background: rgb(84, 93, 52);
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.icons_Meta img {
+  padding: 10px;
+  background: rgb(84, 93, 52);
+  border: 1px solid #808080;
+  box-shadow: inset 28.3333px -28.3333px 28.3333px rgba(186, 186, 186, 0.1),
+    inset -28.3333px 28.3333px 28.3333px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(28.3333px);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
 .digital_content_items {
   margin-top: 30px;
   display: flex;
-  gap: 15px;
+  gap: 14px;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
@@ -105,6 +233,12 @@
   .digital_content {
     min-width: 100%;
   }
+  .tools_heading {
+    margin-top: 30px;
+  }
+  .tools {
+    margin-top: 15px;
+  }
 }
 
 .digital_content p {
@@ -112,7 +246,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
   color: #ffffff;
   padding: 15px;
 }
@@ -147,6 +281,7 @@
 }
 
 .digital_content_stats_desktop {
+  margin-top: 38px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -77,6 +77,18 @@
   bottom: 0;
 }
 
+.about a:hover {
+  color: #a7ce0c;
+}
+
+.about a:active {
+  color: #7140fd;
+}
+
+.about a:focus {
+  color: #7140fd;
+}
+
 .awards_block {
   padding: 10px 0;
   border-bottom: 1px solid #808080;

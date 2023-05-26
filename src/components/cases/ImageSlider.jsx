@@ -39,8 +39,8 @@ const ImageSlider = ({ cases }) => {
     slidesToShow: 3,
     centerMode: true,
     centerPadding: 0,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setImgIndex(next),
   };
 
