@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 import TagManager from 'react-gtm-module';
 import * as fbq from '@/utils/fpixel';
 import Script from 'next/script';
-import { gtmEvent } from '@/utils/gtm';
 
 function MyApp({ Component, pageProps }) {
   const [showCookie, setShowCookie] = useState(false);
@@ -21,7 +20,6 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-PQC67DR' });
-    gtmEvent('gtm.js');
   }, []);
 
   const router = useRouter();
@@ -32,7 +30,6 @@ function MyApp({ Component, pageProps }) {
 
     const handleRouteChange = () => {
       fbq.pageview();
-      gtmEvent('gtm.js');
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
