@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-PQC67DR' });
+    gtmEvent('gtm.js');
   }, []);
 
   const router = useRouter();
