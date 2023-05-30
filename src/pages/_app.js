@@ -21,7 +21,6 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-PQC67DR' });
-    gtmEvent('next_route_change');
   }, []);
 
   const router = useRouter();
@@ -32,7 +31,7 @@ function MyApp({ Component, pageProps }) {
 
     const handleRouteChange = () => {
       fbq.pageview();
-      gtmEvent('next_route_change');
+      gtmEvent('gtm.js');
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
