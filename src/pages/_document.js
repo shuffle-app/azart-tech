@@ -2,6 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 import Image from 'next/image';
 import Script from 'next/script';
 import { FB_PIXEL_ID } from '@/utils/fpixel';
+import { GTM_ID } from '@/utils/gtm';
 
 export default function Document() {
   return (
@@ -49,6 +50,14 @@ export default function Document() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body>
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         {/* Yandex.Metrika noscript */}
         <noscript
           dangerouslySetInnerHTML={{
