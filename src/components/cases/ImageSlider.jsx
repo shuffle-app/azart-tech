@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import s from '@/styles/cases/Stack.module.css';
 
@@ -39,8 +40,8 @@ const ImageSlider = ({ cases }) => {
     slidesToShow: 3,
     centerMode: true,
     centerPadding: 0,
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setImgIndex(next),
   };
 

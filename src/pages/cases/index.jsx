@@ -6,9 +6,23 @@ import Footer from '@/components/shared/Footer';
 import Form from '@/components/home/Form';
 import { format } from 'date-fns';
 import { useRouter } from 'next/router';
+import { Transition } from 'react-transition-group';
+import { useRef, useState } from 'react';
 
 const FormattedDate = ({ date }) => {
   return <p>{format(new Date(date), 'd MMM. yyyy').toLowerCase()}</p>;
+};
+
+const duration = 300;
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+};
+const transitionStyles = {
+  entering: { opacity: 1 },
+  entered: { opacity: 1 },
+  exiting: { opacity: 0 },
+  exited: { opacity: 0 },
 };
 
 export async function getStaticProps() {
@@ -50,6 +64,9 @@ export async function getStaticProps() {
 }
 
 const CasePage = ({ projects }) => {
+  const [menu, setMenu] = useState(true);
+  const nodeRef = useRef(null);
+
   const router = useRouter();
   return (
     <main className="main_container">
@@ -58,7 +75,8 @@ const CasePage = ({ projects }) => {
         <section className={` ${s.bm_section}`}>
           <div className={s.text_content}>
             <h1>
-              Pay attention <br /> <span>to our work</span>
+              Pay attention <br />
+              to <span>our work</span>
             </h1>
             <p className={s.p}>
               Here are collected cases on various topics. We specialize not only
@@ -68,9 +86,15 @@ const CasePage = ({ projects }) => {
               <h3>Our destinations</h3>
             </div>
             <div className={s.tags}>
-              <p>Digital</p>
-              <p>IT</p>
-              <p>Service</p>
+              <p>
+                <a href="/cases#digital">Digital</a>
+              </p>
+              <p>
+                <a href="/cases#it">IT</a>
+              </p>
+              <p>
+                <a href="/cases#services">Services</a>
+              </p>
             </div>
           </div>
           <div className={s.project_card}>
@@ -120,7 +144,7 @@ const CasePage = ({ projects }) => {
               </div>
             </div>
             <div className={c.preview}>
-              <img src="./assets/img/shuffle.svg" alt="" />
+              <img src="./assets/img/shuffle-1.png" alt="Project preview" />
               <div className={c.detailis}>
                 <Link href={`/cases/shuffle-start-up`}>more details</Link>
                 <p>28 jan. 2023</p>
@@ -130,7 +154,7 @@ const CasePage = ({ projects }) => {
         </section>
 
         <section className={s.category}>
-          <h1>IT</h1>
+          <h1 id="it">IT</h1>
           <div className={s.case_cards}>
             {projects &&
               projects
@@ -169,7 +193,7 @@ const CasePage = ({ projects }) => {
         </section>
 
         <section className={s.category}>
-          <h1>Digital</h1>
+          <h1 id="digital">Digital</h1>
           <div className={s.case_cards}>
             {projects &&
               projects
@@ -208,7 +232,7 @@ const CasePage = ({ projects }) => {
         </section>
 
         <section className={s.category}>
-          <h1>Services</h1>
+          <h1 id="services">Services</h1>
           <section className={s.case_cards}>
             {projects &&
               projects

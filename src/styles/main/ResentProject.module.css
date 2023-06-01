@@ -38,7 +38,7 @@
 .text_content h1 span {
   background: #7140fd;
   border-radius: 8px;
-  padding: 0 5px;
+  padding: 0 9px;
 }
 
 .text_content p {
@@ -71,6 +71,18 @@
 .tags {
   display: flex;
   gap: 15px;
+  transition: border-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.tags p:hover {
+  border: #cbfa11 1px solid;
+}
+
+.tags a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .project_card h2 {

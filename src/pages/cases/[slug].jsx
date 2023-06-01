@@ -12,7 +12,7 @@ import Footer from '@/components/shared/Footer';
 import Header from '@/components/shared/Header';
 import Loader from '@/components/shared/Loader';
 
-const Case = ({ initialData: cases }) => {
+const Case = ({ initialData: cases, currentFile }) => {
   if (!cases) {
     return <Loader />;
   }
