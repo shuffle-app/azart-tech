@@ -6,23 +6,9 @@ import Footer from '@/components/shared/Footer';
 import Form from '@/components/home/Form';
 import { format } from 'date-fns';
 import { useRouter } from 'next/router';
-import { Transition } from 'react-transition-group';
-import { useRef, useState } from 'react';
 
 const FormattedDate = ({ date }) => {
   return <p>{format(new Date(date), 'd MMM. yyyy').toLowerCase()}</p>;
-};
-
-const duration = 300;
-const defaultStyle = {
-  transition: `opacity ${duration}ms ease-in-out`,
-  opacity: 0,
-};
-const transitionStyles = {
-  entering: { opacity: 1 },
-  entered: { opacity: 1 },
-  exiting: { opacity: 0 },
-  exited: { opacity: 0 },
 };
 
 export async function getStaticProps() {
@@ -64,9 +50,6 @@ export async function getStaticProps() {
 }
 
 const CasePage = ({ projects }) => {
-  const [menu, setMenu] = useState(true);
-  const nodeRef = useRef(null);
-
   const router = useRouter();
   return (
     <main className="main_container">
@@ -99,7 +82,10 @@ const CasePage = ({ projects }) => {
           </div>
           <div className={s.project_card}>
             <h2>Recent project</h2>
-            <div className={s.card}>
+            <div
+              className={s.card}
+              onClick={(e) => router.push(`/cases/shuffle-start-up`)}
+            >
               <div className={s.card_text}>
                 <h3>Shuffle start-up</h3>
                 <p>
@@ -126,7 +112,10 @@ const CasePage = ({ projects }) => {
         </section>
 
         <section className={s.mobile_card}>
-          <div className={c.card}>
+          <div
+            className={c.card}
+            onClick={(e) => router.push(`/cases/shuffle-start-up`)}
+          >
             <div className={c.card_header}>
               <div className={c.card_text}>
                 <h4>

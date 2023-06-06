@@ -10,6 +10,7 @@ const Digital = ({ cases }) => {
 
   const toolsRef = useRef(null);
   const { width } = useWindowSize();
+  const isShuffleStartup = cases.slug === 'shuffle-start-up';
 
   if (!cases.digital) {
     return null;
@@ -79,19 +80,21 @@ const Digital = ({ cases }) => {
                   tools
                 </div>
               )}
-              <div
-                className={s.purpose}
-                style={
-                  shouldRenderTools && width > 768
-                    ? {
-                        maxWidth: 250,
-                      }
-                    : undefined
-                }
-              >
-                <span className={s.purpose_label}>purpose: </span>
-                {purpose}
-              </div>
+              {isShuffleStartup && (
+                <div
+                  className={s.purpose}
+                  style={
+                    shouldRenderTools && width > 768
+                      ? {
+                          maxWidth: 250,
+                        }
+                      : undefined
+                  }
+                >
+                  <span className={s.purpose_label}>purpose: </span>
+                  {purpose}
+                </div>
+              )}
             </div>
 
             <div className={s.digital_content_items}>

@@ -79,6 +79,10 @@
   border: #cbfa11 1px solid;
 }
 
+.card:hover {
+  border: #cbfa11 1px solid;
+}
+
 .tags a {
   color: #ffffff;
   text-decoration: none;
@@ -115,6 +119,8 @@
   width: 669px;
   height: 313px;
   position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .card_text {
@@ -172,6 +178,16 @@
   color: #cbfa11;
 }
 
+.card_ft a:hover {
+  color: #a7ce0c;
+}
+.card_ft a:active {
+  color: #7140fd;
+}
+
+.card_ft a:focus {
+  color: #7140fd;
+}
 .card_ft p {
   color: #808080;
 }

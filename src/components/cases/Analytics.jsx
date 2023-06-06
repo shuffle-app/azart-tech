@@ -127,7 +127,6 @@ const Analytics = ({ cases }) => {
           {isShuffleStartup && <h4>Also</h4>}
           <div className={s.accordions}>
             {data1.map((item, index) => {
-              console.log('item: ', item, 'index: ', index);
               const isActive = index === activeIndex;
               const arrowIcon = isActive
                 ? './assets/icons/arr-minus.svg'
