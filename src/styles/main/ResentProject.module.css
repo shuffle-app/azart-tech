@@ -41,6 +41,7 @@
   padding: 0 9px;
 }
 
+.text_content a,
 .text_content p {
   margin-top: 15px;
   font-size: 16px;
@@ -75,7 +76,7 @@
   cursor: pointer;
 }
 
-.tags p:hover {
+.tags a:hover {
   border: #cbfa11 1px solid;
 }
 

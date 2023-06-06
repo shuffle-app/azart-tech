@@ -69,15 +69,15 @@ const CasePage = ({ projects }) => {
               <h3>Our destinations</h3>
             </div>
             <div className={s.tags}>
-              <p>
-                <a href="/cases#digital">Digital</a>
-              </p>
-              <p>
-                <a href="/cases#it">IT</a>
-              </p>
-              <p>
-                <a href="/cases#services">Services</a>
-              </p>
+              <a href="cases#digital">
+                <span>Digital</span>
+              </a>
+              <a href="cases#it">
+                <span>IT</span>
+              </a>
+              <a href="cases#services">
+                <span>Services</span>
+              </a>
             </div>
           </div>
           <div className={s.project_card}>
