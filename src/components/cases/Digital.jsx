@@ -27,10 +27,8 @@ const Digital = ({ cases }) => {
 
       {blocks.map((block, index) => {
         const { purpose, items, heading, stats } = block;
-
         const shouldRenderTools =
           cases.slug === 'shuffle-start-up' && index === 2;
-
         const renderStats = () => {
           return (
             <div className={s.digital_content_stats}>
