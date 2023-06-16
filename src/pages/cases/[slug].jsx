@@ -84,6 +84,7 @@ export async function getStaticProps({ params }) {
                 analytics01
                 analytics02
                 analyticsResult
+                members
                 
             }
         }`;

@@ -1,53 +1,65 @@
 import s from '@/styles/cases/Members.module.css';
+import Image from 'next/image';
 
 const Members = ({ cases }) => {
+  console.log(cases);
+  if (!cases.members) {
+    return null;
+  }
+
   return (
     <section className="container">
       <h3 className={s.h3}>Members</h3>
       <div className={s.members}>
-        <div className={s.member}>
-          <img src="./assets/images/stanislav.svg" alt="" />
-          <div>
-            <h5>Name Name</h5>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
-        <div className={s.member}>
-          <img src="./assets/images/stanislav.svg" alt="" />
-          <div>
-            <h5>Name Name</h5>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
-        <div className={s.member}>
-          <img src="./assets/images/stanislav.svg" alt="" />
-          <div>
-            <h5>Name Name</h5>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
-        <div className={s.member}>
-          <img src="./assets/images/stanislav.svg" alt="" />
-          <div>
-            <h5>Name Name</h5>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
-        <div className={s.member}>
-          <img src="./assets/images/stanislav.svg" alt="" />
-          <div>
-            <h5>Name Name</h5>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
-        <div className={s.member}>
-          <img src="./assets/images/stanislav.svg" alt="" />
-          <div>
-            <h5>Name Name</h5>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
+        {cases.members[0].members.map((member, index) => {
+          return (
+            <div className={s.member} key={index}>
+              <Image src={member.photo} alt="" width={60} height={60} />
+              <div>
+                <h5>{member.name}</h5>
+                <p>{member.position}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
+
+      {/* <div className={s.member}>
+              <img src="./assets/images/stanislav.svg" alt="" />
+              <div>
+                <h5>Name Name</h5>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div className={s.member}>
+              <img src="./assets/images/stanislav.svg" alt="" />
+              <div>
+                <h5>Name Name</h5>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div className={s.member}>
+              <img src="./assets/images/stanislav.svg" alt="" />
+              <div>
+                <h5>Name Name</h5>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div className={s.member}>
+              <img src="./assets/images/stanislav.svg" alt="" />
+              <div>
+                <h5>Name Name</h5>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div className={s.member}>
+              <img src="./assets/images/stanislav.svg" alt="" />
+              <div>
+                <h5>Name Name</h5>
+                <p>Lorem, ipsum.</p>
+              </div> */}
+      {/* </div> */}
+
       <div className={s.reviews_block}>
         <div>
           <h4 className={s.h4}>Reviews</h4>
