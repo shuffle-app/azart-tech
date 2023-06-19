@@ -27,7 +27,7 @@ const Case = ({ initialData: cases, currentFile }) => {
       {cases.development && <Development cases={cases} />}
       <Digital cases={cases} />
       <Production cases={cases} />
-      {cases.members && <Members cases={cases} />}
+      {<Members cases={cases} />}
       <Form />
       <Footer />
     </main>
@@ -84,6 +84,7 @@ export async function getStaticProps({ params }) {
                 analytics01
                 analytics02
                 analyticsResult
+                members
                 
             }
         }`;
