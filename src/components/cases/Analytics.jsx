@@ -83,7 +83,7 @@ const Analytics = ({ cases }) => {
     { content: cases.analytics01 },
     { content: cases.analytics02 },
   ];
-  console.log(data);
+
   const [activeIndex, setActiveIndex] = useState(null);
   const [activeInd, setActiveInd] = useState(null);
   const router = useRouter();
@@ -129,7 +129,7 @@ const Analytics = ({ cases }) => {
           <div className={s.accordions}>
             {data1.map((item, index) => {
               const isActive = index === activeInd;
-              const arrrowIcon = isActive
+              const arrowIcon = isActive
                 ? './assets/icons/arr-minus.svg'
                 : './assets/icons/arr-plus.svg';
 
@@ -145,7 +145,7 @@ const Analytics = ({ cases }) => {
                     <button
                       onClick={() => setActiveInd(isActive ? null : index)}
                     >
-                      <img src={arrrowIcon} alt="" />
+                      <img src={arrowIcon} alt="" />
                     </button>
                   </div>
                 </div>
@@ -161,7 +161,6 @@ const Analytics = ({ cases }) => {
           {isShuffleStartup && <h4>Also</h4>}
           <div className={s.accordions}>
             {data.map((item, index) => {
-              console.log('item: ', item, 'index: ', index);
               const isActive = index === activeIndex;
               const arrowIcon = isActive
                 ? './assets/icons/arr-minus.svg'

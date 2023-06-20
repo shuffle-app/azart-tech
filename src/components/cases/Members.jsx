@@ -2,7 +2,6 @@ import s from '@/styles/cases/Members.module.css';
 import Image from 'next/image';
 
 const Members = ({ cases }) => {
-  console.log(cases);
   if (!cases.members) {
     return null;
   }
