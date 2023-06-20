@@ -85,6 +85,7 @@ const Analytics = ({ cases }) => {
   ];
   console.log(data);
   const [activeIndex, setActiveIndex] = useState(null);
+  const [activeInd, setActiveInd] = useState(null);
   const router = useRouter();
   const isShuffleStartup = cases.slug === 'shuffle-start-up';
 
@@ -127,8 +128,8 @@ const Analytics = ({ cases }) => {
           {isShuffleStartup && <h4>Also</h4>}
           <div className={s.accordions}>
             {data1.map((item, index) => {
-              const isActive = index === activeIndex;
-              const arrowIcon = isActive
+              const isActive = index === activeInd;
+              const arrrowIcon = isActive
                 ? './assets/icons/arr-minus.svg'
                 : './assets/icons/arr-plus.svg';
 
@@ -142,9 +143,9 @@ const Analytics = ({ cases }) => {
                       {item.content}
                     </p>
                     <button
-                      onClick={() => setActiveIndex(isActive ? null : index)}
+                      onClick={() => setActiveInd(isActive ? null : index)}
                     >
-                      <img src={arrowIcon} alt="" />
+                      <img src={arrrowIcon} alt="" />
                     </button>
                   </div>
                 </div>
