@@ -48,12 +48,12 @@ const ImageSlider = ({ cases }) => {
   return (
     <div className="slider_container">
       <Slider {...settings}>
-        {cases.imageSlider.slider.map((img, idx) => (
+        {cases.sliderImages.map((img, idx) => (
           <div
             key={idx}
             className={idx === imgIndex ? 'slide activeSlide' : 'slide'}
           >
-            <img className={s.imgg} src={img} alt={idx} />
+            <img className={s.imgg} src={img.url} alt={idx} />
           </div>
         ))}
       </Slider>

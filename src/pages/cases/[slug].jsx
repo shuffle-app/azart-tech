@@ -81,11 +81,20 @@ export async function getStaticProps({ params }) {
                 }
                 reviewsText
                 imageSlider
+                sliderImages {
+                    url
+                }
                 analytics01
                 analytics02
                 analyticsResult
                 members
-                
+                teamMembers {
+                  name
+                  photo {
+                    url
+                  }
+                  position
+                }
             }
         }`;
 
