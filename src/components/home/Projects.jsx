@@ -1,5 +1,6 @@
 import s from '@/styles/main/Projects.module.css';
 import CaseCard from '../cards/CaseCard';
+import ScrollableContainer from "@/components/common/scrollable/ScrollableContainer"
 import Link from 'next/link';
 
 export default function Projects({ projects }) {
@@ -7,7 +8,7 @@ export default function Projects({ projects }) {
     <section className={`${s.projects_section}`}>
       <h1 className="container">Recent projects</h1>
       {/* Карточки проектов */}
-      <div className={`${s.slide} ${s.container}`}>
+      <ScrollableContainer>
         {projects && projects.length > 0 ? (
           projects.map((project, index) => (
             <CaseCard key={index} project={project} />
@@ -15,7 +16,7 @@ export default function Projects({ projects }) {
         ) : (
           <p>Loading...</p>
         )}
-      </div>
+      </ScrollableContainer>
 
       {/* Скролл бар слайдера, длинной линией */}
       <div className={`container ${s.slider_block}`}>

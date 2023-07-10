@@ -2,6 +2,7 @@
   padding: 15px;
   min-width: 348px;
   max-width: 348.1px;
+  flex-shrink: 0;
   background: #282835;
   border: 1px solid #808080;
   border-radius: 10px;

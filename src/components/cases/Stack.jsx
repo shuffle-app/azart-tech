@@ -22,7 +22,7 @@ const Stack = ({ cases }) => {
       <div className={s.section}>
         <div className={s.stacks}>
           {cases.stacks.stack.map((stack, index) => (
-            <p key={index}>{stack}</p>
+            <p className={stack.status === 'active' ? s.active_stacks : ''} key={index}>{stack.name}</p>
           ))}
         </div>
 
