@@ -1,6 +1,7 @@
 import s from '@/styles/cases/Design.module.css';
 
 const Design = ({ cases }) => {
+  console.log(cases);
   return (
     <section className="container">
       <div className={s.block_02}>
