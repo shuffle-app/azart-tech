@@ -97,7 +97,7 @@
     inset -22.6666px 22.6666px 22.6666px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(22.6666px);
   border-radius: 8px;
-  padding: 20px 26px;
+  padding: 20px 0;
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
@@ -115,11 +115,13 @@
   background: #cbfa11;
   border: 0.799999px solid #808080;
   border-radius: 8px;
-  padding: 20px 26px;
+  padding: 20px 0;
   font-weight: 700;
   font-size: 24px;
   color: #000;
   text-align: center;
+  width: 64px;
+  height: 64px;
 }
 
 .accordion_block {
