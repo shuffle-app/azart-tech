@@ -2,7 +2,7 @@ import s from '@/styles/cases/Members.module.css';
 import Image from 'next/image';
 
 const Members = ({ cases }) => {
-  if (!cases.members) {
+  if (!cases.teamMembers) {
     return null;
   }
 
@@ -10,10 +10,10 @@ const Members = ({ cases }) => {
     <section className="container">
       <h3 className={s.h3}>Members</h3>
       <div className={s.members}>
-        {cases.members[0].members.map((member, index) => {
+        {cases.teamMembers.map((member, index) => {
           return (
             <div className={s.member} key={index}>
-              <Image src={member.photo} alt="" width={60} height={60} />
+              <Image src={member.photo.url} alt="" width={60} height={60} />
               <div>
                 <h5>{member.name}</h5>
                 <p>{member.position}</p>

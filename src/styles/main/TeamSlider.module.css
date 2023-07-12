@@ -25,8 +25,8 @@
 }
 
 .photo img {
-  min-width: 130px;
-  min-height: 130px;
+  width: 157px;
+  height: 157px;
   border: 1px solid #808080;
   border-radius: 11px;
 }
@@ -98,7 +98,7 @@
   display: flex;
   gap: 30px;
   width: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .download_block {

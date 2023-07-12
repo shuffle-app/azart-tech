@@ -2,6 +2,7 @@ import s from '@/styles/main/TeamSlider.module.css';
 import TeamCard from '../cards/TeamCard';
 import { useForm } from 'react-hook-form';
 import { submitForm } from '@/api/utils/submitForm';
+import ScrollableContainer from "@/components/common/scrollable/ScrollableContainer"
 
 const TeamSlider = ({ teamMembers }) => {
   const {
@@ -35,9 +36,9 @@ const TeamSlider = ({ teamMembers }) => {
           </div>
         </div>
       </div>
-      <div className={`${s.team_slider} ${s.container}`}>
+      <ScrollableContainer>
         <TeamCard teamMembers={teamMembers} />
-      </div>
+      </ScrollableContainer>
 
       <div className="container">
         <div className={s.download_block}>

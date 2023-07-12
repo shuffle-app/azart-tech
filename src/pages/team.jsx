@@ -4,6 +4,7 @@ import Header from "@/components/shared/Header"
 import BestMember from "@/components/teamPage/BestMember"
 import s from '@/styles/main/TeamSlider.module.css'
 import c from '@/styles/main/TeamCard.module.css'
+import ScrollableContainer from "@/components/common/scrollable/ScrollableContainer"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
@@ -68,7 +69,7 @@ const TeamPage = ({ teamMembers }) => {
   
           <section className={`${s.team_section}`}>
             <h1 className={`container ${s.h1}`}>Development</h1>
-            <div className={`${s.team_slider} ${s.container}`}>
+            <ScrollableContainer>
               {teamMembers &&
                 teamMembers
                   .filter((teamMember) => teamMember.category.includes("development"))
@@ -91,7 +92,7 @@ const TeamPage = ({ teamMembers }) => {
                               <div className={s.rew}>
                                   {
                                       teamMember.awardsImg === null ? (<p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>)
-                                      : (<img src={teamMember.awardsImg.url}/>)
+                                      : (<img className={c.award_image} src={teamMember.awardsImg.url}/>)
                                   }
                               </div>
                           </div>
@@ -106,13 +107,13 @@ const TeamPage = ({ teamMembers }) => {
                       </div>
                     </div>
                   ))}
-            </div>
+            </ScrollableContainer>
           </section>
 
 
           <section className={`${s.team_section}`}>
             <h1 className={`container ${s.h1}`}>UX/UI</h1>
-            <div className={`${s.team_slider} ${s.container}`}>
+            <ScrollableContainer>
               {teamMembers &&
                 teamMembers
                   .filter((teamMember) => teamMember.category.includes("design"))
@@ -150,12 +151,12 @@ const TeamPage = ({ teamMembers }) => {
                       </div>
                     </div>
                   ))}
-            </div>
+            </ScrollableContainer>
           </section>
 
           <section className={`${s.team_section}`}>
             <h1 className={`container ${s.h1}`}>Marketing</h1>
-            <div className={`${s.team_slider} ${s.container}`}>
+            <ScrollableContainer>
               {teamMembers &&
                 teamMembers
                   .filter((teamMember) => teamMember.category.includes("marketing"))
@@ -193,7 +194,7 @@ const TeamPage = ({ teamMembers }) => {
                       </div>
                     </div>
                   ))}
-            </div>
+            </ScrollableContainer>
           </section>
 
           

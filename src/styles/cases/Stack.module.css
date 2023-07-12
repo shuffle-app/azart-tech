@@ -44,6 +44,12 @@
   margin-bottom: 15px;
 }
 
+.active_stacks {
+  color: #21212B !important;
+  background: #cbfa11 !important;
+  display: table !important;
+}
+
 .ds {
   display: flex;
   overflow: hidden;

@@ -1,7 +1,9 @@
 .card {
   padding: 15px;
   min-width: 348px;
+  min-height: 412px;
   max-width: 348.1px;
+  flex-shrink: 0;
   background: #282835;
   border: 1px solid #808080;
   border-radius: 10px;
@@ -212,11 +214,17 @@
   font-size: 16px;
   line-height: 21px;
   color: #808080;
+  padding-bottom: 12px;
+}
+
+.award_image {
+  height: 52px;
 }
 
 @media (max-width: 1024px) {
   .card {
     min-width: 320px;
+    min-height: 371px;
   }
 }
 
