@@ -86,7 +86,7 @@ const TeamMemberPage = ({ initialData }) => {
           <div className={`container ${s.cv_section}`}>
             <div className={s.person_header}>
               <div className={s.header_logo}>
-                <img src={teamMember.coverImage?.url} alt="" />
+                <img className={s.header_logo_image} src={teamMember.coverImage?.url} alt="" />
                 <div>
                   <div className={s.name_block}>
                     <h1>{teamMember.name}</h1>

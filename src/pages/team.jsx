@@ -92,7 +92,7 @@ const TeamPage = ({ teamMembers }) => {
                               <div className={s.rew}>
                                   {
                                       teamMember.awardsImg === null ? (<p className={c.comming}>They are not there yet, but they will definitely be soon! 💪</p>)
-                                      : (<img src={teamMember.awardsImg.url}/>)
+                                      : (<img className={c.award_image} src={teamMember.awardsImg.url}/>)
                                   }
                               </div>
                           </div>
